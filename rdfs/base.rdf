@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xml:lang="en" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+  <rdfs:Class rdf:ID="GrandAndGeneralCouncil">
+    <rdfs:label xml:lang="en">Grand and General Council</rdfs:label>
+    <rdfs:label xml:lang="it">Consiglio Grande e Generale</rdfs:label>
+    <rdfs:comment>Institution responsible for the legislative power, the determination of political address and the exercise of control functions. Made up of 60 members called Councilors.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Councilor">
+    <rdfs:label xml:lang="en">Councilor</rdfs:label>
+    <rdfs:label xml:lang="it">Consigliere</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
+    <rdfs:comment>One of the 60 members of the GGC, belonging to a political force or mixed group.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdf:Property rdf:ID="declares">
+    <rdfs:domain rdf:resource="#Councilor" />
+    <rdfs:range rdf:resource="#TaxReturn"/>
+  </rdf:Property>
+
+  <rdfs:Class rdf:ID="TaxReturn">
+    <rdfs:domain rdf:resource="#Councilor"/>
+    <rdfs:label xml:lang="en">Tax Return</rdfs:label>
+    <rdfs:label xml:lang="it">Dichiarazione dei Redditi</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment>The tax return declarated by each Councilor.</rdfs:comment>
+  </rdfs:Class>
+
+  <rdf:Property rdf:ID="belongsTo">
+    <rdfs:domain rdf:resource="#Councilor" />
+    <rdfs:range rdf:resource="#ParliamentaryGroup"/>
+  </rdf:Property>
+
+  <rdfs:Class rdf:ID="ParliamentaryGroup">
+    <rdfs:label xml:lang="en">Parliamentary Group</rdfs:label>
+    <rdfs:label xml:lang="it">Gruppo parlamentare</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="CounciliarGroup">
+    <rdfs:label xml:lang="en">Counciliar Group</rdfs:label>
+    <rdfs:label xml:lang="it">Gruppo Consiliare</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ParliamentaryGroup" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Coalition">
+    <rdfs:label xml:lang="en">Coalition</rdfs:label>
+    <rdfs:label xml:lang="it">Coalizione</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Property rdf:ID="isComposedBy">
+    <rdfs:domain rdf:resource="#Coalition" />
+    <rdfs:range rdf:resource="#CounciliarGroup" />
+  </rdfs:Property>
+
+  <rdfs:Property rdf:ID="hasLeader">
+    <rdfs:domain rdf:resource="#CounciliarGroup" />
+    <rdfs:range rdf:resource="#Leader" />
+  </rdfs:Property>
+
+  <rdfs:Class rdf:ID="Leader">
+    <rdfs:label xml:lang="en">Leader</rdfs:label>
+    <rdfs:label xml:lang="it">Capogruppo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Councilor" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="MixedGroup">
+    <rdfs:label xml:lang="en">Mixed Group</rdfs:label>
+    <rdfs:label xml:lang="it">Gruppo Misto</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ParliamentaryGroup" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="CaptainRegent">
+    <rdfs:label xml:lang="en">Captain Regent</rdfs:label>
+    <rdfs:label xml:lang="it">Capitano Reggente</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Councilor" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="LegislativePeriod">
+    <rdfs:label xml:lang="en">Legislative Period</rdfs:label>
+    <rdfs:label xml:lang="it">Legislatura</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Property rdf:ID="hasGroups">
+    <rdfs:domain rdf:resource="#LegislativePeriod" />
+    <rdfs:range rdf:resource="#CounciliarGroup" />
+    <rdfs:range rdf:resource="#MixedGroup" />
+  </rdfs:Property>
+
+</rdf:RDF>
