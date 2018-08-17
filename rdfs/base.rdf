@@ -3,18 +3,30 @@
 <rdf:RDF xml:lang="en" 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  >
+
+
+  <!-- BASE -->
+  <rdfs:Class rdf:ID="Institution" />
+  <rdf:Property rdf:ID="belongsTo" />
+  <rdfs:Property rdf:ID="composedBy" />
+  <rdfs:Class rdf:ID="Politician" rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
+
+  <!-- GRAND AND GENERAL COUNCIL -->
 
   <rdfs:Class rdf:ID="GrandAndGeneralCouncil">
     <rdfs:label xml:lang="en">Grand and General Council</rdfs:label>
     <rdfs:label xml:lang="it">Consiglio Grande e Generale</rdfs:label>
     <rdfs:comment>Institution responsible for the legislative power, the determination of political address and the exercise of control functions. Made up of 60 members called Councilors.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Institution" />
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Councilor">
     <rdfs:label xml:lang="en">Councilor</rdfs:label>
     <rdfs:label xml:lang="it">Consigliere</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
+    <rdfs:subClassOf rdf:resource="#Politician"/>
     <rdfs:comment>One of the 60 members of the GGC, belonging to a political force or mixed group.</rdfs:comment>
   </rdfs:Class>
 
@@ -31,7 +43,8 @@
     <rdfs:comment>The tax return declarated by each Councilor.</rdfs:comment>
   </rdfs:Class>
 
-  <rdf:Property rdf:ID="belongsTo">
+  <rdf:Property rdf:ID="belongsToGroup">
+    <rdfs:subPropertyOf rdf:resource="#belongsTo" />
     <rdfs:domain rdf:resource="#Councilor" />
     <rdfs:range rdf:resource="#ParliamentaryGroup"/>
   </rdf:Property>
@@ -41,10 +54,27 @@
     <rdfs:label xml:lang="it">Gruppo parlamentare</rdfs:label>
   </rdfs:Class>
 
+  <rdfs:Property rdf:ID="belongsToFaction">
+    <rdfs:subPropertyOf rdf:resource="#belongsTo" />
+    <rdfs:domain rdf:resource="#ParliamentaryGroup" />
+    <rdfs:range rdf:resource="#Majority" />
+    <rdfs:range rdf:resource="#Minority" />
+  </rdfs:Property>
+
   <rdfs:Class rdf:ID="CounciliarGroup">
     <rdfs:label xml:lang="en">Counciliar Group</rdfs:label>
     <rdfs:label xml:lang="it">Gruppo Consiliare</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ParliamentaryGroup" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Majority">
+    <rdfs:label xml:lang="en">Majority</rdfs:label>
+    <rdfs:label xml:lang="it">Maggioranza</rdfs:label>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Minority">
+    <rdfs:label xml:lang="en">Minority</rdfs:label>
+    <rdfs:label xml:lang="it">Minoranza</rdfs:label>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Coalition">
@@ -57,16 +87,18 @@
     <rdfs:range rdf:resource="#CounciliarGroup" />
   </rdfs:Property>
 
-  <rdfs:Property rdf:ID="hasLeader">
+  <!--<rdfs:Property rdf:ID="hasLeader">
     <rdfs:domain rdf:resource="#CounciliarGroup" />
     <rdfs:range rdf:resource="#Leader" />
-  </rdfs:Property>
+  </rdfs:Property>-->
 
-  <rdfs:Class rdf:ID="Leader">
+  <rdfs:Property rdf:ID="leader">
     <rdfs:label xml:lang="en">Leader</rdfs:label>
     <rdfs:label xml:lang="it">Capogruppo</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Councilor" />
-  </rdfs:Class>
+    <!--<rdfs:subClassOf rdf:resource="#Councilor" />-->
+    <rdfs:domain rdf:resource="#CounciliarGroup" />
+    <rdfs:range rdf:resource="#Councilor" />
+  </rdfs:Property>
 
   <rdfs:Class rdf:ID="MixedGroup">
     <rdfs:label xml:lang="en">Mixed Group</rdfs:label>
@@ -74,21 +106,77 @@
     <rdfs:subClassOf rdf:resource="#ParliamentaryGroup" />
   </rdfs:Class>
 
-  <rdfs:Class rdf:ID="CaptainRegent">
-    <rdfs:label xml:lang="en">Captain Regent</rdfs:label>
-    <rdfs:label xml:lang="it">Capitano Reggente</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Councilor" />
-  </rdfs:Class>
+  <rdfs:Property rdf:ID="electedFor">
+    <rdfs:domain rdf:resource="#GrandAndGeneralCouncil" />
+    <rdfs:range rdf:resource="#LegislativePeriod" />
+  </rdfs:Property>
 
   <rdfs:Class rdf:ID="LegislativePeriod">
     <rdfs:label xml:lang="en">Legislative Period</rdfs:label>
     <rdfs:label xml:lang="it">Legislatura</rdfs:label>
   </rdfs:Class>
 
-  <rdfs:Property rdf:ID="hasGroups">
-    <rdfs:domain rdf:resource="#LegislativePeriod" />
+  <rdfs:Property rdf:ID="isComposedByGroups">
+    <rdfs:domain rdf:resource="#GrandAndGeneralCouncil" />
     <rdfs:range rdf:resource="#CounciliarGroup" />
     <rdfs:range rdf:resource="#MixedGroup" />
+    <rdfs:subPropertyOf rdf:resource="#isComposedBy" />
   </rdfs:Property>
 
+  <!-- REGENCY -->
+
+  <rdfs:Property rdf:ID="elects">
+    <rdfs:domain rdf:resource="#GrandAndGeneralCouncil" />
+    <rdfs:range rdf:resource="#Regency" />
+  </rdfs:Property>
+
+  <rdfs:Class rdf:ID="Regency">
+    <rdfs:label xml:lang="en">Regency</rdfs:label>
+    <rdfs:label xml:lang="it">Reggenza</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Institution" />
+  </rdfs:Class>
+
+  <rdfs:Property rdf:ID="startDate">
+    <rdfs:domain rdf:resource="#Regency" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime" />
+  </rdfs:Property>
+
+  <rdfs:Property rdf:ID="endDate">
+    <rdfs:domain rdf:resource="#Regency" />
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime" />
+  </rdfs:Property>
+
+  <rdfs:Property rdf:ID="composedByRegents">
+    <rdfs:domain rdf:resource="#Regency" />
+    <rdfs:range rdf:resource="#CaptainRegent" />
+    <rdfs:subPropertyOf rdf:resource="#composedBy" />
+  </rdfs:Property>
+
+  <rdfs:Class rdf:ID="CaptainRegent">
+    <rdfs:label xml:lang="en">Captain Regent</rdfs:label>
+    <rdfs:label xml:lang="it">Capitano Reggente</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Councilor" />
+  </rdfs:Class>
+
+  <!-- CONGRESS -->
+
+  <rdfs:Class rdf:ID="Congress">
+    <rdfs:label xml:lang="en">Congress of State</rdfs:label>
+    <rdfs:label xml:lang="it">Congresso di Stato</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Institution" />
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="SecretaryOfState">
+    <rdfs:label xml:lang="en">Secretary of State</rdfs:label>
+    <rdfs:label xml:lang="it">Segretario di Stato</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Politician"/>
+  </rdfs:Class>
+
+  <rdfs:Class rdf:ID="Secretary">
+    <rdfs:label xml:lang="en">Secretary of State</rdfs:label>
+    <rdfs:label xml:lang="it">Segretario di Stato</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Politician"/>
+  </rdfs:Class>
+
+  </rdfs:Class>
 </rdf:RDF>
