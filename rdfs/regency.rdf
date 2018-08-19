@@ -1,0 +1,49 @@
+
+<?xml version="1.0"?>
+
+<rdf:RDF xml:lang="en" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:cggbase="http://www.cgg.sm/ontology/base#" 
+    xmlns:cggroot="http://www.cgg.sm/ontology/cgg#" 
+    xmlns:eli="http://data.europa.eu/eli/ontology#" 
+    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+
+    <!-- REGENCY -->
+
+    <rdfs:Property rdf:ID="elects">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
+        <rdfs:range rdf:resource="#Regency"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="Regency">
+        <rdfs:label xml:lang="en">Regency</rdfs:label>
+        <rdfs:label xml:lang="it">Reggenza</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="startDate">
+        <rdfs:domain rdf:resource="#Regency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="endDate">
+        <rdfs:domain rdf:resource="#Regency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="composedByRegents">
+        <rdfs:domain rdf:resource="#Regency"/>
+        <rdfs:range rdf:resource="#CaptainRegent"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="CaptainRegent">
+        <rdfs:label xml:lang="en">Captain Regent</rdfs:label>
+        <rdfs:label xml:lang="it">Capitano Reggente</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+    </rdfs:Class>
+
+</rdf:RDF>

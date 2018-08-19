@@ -1,47 +1,49 @@
 <?xml version="1.0"?>
 
 <rdf:RDF xml:lang="en" 
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xmlns:cggtp="http://www.cgg.sm/ontology/base#"
-  >
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:cggbase="http://www.cgg.sm/ontology/base#" 
+    xmlns:cggroot="http://www.cgg.sm/ontology/cgg#" 
+    xmlns:eli="http://data.europa.eu/eli/ontology#" 
+    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
 
-  <!-- INTERNATIONAL DELEGATIONS -->
+    <!-- INTERNATIONAL DELEGATIONS -->
 
-  <rdfs:Class rdf:ID="CounciliarDelegationAtInternationalOrganizations">
-    <rdfs:label xml:lang="en">Counciliar Delegation at International Organization</rdfs:label>
-    <rdfs:label xml:lang="it">Delegazione Consiliare presso Organismo Internazionale</rdfs:label>
-  </rdfs:Class>
+    <rdfs:Class rdf:ID="CounciliarDelegationAtInternationalOrganizations">
+        <rdfs:label xml:lang="en">Counciliar Delegation at International Organization</rdfs:label>
+        <rdfs:label xml:lang="it">Delegazione Consiliare presso Organismo Internazionale</rdfs:label>
+    </rdfs:Class>
 
-  <rdfs:Property rdf:ID="organizationName">
-    <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </rdfs:Property>
+    <rdfs:Property rdf:ID="organizationName">
+        <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdfs:Property>
 
-  <rdfs:Property rdf:ID="composedByDelegates">
-    <rdfs:subPropertyOf rdf:resource="#composedBy"/>
-    <rdfs:domain rdf:resource="#CouncilOfTwelves"/>
-    <rdfs:range rdf:resource="#Councilor"/>
-  </rdfs:Property>
+    <rdfs:Property rdf:ID="composedByDelegates">
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+        <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="#Delegated"/>
+    </rdfs:Property>
 
-  <rdfs:Class rdf:ID="Delegated">
-    <rdfs:subClassOf rdf:resource="#Councilor"/>
-  </rdfs:Class>
+    <rdfs:Class rdf:ID="Delegated">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+    </rdfs:Class>
 
-  <rdfs:Class rdf:ID="HeadOfDelegation">
-    <rdfs:subClassOf rdf:resource="#Delegated"/>
-  </rdfs:Class>
+    <rdfs:Class rdf:ID="HeadOfDelegation">
+        <rdfs:subClassOf rdf:resource="#Delegated"/>
+    </rdfs:Class>
 
-  <rdfs:Property rdf:ID="functionsOfTheDelegation">
-    <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </rdfs:Property>
+    <rdfs:Property rdf:ID="functionsOfTheDelegation">
+        <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdfs:Property>
 
-  <rdfs:Property rdf:ID="annualReport">
-    <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </rdfs:Property>
+    <rdfs:Property rdf:ID="annualReport">
+        <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdfs:Property>
 
 </rdf:RDF>

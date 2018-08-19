@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xml:lang="en" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+  xmlns:cggroot="http://www.cgg.sm/ontology/cgg#"
+  xmlns:cggbase="http://www.cgg.sm/ontology/base#"
+  xmlns:eli="http://data.europa.eu/eli/ontology#" 
+  xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+
+    <!-- COMMISSIONS -->
+
+    <rdfs:Class rdf:ID="CouncilCommission">
+      <rdfs:label xml:lang="en">Council Commission</rdfs:label>
+      <rdfs:label xml:lang="it">Commissione consiliare</rdfs:label>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:ID="PermanentCouncilCommission">
+      <rdfs:subClassOf rdf:resource="#CouncilCommission"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:ID="SpecialCouncilCommission">
+      <rdfs:subClassOf rdf:resource="#CouncilCommission"/>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="inChargeFor">
+      <rdfs:domain rdf:resource="#CouncilCommission"/>
+      <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#LegislativePeriod"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="composedByCommissioners">
+      <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+      <rdfs:domain rdf:resource="#CouncilOfTwelves"/>
+      <rdfs:range rdf:resource="#Commissioner"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="Commissioner">
+      <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:ID="President">
+      <rdfs:subClassOf rdf:resource="#Commissioner"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:ID="VicePresident">
+      <rdfs:subClassOf rdf:resource="#Commissioner"/>
+    </rdfs:Class>
+
+</rdf:RDF>

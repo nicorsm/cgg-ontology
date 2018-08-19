@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xml:lang="en" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:cggbase="http://www.cgg.sm/ontology/base#" 
+    xmlns:cggroot="http://www.cgg.sm/ontology/cgg#" 
+    xmlns:eli="http://data.europa.eu/eli/ontology#" 
+    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+
+    <!-- CONGRESS -->
+
+    <rdfs:Class rdf:ID="Congress">
+        <rdfs:label xml:lang="en">Congress of State</rdfs:label>
+        <rdfs:label xml:lang="it">Congresso di Stato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="composedByMinisters">
+        <rdfs:domain rdf:resource="#Congress"/>
+        <rdfs:range rdf:resource="#Minister"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="Minister">
+        <rdfs:label xml:lang="en">Minister</rdfs:label>
+        <rdfs:label xml:lang="it">Segretario di Stato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Politician"/>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="holds">
+        <rdfs:domain rdf:resource="#Minister"/>
+        <rdfs:range rdf:resource="#Secretary"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="Secretary">
+        <rdfs:label xml:lang="en">Secretary of State</rdfs:label>
+        <rdfs:label xml:lang="it">Segreteria di Stato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="headOffice">
+        <rdfs:domain rdf:resource="#Secretary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="entrustedOf">
+        <rdfs:domain rdf:resource="#Secretary"/>
+        <rdfs:range rdf:resource="#Delegation"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="Delegation">        <!-- Department? -->
+        <rdfs:label xml:lang="en">Delegation</rdfs:label>
+        <rdfs:label xml:lang="it">Delega</rdfs:label>
+    </rdfs:Class>
+
+</rdf:RDF>

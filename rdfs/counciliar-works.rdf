@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xml:lang="en" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:cggtp="http://www.cgg.sm/ontology/textual-products#" 
+    xmlns:eli="http://data.europa.eu/eli/ontology#" 
+    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+
+    <!-- COUNCILIAR WORKS -->
+
+    <!--- Needs more investigation -->
+    <rdfs:Class rdf:ID="Session">
+
+    </rdfs:Class>
+
+    <rdfs:Class rdf:ID="UrgentSession">
+        <rdfs:subPropertyOf rdf:resource="#Session"/>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="isConvenedBy">
+        <rdfs:domain rdf:resource="#Session"/>
+        <rdfs:range rdf:resource="#Convocation"/>
+    </rdfs:Property>
+
+    <rdfs:Class rdf:ID="Convocation">
+    </rdfs:Class>
+
+    <!-- /Needs more investigation -->
+
+    <rdfs:Class rdf:ID="Paragraph">
+        <rdfs:label xml:lang="en">Paragraph</rdfs:label>
+        <rdfs:label xml:lang="it">Comma</rdfs:label>
+        <rdfs:comment>Topic discussed during a session.</rdfs:comment>
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="topic">
+        <rdfs:domain rdf:resource="#Paragraph"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#Norm"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="type">
+        <rdfs:domain rdf:resource="#Paragraph"/>
+        <rdfs:range rdf:resource="#DiscussionType"/>
+        <!-- Public or Secret -->
+    </rdfs:Property>
+
+    
+
+</rdf:RDF>

@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 
 <rdf:RDF xml:lang="en" 
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xmlns:cggtp="http://www.cgg.sm/ontology/base#"
-  >
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:cggtp="http://www.cgg.sm/ontology/textual-products#" 
+    xmlns:eli="http://data.europa.eu/eli/ontology#" 
+    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+
 
   <!-- TEXTUAL PRODUCTS -->
 
@@ -19,8 +21,9 @@
     <rdfs:label xml:lang="en">Norm</rdfs:label>
     <rdfs:label xml:lang="it">Norma</rdfs:label>
     <rdfs:subClassOf rdf:resource="#TextualProduct"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
   </rdfs:Class>
-
+<!--
   <rdfs:Property rdf:ID="date">
     <rdfs:domain rdf:resource="#Norm"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
@@ -55,57 +58,53 @@
     <rdfs:domain rdf:resource="#Norm"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
   </rdfs:Property>
-
+-->
   <rdfs:Class rdf:ID="Regulation">
     <rdfs:label xml:lang="en">Regulation</rdfs:label>
     <rdfs:label xml:lang="it">Regolamento</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Notification">
     <rdfs:label xml:lang="en">Notification</rdfs:label>
     <rdfs:label xml:lang="it">Notifica</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Statute">
     <rdfs:label xml:lang="en">Statute</rdfs:label>
     <rdfs:label xml:lang="it">Statuto</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Verbal">
     <rdfs:label xml:lang="en">Verbal</rdfs:label>
     <rdfs:label xml:lang="it">Verbale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Order">
     <rdfs:label xml:lang="en">Order</rdfs:label>
     <rdfs:label xml:lang="it">Ordine</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="ErrataCorrige">
     <rdfs:label>Errata Corrige</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="Law">
     <rdfs:label xml:lang="en">Law</rdfs:label>
     <rdfs:label xml:lang="it">Legge</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
 
-  <rdfs:Property rdf:ID="draftLaw">
-    <rdfs:domain rdf:resource="#Norm"/>
-    <rdfs:range rdf:resource="#DraftLaw"/>
-  </rdfs:Property>
-
-  <rdfs:Property rdf:ID="coordinatedText">
-    <rdfs:domain rdf:resource="#Norm"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </rdfs:Property>
+  <rdfs:Class rdf:ID="DraftLaw">
+    <rdfs:label xml:lang="en">Draft Law</rdfs:label>
+    <rdfs:label xml:lang="it">Progetto di legge</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+  </rdfs:Class>
 
   <rdfs:Class rdf:ID="ConstitutionalLaw">
     <rdfs:label xml:lang="en">Constitutional Law</rdfs:label>
@@ -128,13 +127,8 @@
   <rdfs:Class rdf:ID="Decree">
     <rdfs:label xml:lang="en">Decree</rdfs:label>
     <rdfs:label xml:lang="it">Decreto</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Norm"/>
+    <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
   </rdfs:Class>
-
-  <rdfs:Property rdf:ID="ratificationDate">
-    <rdfs:domain rdf:resource="#Decree"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-  </rdfs:Property>
 
   <rdfs:Class rdf:ID="RegentialDecree">
     <rdfs:label xml:lang="en">Regential Decree</rdfs:label>
@@ -166,8 +160,6 @@
     <rdfs:subClassOf rdf:resource="#TextualProduct"/>
   </rdfs:Class>
 
-
-
   <rdfs:Class rdf:ID="InstanceOfArengo">
     <rdfs:label xml:lang="en">Instance of Arengo</rdfs:label>
     <rdfs:label xml:lang="it">Istanza d'Arengo</rdfs:label>
@@ -183,12 +175,6 @@
   <rdfs:Class rdf:ID="DecreesRatification">
     <rdfs:label xml:lang="en">Decrees Ratification</rdfs:label>
     <rdfs:label xml:lang="it">Ratifica Decreti</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Document"/>
-  </rdfs:Class>
-
-  <rdfs:Class rdf:ID="DraftLaw">
-    <rdfs:label xml:lang="en">Draft Law</rdfs:label>
-    <rdfs:label xml:lang="it">Progetto di legge</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Document"/>
   </rdfs:Class>
 
