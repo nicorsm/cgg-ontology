@@ -18,4 +18,31 @@
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
   </rdfs:Class>
 
+  <rdf:Property rdf:ID="taxReturn">
+    <rdfs:domain rdf:resource="#Politician"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:label xml:lang="en">Tax Return</rdfs:label>
+    <rdfs:label xml:lang="it">Dichiarazione dei Redditi</rdfs:label>
+    <rdfs:comment xml:lang="en">The tax return declarated by each Politician.</rdfs:comment>
+    <rdfs:comment xml:lang="it">La dichiarazione dei redditi presentata da ogni Politico.</rdfs:comment>
+  </rdf:Property>
+
+  <rdfs:Class rdf:ID="Contact">
+  </rdfs:Class>
+
+  <rdfs:Property rdf:ID="headquarters">
+    <rdfs:domain rdf:resource="Contact" />
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address" />
+  </rdfs:Property>
+
+  <rdfs:Property rdf:ID="email">
+    <rdfs:domain rdf:resource="Contact" />
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Email" />
+  </rdfs:Property>
+
+  <rdfs:Property rdf:ID="url">
+    <rdfs:domain rdf:resource="Contact" />
+    <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#URL" />
+  </rdfs:Property>
+
 </rdf:RDF>

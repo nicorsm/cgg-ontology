@@ -7,6 +7,7 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
   xmlns:cggroot="http://www.cgg.sm/ontology/cgg#"
   xmlns:cggbase="http://www.cgg.sm/ontology/base#"
+  xmlns:cggtp="http://www.cgg.sm/ontology/textual-products#"
   xmlns:eli="http://data.europa.eu/eli/ontology#" 
   xmlns:vc="http://www.w3.org/2006/vcard/ns#">
 
@@ -30,9 +31,24 @@
       <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#LegislativePeriod"/>
     </rdfs:Property>
 
+    <rdfs:Property rdf:ID="appointedBy">
+      <rdfs:domain rdf:resource="#CouncilCommission"/>
+      <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="examinesLaws">
+      <rdfs:domain rdf:resource="#CouncilCommission"/>
+      <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#DraftLaw"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="examinesMotions">
+      <rdfs:domain rdf:resource="#CouncilCommission"/>
+      <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#Motion"/>
+    </rdfs:Property>
+
     <rdfs:Property rdf:ID="composedByCommissioners">
       <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
-      <rdfs:domain rdf:resource="#CouncilOfTwelves"/>
+      <rdfs:domain rdf:resource="#CouncilCommission"/>
       <rdfs:range rdf:resource="#Commissioner"/>
     </rdfs:Property>
 
@@ -47,5 +63,18 @@
     <rdfs:Class rdf:ID="VicePresident">
       <rdfs:subClassOf rdf:resource="#Commissioner"/>
     </rdfs:Class>
+
+    <rdfs:Class rdf:ID="CommissionSession">
+    </rdfs:Class>
+
+    <rdfs:Property rdf:ID="participates">
+      <rdfs:domain rdf:resource="#Commissioner"/>
+      <rdfs:range rdf:resource="#CommissionSession"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="convenes">
+      <rdfs:domain rdf:resource="#President"/>
+      <rdfs:range rdf:resource="#CommissionSession"/>
+    </rdfs:Property>
 
 </rdf:RDF>

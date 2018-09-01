@@ -1,4 +1,3 @@
-
 <?xml version="1.0"?>
 
 <rdf:RDF xml:lang="en" 
@@ -45,5 +44,10 @@
         <rdfs:label xml:lang="it">Capitano Reggente</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
     </rdfs:Class>
+
+    <rdf:Property rdf:ID="canEmit">
+        <rdfs:domain rdf:resource="#Regency"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#RegentialDecree"/>
+    </rdf:Property>
 
 </rdf:RDF>
