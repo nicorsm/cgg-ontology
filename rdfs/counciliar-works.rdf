@@ -12,7 +12,6 @@
 
     <!-- COUNCILIAR WORKS -->
 
-    <!--- Needs more investigation -->
     <rdfs:Class rdf:ID="Session">
     </rdfs:Class>
 
@@ -43,8 +42,6 @@
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
     </rdfs:Property>
 
-    <!-- /Needs more investigation -->
-
     <rdfs:Class rdf:ID="Paragraph">
         <rdfs:label xml:lang="en">Paragraph</rdfs:label>
         <rdfs:label xml:lang="it">Comma</rdfs:label>
@@ -55,13 +52,5 @@
         <rdfs:domain rdf:resource="#Paragraph"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#Norm"/>
     </rdfs:Property>
-
-    <rdfs:Property rdf:ID="type">
-        <rdfs:domain rdf:resource="#Paragraph"/>
-        <rdfs:range rdf:resource="#DiscussionType"/>
-        <!-- Public or Secret -->
-    </rdfs:Property>
-
-    
 
 </rdf:RDF>

@@ -36,7 +36,7 @@
         <rdfs:subClassOf rdf:resource="#Delegated"/>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="functionsOfTheDelegation">
+    <rdfs:Property rdf:ID="functions">
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdfs:Property>

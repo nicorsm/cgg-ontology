@@ -15,6 +15,7 @@
     <rdfs:Class rdf:ID="CouncilOfTwelves">
       <rdfs:label xml:lang="en">Council of Twelves</rdfs:label>
       <rdfs:label xml:lang="it">Consiglio dei XII</rdfs:label>
+      <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
     </rdfs:Class>
 
     <rdfs:Property rdf:ID="composedByCouncilors">      <!-- subclass of councilor dedicated to the commission? -->
