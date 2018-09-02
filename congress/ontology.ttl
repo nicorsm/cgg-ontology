@@ -1,0 +1,191 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.cgg.sm/ontology/congress#composedBySecretaries
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> rdf:type owl:AnnotationProperty ;
+                                                            rdfs:subPropertyOf <http://www.cgg.sm/ontology/base#composedBy> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/congress#composedBySecretaries
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <http://www.cgg.sm/ontology/congress#Congress> ;
+                                                            rdfs:range <http://www.cgg.sm/ontology/congress#Secretary> .
+
+
+###  http://www.cgg.sm/ontology/congress#contact
+<http://www.cgg.sm/ontology/congress#contact> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.cgg.sm/ontology/congress#Secretariat> ;
+                                              rdfs:range <http://www.cgg.sm/ontology/base#Contact> ;
+                                              rdfs:comment "Contact information for the Secretariat of State."@en ,
+                                                           "Informazioni di contatto della Segreteria di Stato."@it ;
+                                              rdfs:label "contact"@en ,
+                                                         "contatto"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#convenedBy
+<http://www.cgg.sm/ontology/congress#convenedBy> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.cgg.sm/ontology/congress#CongressMeeting> ;
+                                                 rdfs:range <http://www.cgg.sm/ontology/regency#Regency> ;
+                                                 rdfs:comment "Convocation of the Congress Meeting by the Regency."@en ,
+                                                              "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."@it ;
+                                                 rdfs:label "convened by"@en ,
+                                                            "convocata da"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#electedBy
+<http://www.cgg.sm/ontology/congress#electedBy> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.cgg.sm/ontology/congress#Secretary> ;
+                                                rdfs:range <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> ;
+                                                rdfs:comment "Election of the Secretary by the Grand and General Council."@en ,
+                                                             "Elezione del Segretario di Stato da parte del Consiglio Grande e Generale."@it ;
+                                                rdfs:label "elected by"@en ,
+                                                           "eletto da"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#entrustedOf
+<http://www.cgg.sm/ontology/congress#entrustedOf> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://www.cgg.sm/ontology/congress#Secretariat> ;
+                                                  rdfs:range <http://www.cgg.sm/ontology/congress#Department> ;
+                                                  rdfs:comment "Affidamento di una o più deleghe alla Segreteria di Stato."@it ,
+                                                               "Entrustment of one or more delegations to the Secretariat of State."@en ;
+                                                  rdfs:label "entrusted of"@en ,
+                                                             "è affidata"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#holds
+<http://www.cgg.sm/ontology/congress#holds> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://www.cgg.sm/ontology/congress#Secretary> ;
+                                            rdfs:range <http://www.cgg.sm/ontology/congress#Secretariat> ;
+                                            rdfs:comment "Ownership of the Secretariat of State by the Secretary."@en ,
+                                                         "Titolarità della Segreteria di Stato da parte del Segretario."@it ;
+                                            rdfs:label "holds"@en ,
+                                                       "è titolare di"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#participatesTo
+<http://www.cgg.sm/ontology/congress#participatesTo> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://www.cgg.sm/ontology/congress#Congress> ;
+                                                     rdfs:range <http://www.cgg.sm/ontology/congress#CongressMeeting> ;
+                                                     rdfs:comment "Partecipazione del Congresso alle loro Riunioni."@it ,
+                                                                  "Participation of the Congress to their Meetings."@en ;
+                                                     rdfs:label "partecipa a"@it ,
+                                                                "participates to"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/congress#date
+<http://www.cgg.sm/ontology/congress#date> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://www.cgg.sm/ontology/congress#CongressMeeting> ;
+                                           rdfs:range xsd:date ;
+                                           rdfs:comment "Data della Riunione del Congresso di Stato."@it ,
+                                                        "Meeting date for the Congress of State."@en ;
+                                           rdfs:label "data della riunione"@it ,
+                                                      "meeting date"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#Contact
+<http://www.cgg.sm/ontology/base#Contact> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/congress#Congress
+<http://www.cgg.sm/ontology/congress#Congress> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.cgg.sm/ontology/base#Institution> ;
+                                               rdfs:comment "Il Congresso di Stato è l'organo esecutivo della Repubblica di San Marino."@it ,
+                                                            "The Congress of State is the executive body of the Republic of San Marino."@en ;
+                                               rdfs:label "Congress of State"@en ,
+                                                          "Congresso di Stato"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#CongressMeeting
+<http://www.cgg.sm/ontology/congress#CongressMeeting> rdf:type owl:Class ;
+                                                      rdfs:comment "Riunione settimanale del Congresso di Stato."@it ,
+                                                                   "Weekly meeting of the Congress of State."@en ;
+                                                      rdfs:label "Meeting of the Congress of State"@en ,
+                                                                 "Riunione del Congresso di Stato"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#Department
+<http://www.cgg.sm/ontology/congress#Department> rdf:type owl:Class ;
+                                                 rdfs:comment "Affidamento di una o più deleghe alla Segreteria di Stato."@it ,
+                                                              "Entrustment of one or more delegations to the Secretariat of State."@en ;
+                                                 rdfs:label "Delega"@it ,
+                                                            "Delegation"@en .
+
+
+###  http://www.cgg.sm/ontology/congress#Secretariat
+<http://www.cgg.sm/ontology/congress#Secretariat> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.cgg.sm/ontology/base#Institution> ;
+                                                  rdfs:label "Secretariat of State"@en ,
+                                                             "Segreteria di Stato"@it .
+
+
+###  http://www.cgg.sm/ontology/congress#Secretary
+<http://www.cgg.sm/ontology/congress#Secretary> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.cgg.sm/ontology/cgg#Councilor> ;
+                                                rdfs:comment "Component of the Congress."@en ,
+                                                             "Componente del Congresso di Stato."@it ;
+                                                rdfs:label "Secretary"@en ,
+                                                           "Segretario di Stato"@it .
+
+
+###  http://www.cgg.sm/ontology/regency#Regency
+<http://www.cgg.sm/ontology/regency#Regency> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> rdfs:comment "Composizione del Congresso di Stato da parte di Segretari di Stato."@it ,
+                                                                         "Congress composition by Secretaries."@en ;
+                                                            rdfs:label "composed by Secretaries"@en ,
+                                                                       "composto da Segretari di Stato"@it .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

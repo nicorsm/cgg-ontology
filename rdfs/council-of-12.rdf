@@ -10,23 +10,24 @@
   xmlns:eli="http://data.europa.eu/eli/ontology#" 
   xmlns:vc="http://www.w3.org/2006/vcard/ns#">
 
-    <!-- COUNCIL OF 12 -->
+  <!-- COUNCIL OF 12 -->
 
-    <rdfs:Class rdf:ID="CouncilOfTwelves">
-      <rdfs:label xml:lang="en">Council of Twelves</rdfs:label>
-      <rdfs:label xml:lang="it">Consiglio dei XII</rdfs:label>
-      <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
-    </rdfs:Class>
+  <rdfs:Class rdf:ID="CouncilOfTwelves">
+    <rdfs:label xml:lang="en">Council of Twelves</rdfs:label>
+    <rdfs:label xml:lang="it">Consiglio dei XII</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
+  </rdfs:Class>
 
-    <rdf:Property rdf:ID="composedByCouncilors">      <!-- subclass of councilor dedicated to the commission? -->
-      <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
-      <rdfs:domain rdf:resource="#CouncilCommission"/>
-      <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
-    </rdf:Property>
+  <rdf:Property rdf:ID="composedByCouncilors">    <!-- subclass of councilor dedicated to the commission? -->
+    <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+    <rdfs:domain rdf:resource="#CouncilCommission"/>
+    <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+  </rdf:Property>
 
-    <rdf:Property rdf:ID="functionsOfCouncilOfTwelves">
-      <rdfs:domain rdf:resource="#CouncilOfTwelves"/>
-      <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </rdf:Property>
+  <rdf:Property rdf:ID="functionsOfCouncilOfTwelves">
+    <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#functions"/>
+    <rdfs:domain rdf:resource="#CouncilOfTwelves"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
 
 </rdf:RDF>

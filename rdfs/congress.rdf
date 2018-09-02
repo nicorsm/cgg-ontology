@@ -1,31 +1,39 @@
 <?xml version="1.0"?>
 
-<rdf:RDF xml:lang="en" 
+<rdf:RDF xmlns="http://www.cgg.sm/ontology/congress#"
+    xml:base="http://www.cgg.sm/ontology/congress#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
     xmlns:cggbase="http://www.cgg.sm/ontology/base#" 
     xmlns:cggroot="http://www.cgg.sm/ontology/cgg#" 
-    xmlns:cggreg="http://www.cgg.sm/ontology/regency#" 
-    xmlns:eli="http://data.europa.eu/eli/ontology#" 
-    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+    xmlns:cggreg="http://www.cgg.sm/ontology/regency#">
 
     <!-- CONGRESS -->
 
     <rdfs:Class rdf:ID="Congress">
         <rdfs:label xml:lang="en">Congress of State</rdfs:label>
         <rdfs:label xml:lang="it">Congresso di Stato</rdfs:label>
+        <rdfs:comment xml:lang="en">The Congress of State is the executive body of the Republic of San Marino.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il Congresso di Stato è l'organo esecutivo della Repubblica di San Marino.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
     </rdfs:Class>
 
-    <rdf:Property rdf:ID="composedByMinisters">
+    <rdf:Property rdf:ID="composedBySecretaries">
+        <rdfs:label xml:lang="en">composed by Secretaries</rdfs:label>
+        <rdfs:label xml:lang="it">composto da Segretari di Stato</rdfs:label>
+        <rdfs:comment xml:lang="en">Congress composition by Secretaries.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Composizione del Congresso di Stato da parte di Segretari di Stato.</rdfs:comment>
         <rdfs:domain rdf:resource="#Congress"/>
-        <rdfs:range rdf:resource="#Minister"/>
+        <rdfs:range rdf:resource="#Secretary"/>
         <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
     </rdf:Property>
 
     <rdf:Property rdf:ID="participatesTo">
+        <rdfs:label xml:lang="en">participates to</rdfs:label>
+        <rdfs:label xml:lang="it">partecipa a</rdfs:label>
+        <rdfs:comment xml:lang="en">Participation of the Congress to their Meetings.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Partecipazione del Congresso alle loro Riunioni.</rdfs:comment>
         <rdfs:domain rdf:resource="#Congress"/>
         <rdfs:range rdf:resource="#CongressMeeting"/>
     </rdf:Property>
@@ -33,53 +41,83 @@
     <rdfs:Class rdf:ID="CongressMeeting">
         <rdfs:label xml:lang="en">Meeting of the Congress of State</rdfs:label>
         <rdfs:label xml:lang="it">Riunione del Congresso di Stato</rdfs:label>
+        <rdfs:comment xml:lang="en">Weekly meeting of the Congress of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Riunione settimanale del Congresso di Stato.</rdfs:comment>
     </rdfs:Class>
 
     <rdf:Property rdf:ID="date">
+        <rdfs:label xml:lang="en">meeting date</rdfs:label>
+        <rdfs:label xml:lang="it">data della riunione</rdfs:label>
+        <rdfs:comment xml:lang="en">Meeting date for the Congress of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Data della Riunione del Congresso di Stato.</rdfs:comment>
         <rdfs:domain rdf:resource="#CongressMeeting"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     </rdf:Property>
 
     <rdf:Property rdf:ID="convenedBy">
+        <rdfs:label xml:lang="en">convened by</rdfs:label>
+        <rdfs:label xml:lang="it">convocata da</rdfs:label>
+        <rdfs:comment xml:lang="en">Convocation of the Congress Meeting by the Regency.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Convocazione della Riunione del Congresso di Stato da parte della Reggenza.</rdfs:comment>
         <rdfs:domain rdf:resource="#CongressMeeting"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/regency#Regency"/>
     </rdf:Property>
 
-    <rdfs:Class rdf:ID="Minister">
-        <rdfs:label xml:lang="en">Minister</rdfs:label>
+    <rdfs:Class rdf:ID="Secretary">
+        <rdfs:label xml:lang="en">Secretary</rdfs:label>
         <rdfs:label xml:lang="it">Segretario di Stato</rdfs:label>
+        <rdfs:comment xml:lang="en">Component of the Congress.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Componente del Congresso di Stato.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
     </rdfs:Class>
 
     <rdf:Property rdf:ID="electedBy">
-        <rdfs:domain rdf:resource="#Minister"/>
+        <rdfs:label xml:lang="en">elected by</rdfs:label>
+        <rdfs:label xml:lang="it">eletto da</rdfs:label>
+        <rdfs:comment xml:lang="en">Election of the Secretary by the Grand and General Council.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Elezione del Segretario di Stato da parte del Consiglio Grande e Generale.</rdfs:comment>
+        <rdfs:domain rdf:resource="#Secretary"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
     </rdf:Property>
 
     <rdf:Property rdf:ID="holds">
-        <rdfs:domain rdf:resource="#Minister"/>
-        <rdfs:range rdf:resource="#Secretary"/>
+        <rdfs:label xml:lang="en">holds</rdfs:label>
+        <rdfs:label xml:lang="it">è titolare di</rdfs:label>
+        <rdfs:comment xml:lang="en">Ownership of the Secretariat of State by the Secretary.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Titolarità della Segreteria di Stato da parte del Segretario.</rdfs:comment>
+        <rdfs:domain rdf:resource="#Secretary"/>
+        <rdfs:range rdf:resource="#Secretariat"/>
     </rdf:Property>
 
-    <rdfs:Class rdf:ID="Secretary">
-        <rdfs:label xml:lang="en">Secretary of State</rdfs:label>
+    <rdfs:Class rdf:ID="Secretariat">
+        <rdfs:label xml:lang="en">Secretariat of State</rdfs:label>
         <rdfs:label xml:lang="it">Segreteria di Stato</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
     </rdfs:Class>
 
     <rdf:Property rdf:ID="contact">
-        <rdfs:domain rdf:resource="#Secretary"/>
+        <rdfs:label xml:lang="en">contact</rdfs:label>
+        <rdfs:label xml:lang="it">contatto</rdfs:label>
+        <rdfs:comment xml:lang="en">Contact information for the Secretariat of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Informazioni di contatto della Segreteria di Stato.</rdfs:comment>
+        <rdfs:domain rdf:resource="#Secretariat"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/base#Contact"/>
     </rdf:Property>
 
     <rdf:Property rdf:ID="entrustedOf">
-        <rdfs:domain rdf:resource="#Secretary"/>
+        <rdfs:label xml:lang="en">entrusted of</rdfs:label>
+        <rdfs:label xml:lang="it">è affidata</rdfs:label>
+        <rdfs:comment xml:lang="en">Entrustment of one or more delegations to the Secretariat of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Affidamento di una o più deleghe alla Segreteria di Stato.</rdfs:comment>
+        <rdfs:domain rdf:resource="#Secretariat"/>
         <rdfs:range rdf:resource="#Department"/>
     </rdf:Property>
 
-    <rdfs:Class rdf:ID="Department">        <!-- Department? -->
+    <rdfs:Class rdf:ID="Department">
         <rdfs:label xml:lang="en">Delegation</rdfs:label>
         <rdfs:label xml:lang="it">Delega</rdfs:label>
+        <rdfs:comment xml:lang="en">Entrustment of one or more delegations to the Secretariat of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Affidamento di una o più deleghe alla Segreteria di Stato.</rdfs:comment>
     </rdfs:Class>
 
 </rdf:RDF>

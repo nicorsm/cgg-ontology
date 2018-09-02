@@ -36,7 +36,8 @@
         <rdfs:subClassOf rdf:resource="#Delegated"/>
     </rdfs:Class>
 
-    <rdf:Property rdf:ID="functions">
+    <rdf:Property rdf:ID="functionsOfDelegation">
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#functions"/>
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdf:Property>

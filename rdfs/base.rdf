@@ -15,7 +15,7 @@
 
   <rdf:Property rdf:ID="functions" />
 
-  <rdfs:Class rdf:ID="Politician"> 
+  <rdfs:Class rdf:ID="Politician">
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
   </rdfs:Class>
 

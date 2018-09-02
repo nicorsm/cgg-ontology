@@ -1,0 +1,356 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/regency", "http://www.w3.org/2001/XMLSchema", "http://www.cgg.sm/ontology/base", "http://www.cgg.sm/ontology/congress", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 10,
+    "objectPropertyCount" : 7,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/congress#Congress",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Congress",
+      "en" : "Congress of State",
+      "it" : "Congresso di Stato"
+    },
+    "comment" : {
+      "en" : "The Congress of State is the executive body of the Republic of San Marino.",
+      "it" : "Il Congresso di Stato è l'organo esecutivo della Repubblica di San Marino."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Secretary",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Secretary",
+      "en" : "Secretary",
+      "it" : "Segretario di Stato"
+    },
+    "comment" : {
+      "en" : "Component of the Congress.",
+      "it" : "Componente del Congresso di Stato."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#CongressMeeting",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CongressMeeting",
+      "en" : "Meeting of the Congress of State",
+      "it" : "Riunione del Congresso di Stato"
+    },
+    "comment" : {
+      "en" : "Weekly meeting of the Congress of State.",
+      "it" : "Riunione settimanale del Congresso di Stato."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Department",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Department",
+      "en" : "Delegation",
+      "it" : "Delega"
+    },
+    "comment" : {
+      "en" : "Entrustment of one or more delegations to the Secretariat of State.",
+      "it" : "Affidamento di una o più deleghe alla Segreteria di Stato."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrandAndGeneralCouncil"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Contact",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contact"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#Regency",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Regency"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Secretariat",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Secretariat",
+      "en" : "Secretariat of State",
+      "it" : "Segreteria di Stato"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Institution",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Institution"
+    },
+    "subClasses" : [ "1", "11" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/congress#participatesTo",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "participatesTo",
+      "en" : "participates to",
+      "it" : "partecipa a"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Participation of the Congress to their Meetings.",
+      "it" : "Partecipazione del Congresso alle loro Riunioni."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#date",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "meeting date",
+      "it" : "data della riunione"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Meeting date for the Congress of State.",
+      "it" : "Data della Riunione del Congresso di Stato."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#composedBySecretaries",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "composedBySecretaries",
+      "en" : "composed by Secretaries",
+      "it" : "composto da Segretari di Stato"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Congress composition by Secretaries.",
+      "it" : "Composizione del Congresso di Stato da parte di Segretari di Stato."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "3",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#electedBy",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "electedBy",
+      "en" : "elected by",
+      "it" : "eletto da"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Election of the Secretary by the Grand and General Council.",
+      "it" : "Elezione del Segretario di Stato da parte del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#entrustedOf",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "entrustedOf",
+      "en" : "entrusted of",
+      "it" : "è affidata"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Entrustment of one or more delegations to the Secretariat of State.",
+      "it" : "Affidamento di una o più deleghe alla Segreteria di Stato."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#holds",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "holds",
+      "en" : "holds",
+      "it" : "è titolare di"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Ownership of the Secretariat of State by the Secretary.",
+      "it" : "Titolarità della Segreteria di Stato da parte del Segretario."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#convenedBy",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "convenedBy",
+      "en" : "convened by",
+      "it" : "convocata da"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Convocation of the Congress Meeting by the Regency.",
+      "it" : "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#contact",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "contact",
+      "en" : "contact",
+      "it" : "contatto"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Contact information for the Secretariat of State.",
+      "it" : "Informazioni di contatto della Segreteria di Stato."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  } ]
+}
