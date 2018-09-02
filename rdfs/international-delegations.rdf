@@ -17,16 +17,16 @@
         <rdfs:label xml:lang="it">Delegazione Consiliare presso Organismo Internazionale</rdfs:label>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="organizationName">
+    <rdf:Property rdf:ID="organizationName">
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="composedByDelegates">
+    <rdf:Property rdf:ID="composedByDelegates">
         <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="#Delegated"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="Delegated">
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
@@ -36,14 +36,14 @@
         <rdfs:subClassOf rdf:resource="#Delegated"/>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="functions">
+    <rdf:Property rdf:ID="functions">
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="annualReport">
+    <rdf:Property rdf:ID="annualReport">
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </rdfs:Property>
+    </rdf:Property>
 
 </rdf:RDF>

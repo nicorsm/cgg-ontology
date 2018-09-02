@@ -51,11 +51,11 @@
         <rdfs:label xml:lang="it">Gruppo parlamentare</rdfs:label>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="belongsToBloc">
+    <rdf:Property rdf:ID="belongsToBloc">
         <rdfs:subPropertyOf rdf:resource="#belongsTo"/>
         <rdfs:domain rdf:resource="#ParliamentaryGroup"/>
         <rdfs:range rdf:resource="#ParliamentaryBloc"/> <!-- UK parliamentary block? -->
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="ParliamentaryBloc">
         <rdfs:label xml:lang="en">Parliamentary Bloc</rdfs:label>
@@ -68,43 +68,43 @@
         <rdfs:subClassOf rdf:resource="#ParliamentaryGroup"/>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="headingTo">
+    <rdf:Property rdf:ID="headingTo">
         <rdfs:domain rdf:resource="#CounciliarGroup"/>
         <rdfs:range rdf:resource="#Party"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="Party">
         <rdfs:label xml:lang="en">Party</rdfs:label>
         <rdfs:label xml:lang="it">Partito</rdfs:label>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="name">
+    <rdf:Property rdf:ID="name">
         <rdfs:domain rdf:resource="#Party"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </rdfs:Property>
+    </rdf:Property>
     
-    <rdfs:Property rdf:ID="contact">
+    <rdf:Property rdf:ID="contact">
         <rdfs:domain rdf:resource="#Party"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/base#Contact"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="Coalition">
         <rdfs:label xml:lang="en">Coalition</rdfs:label>
         <rdfs:label xml:lang="it">Coalizione</rdfs:label>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="coalitionComposedBy">
+    <rdf:Property rdf:ID="coalitionComposedBy">
         <rdfs:domain rdf:resource="#Coalition"/>
         <rdfs:range rdf:resource="#CounciliarGroup"/>
         <rdfs:subPropertyOf rdf:resource="#composedBy"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="leader">
+    <rdf:Property rdf:ID="leader">
         <rdfs:label xml:lang="en">Leader</rdfs:label>
         <rdfs:label xml:lang="it">Capogruppo</rdfs:label>
         <rdfs:domain rdf:resource="#CounciliarGroup"/>
         <rdfs:range rdf:resource="#Councilor"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="MixedGroup">
         <rdfs:label xml:lang="en">Mixed Group</rdfs:label>
@@ -112,24 +112,24 @@
         <rdfs:subClassOf rdf:resource="#ParliamentaryGroup"/>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="electedFor">
+    <rdf:Property rdf:ID="electedFor">
         <rdfs:domain rdf:resource="#GrandAndGeneralCouncil"/>
         <rdfs:range rdf:resource="#LegislativePeriod"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="LegislativePeriod">
         <rdfs:label xml:lang="en">Legislative Period</rdfs:label>
         <rdfs:label xml:lang="it">Legislatura</rdfs:label>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="begins">
+    <rdf:Property rdf:ID="begins">
         <rdfs:domain rdf:resource="#LegislativePeriod"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="ends">
+    <rdf:Property rdf:ID="ends">
         <rdfs:domain rdf:resource="#LegislativePeriod"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    </rdfs:Property>
+    </rdf:Property>
 
 </rdf:RDF>

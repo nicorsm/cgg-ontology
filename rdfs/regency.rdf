@@ -12,10 +12,10 @@
 
     <!-- REGENCY -->
 
-    <rdfs:Property rdf:ID="elects">
+    <rdf:Property rdf:ID="elects">
         <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
         <rdfs:range rdf:resource="#Regency"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="Regency">
         <rdfs:label xml:lang="en">Regency</rdfs:label>
@@ -23,21 +23,21 @@
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="startDate">
+    <rdf:Property rdf:ID="startDate">
         <rdfs:domain rdf:resource="#Regency"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="endDate">
+    <rdf:Property rdf:ID="endDate">
         <rdfs:domain rdf:resource="#Regency"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="composedByRegents">
+    <rdf:Property rdf:ID="composedByRegents">
         <rdfs:domain rdf:resource="#Regency"/>
         <rdfs:range rdf:resource="#CaptainRegent"/>
         <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="CaptainRegent">
         <rdfs:label xml:lang="en">Captain Regent</rdfs:label>

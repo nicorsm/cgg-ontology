@@ -11,9 +11,9 @@
 
   <rdf:Property rdf:ID="belongsTo" />
 
-  <rdfs:Property rdf:ID="composedBy" />
+  <rdf:Property rdf:ID="composedBy" />
 
-  <rdfs:Property rdf:ID="functions" />
+  <rdf:Property rdf:ID="functions" />
 
   <rdfs:Class rdf:ID="Politician"> 
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
@@ -31,19 +31,19 @@
   <rdfs:Class rdf:ID="Contact">
   </rdfs:Class>
 
-  <rdfs:Property rdf:ID="headquarters">
+  <rdf:Property rdf:ID="headquarters">
     <rdfs:domain rdf:resource="#Contact" />
     <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address" />
-  </rdfs:Property>
+  </rdf:Property>
 
-  <rdfs:Property rdf:ID="email">
+  <rdf:Property rdf:ID="email">
     <rdfs:domain rdf:resource="#Contact" />
     <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Email" />
-  </rdfs:Property>
+  </rdf:Property>
 
-  <rdfs:Property rdf:ID="url">
+  <rdf:Property rdf:ID="url">
     <rdfs:domain rdf:resource="#Contact" />
     <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#URL" />
-  </rdfs:Property>
+  </rdf:Property>
 
 </rdf:RDF>

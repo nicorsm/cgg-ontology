@@ -15,32 +15,32 @@
     <rdfs:Class rdf:ID="Session">
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="begins">
+    <rdf:Property rdf:ID="begins">
         <rdfs:domain rdf:resource="#Session"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdfs:Property>
+    </rdf:Property>
 
-    <rdfs:Property rdf:ID="ends">
+    <rdf:Property rdf:ID="ends">
         <rdfs:domain rdf:resource="#Session"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="UrgentSession">
         <rdfs:subClassOf rdf:resource="#Session"/>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="isConvenedBy">
+    <rdf:Property rdf:ID="isConvenedBy">
         <rdfs:domain rdf:resource="#Session"/>
         <rdfs:range rdf:resource="#Convocation"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="Convocation">
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="of">
+    <rdf:Property rdf:ID="of">
         <rdfs:domain rdf:resource="#Convocation"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
-    </rdfs:Property>
+    </rdf:Property>
 
     <rdfs:Class rdf:ID="Paragraph">
         <rdfs:label xml:lang="en">Paragraph</rdfs:label>
@@ -48,9 +48,9 @@
         <rdfs:comment>Topic discussed during a session.</rdfs:comment>
     </rdfs:Class>
 
-    <rdfs:Property rdf:ID="topic">
+    <rdf:Property rdf:ID="topic">
         <rdfs:domain rdf:resource="#Paragraph"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#Norm"/>
-    </rdfs:Property>
+    </rdf:Property>
 
 </rdf:RDF>
