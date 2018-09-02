@@ -1,0 +1,219 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/textual-products#presentedTo
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/textual-products#RegentialDecree> .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/eli/ontology#LegalResource
+<http://data.europa.eu/eli/ontology#LegalResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://data.europa.eu/eli/ontology#ResourceType
+<http://data.europa.eu/eli/ontology#ResourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/regency#Regency
+# 
+# http://www.cgg.sm/ontology/textual-products#Agenda
+<http://www.cgg.sm/ontology/textual-products#Agenda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Agenda> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#Agenda> <http://www.w3.org/2000/01/rdf-schema#label> "Agenda"@en .
+<http://www.cgg.sm/ontology/textual-products#Agenda> <http://www.w3.org/2000/01/rdf-schema#label> "Ordine del Giorno"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#Communication
+<http://www.cgg.sm/ontology/textual-products#Communication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Communication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#Communication> <http://www.w3.org/2000/01/rdf-schema#label> "Communication"@en .
+<http://www.cgg.sm/ontology/textual-products#Communication> <http://www.w3.org/2000/01/rdf-schema#label> "Comunicazione"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Law> .
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Constitutional Law"@en .
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Legge Costituzionale"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Law> .
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Constitutional Review Law"@en .
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Legge di Revisione Costituzionale"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#CounciliarDecree
+<http://www.cgg.sm/ontology/textual-products#CounciliarDecree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#CounciliarDecree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Decree> .
+<http://www.cgg.sm/ontology/textual-products#CounciliarDecree> <http://www.w3.org/2000/01/rdf-schema#label> "Counciliar Decree"@en .
+<http://www.cgg.sm/ontology/textual-products#CounciliarDecree> <http://www.w3.org/2000/01/rdf-schema#label> "Decreto Consiliare"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#Decree
+<http://www.cgg.sm/ontology/textual-products#Decree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Decree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Decree> <http://www.w3.org/2000/01/rdf-schema#label> "Decree"@en .
+<http://www.cgg.sm/ontology/textual-products#Decree> <http://www.w3.org/2000/01/rdf-schema#label> "Decreto"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#Decree-Law
+<http://www.cgg.sm/ontology/textual-products#Decree-Law> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Decree-Law> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Decree> .
+<http://www.cgg.sm/ontology/textual-products#Decree-Law> <http://www.w3.org/2000/01/rdf-schema#label> "Decree-Law"@en .
+<http://www.cgg.sm/ontology/textual-products#Decree-Law> <http://www.w3.org/2000/01/rdf-schema#label> "Decreto-Legge"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#DecreesRatification
+<http://www.cgg.sm/ontology/textual-products#DecreesRatification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#DecreesRatification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#DecreesRatification> <http://www.w3.org/2000/01/rdf-schema#label> "Decrees Ratification"@en .
+<http://www.cgg.sm/ontology/textual-products#DecreesRatification> <http://www.w3.org/2000/01/rdf-schema#label> "Ratifica Decreti"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#DelegatedDecree
+<http://www.cgg.sm/ontology/textual-products#DelegatedDecree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#DelegatedDecree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Decree> .
+<http://www.cgg.sm/ontology/textual-products#DelegatedDecree> <http://www.w3.org/2000/01/rdf-schema#label> "Decreto Delegato"@it .
+<http://www.cgg.sm/ontology/textual-products#DelegatedDecree> <http://www.w3.org/2000/01/rdf-schema#label> "Delegated Decree"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Document
+<http://www.cgg.sm/ontology/textual-products#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#TextualProduct> .
+<http://www.cgg.sm/ontology/textual-products#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+<http://www.cgg.sm/ontology/textual-products#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Documento"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#DraftLaw
+<http://www.cgg.sm/ontology/textual-products#DraftLaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#DraftLaw> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#DraftLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Draft Law"@en .
+<http://www.cgg.sm/ontology/textual-products#DraftLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Progetto di legge"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#ErrataCorrige
+<http://www.cgg.sm/ontology/textual-products#ErrataCorrige> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#ErrataCorrige> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#ErrataCorrige> <http://www.w3.org/2000/01/rdf-schema#label> "Errata Corrige" .
+# 
+# http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement
+<http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "Accordi di politica estera"@it .
+<http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "Foreign Affairs Agreement"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#InstanceOfArengo
+<http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> <http://www.w3.org/2000/01/rdf-schema#label> "Instance of Arengo"@en .
+<http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> <http://www.w3.org/2000/01/rdf-schema#label> "Istanza d'Arengo"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations
+<http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations> <http://www.w3.org/2000/01/rdf-schema#label> "Interpellanze e interrogazioni"@it .
+<http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations> <http://www.w3.org/2000/01/rdf-schema#label> "Interpellations and Interrogations"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Law
+<http://www.cgg.sm/ontology/textual-products#Law> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Law> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Law> <http://www.w3.org/2000/01/rdf-schema#label> "Law"@en .
+<http://www.cgg.sm/ontology/textual-products#Law> <http://www.w3.org/2000/01/rdf-schema#label> "Legge"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#Motion
+<http://www.cgg.sm/ontology/textual-products#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Motion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#Motion> <http://www.w3.org/2000/01/rdf-schema#label> "Motion"@en .
+<http://www.cgg.sm/ontology/textual-products#Motion> <http://www.w3.org/2000/01/rdf-schema#label> "Mozione"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#Nomination
+<http://www.cgg.sm/ontology/textual-products#Nomination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Nomination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#Nomination> <http://www.w3.org/2000/01/rdf-schema#label> "Nomina"@it .
+<http://www.cgg.sm/ontology/textual-products#Nomination> <http://www.w3.org/2000/01/rdf-schema#label> "Nomination"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Norm
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#LegalResource> .
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#TextualProduct> .
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/2000/01/rdf-schema#label> "Norm"@en .
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/2000/01/rdf-schema#label> "Norma"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#Notification
+<http://www.cgg.sm/ontology/textual-products#Notification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Notification> <http://www.w3.org/2000/01/rdf-schema#label> "Notifica"@it .
+<http://www.cgg.sm/ontology/textual-products#Notification> <http://www.w3.org/2000/01/rdf-schema#label> "Notification"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Order
+<http://www.cgg.sm/ontology/textual-products#Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Order> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Order> <http://www.w3.org/2000/01/rdf-schema#label> "Order"@en .
+<http://www.cgg.sm/ontology/textual-products#Order> <http://www.w3.org/2000/01/rdf-schema#label> "Ordine"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#QualifiedLaw
+<http://www.cgg.sm/ontology/textual-products#QualifiedLaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#QualifiedLaw> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Law> .
+<http://www.cgg.sm/ontology/textual-products#QualifiedLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Legge Qualificata"@it .
+<http://www.cgg.sm/ontology/textual-products#QualifiedLaw> <http://www.w3.org/2000/01/rdf-schema#label> "Qualified Law"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates
+<http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates> <http://www.w3.org/2000/01/rdf-schema#label> "References and Debates"@en .
+<http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates> <http://www.w3.org/2000/01/rdf-schema#label> "Riferimenti e Dibattiti"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#RegentialDecree
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Decree> .
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> <http://www.w3.org/2000/01/rdf-schema#label> "Decreto Reggenziale"@it .
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> <http://www.w3.org/2000/01/rdf-schema#label> "Regential Decree"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Regulation
+<http://www.cgg.sm/ontology/textual-products#Regulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Regulation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Regulation> <http://www.w3.org/2000/01/rdf-schema#label> "Regolamento"@it .
+<http://www.cgg.sm/ontology/textual-products#Regulation> <http://www.w3.org/2000/01/rdf-schema#label> "Regulation"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Resignation
+<http://www.cgg.sm/ontology/textual-products#Resignation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Resignation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#Resignation> <http://www.w3.org/2000/01/rdf-schema#label> "Dimissioni"@it .
+<http://www.cgg.sm/ontology/textual-products#Resignation> <http://www.w3.org/2000/01/rdf-schema#label> "Resignation"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Statute
+<http://www.cgg.sm/ontology/textual-products#Statute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Statute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Statute> <http://www.w3.org/2000/01/rdf-schema#label> "Statute"@en .
+<http://www.cgg.sm/ontology/textual-products#Statute> <http://www.w3.org/2000/01/rdf-schema#label> "Statuto"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#TextualProduct
+<http://www.cgg.sm/ontology/textual-products#TextualProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#TextualProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Prodotto testuale"@it .
+<http://www.cgg.sm/ontology/textual-products#TextualProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Textual Product"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement
+<http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "Accordi PA-OOSS e Inquadramenti"@it .
+<http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "Trade Union Agreement"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#VariousReport
+<http://www.cgg.sm/ontology/textual-products#VariousReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#VariousReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/textual-products#Document> .
+<http://www.cgg.sm/ontology/textual-products#VariousReport> <http://www.w3.org/2000/01/rdf-schema#label> "Relazioni varie"@it .
+<http://www.cgg.sm/ontology/textual-products#VariousReport> <http://www.w3.org/2000/01/rdf-schema#label> "Various Report"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Verbal
+<http://www.cgg.sm/ontology/textual-products#Verbal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#Verbal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#ResourceType> .
+<http://www.cgg.sm/ontology/textual-products#Verbal> <http://www.w3.org/2000/01/rdf-schema#label> "Verbal"@en .
+<http://www.cgg.sm/ontology/textual-products#Verbal> <http://www.w3.org/2000/01/rdf-schema#label> "Verbale"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

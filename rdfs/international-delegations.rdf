@@ -1,23 +1,26 @@
 <?xml version="1.0"?>
 
-<rdf:RDF xml:lang="en" 
+<rdf:RDF xmlns="http://www.cgg.sm/ontology/international-delegations#"
+    xml:base="http://www.cgg.sm/ontology/international-delegations#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
     xmlns:cggbase="http://www.cgg.sm/ontology/base#" 
-    xmlns:cggroot="http://www.cgg.sm/ontology/cgg#" 
-    xmlns:eli="http://data.europa.eu/eli/ontology#" 
-    xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+    xmlns:cggroot="http://www.cgg.sm/ontology/cgg#">
 
     <!-- INTERNATIONAL DELEGATIONS -->
 
     <rdfs:Class rdf:ID="CounciliarDelegationAtInternationalOrganizations">
         <rdfs:label xml:lang="en">Counciliar Delegation at International Organization</rdfs:label>
         <rdfs:label xml:lang="it">Delegazione Consiliare presso Organismo Internazionale</rdfs:label>
+        <rdfs:comment xml:lang="en">Counciliar delegation elected at the international organizations in order to represent the Republic.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Delegazioni consiliari elette presso le organizzazioni internazionali al fine di rappresentare la Repubblica.</rdfs:comment>
     </rdfs:Class>
 
     <rdf:Property rdf:ID="organizationName">
+        <rdfs:label xml:lang="en">organization name</rdfs:label>
+        <rdfs:label xml:lang="it">nome dell'organizzazione</rdfs:label>
+        <rdfs:comment xml:lang="en">Name of the international organization.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Nome dell'organizzazione internazionale. </rdfs:comment>
         <rdfs:domain rdf:resource="#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </rdf:Property>

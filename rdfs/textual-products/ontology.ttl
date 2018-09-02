@@ -1,0 +1,253 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/textual-products#presentedTo
+<http://www.cgg.sm/ontology/textual-products#presentedTo> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://www.cgg.sm/ontology/textual-products#RegentialDecree> ;
+                                                          rdfs:range <http://www.cgg.sm/ontology/regency#Regency> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europa.eu/eli/ontology#LegalResource
+<http://data.europa.eu/eli/ontology#LegalResource> rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/ontology#ResourceType
+<http://data.europa.eu/eli/ontology#ResourceType> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/regency#Regency
+<http://www.cgg.sm/ontology/regency#Regency> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Agenda
+<http://www.cgg.sm/ontology/textual-products#Agenda> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                     rdfs:label "Agenda"@en ,
+                                                                "Ordine del Giorno"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Communication
+<http://www.cgg.sm/ontology/textual-products#Communication> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                            rdfs:label "Communication"@en ,
+                                                                       "Comunicazione"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Law> ;
+                                                                rdfs:label "Constitutional Law"@en ,
+                                                                           "Legge Costituzionale"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw
+<http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Law> ;
+                                                                      rdfs:label "Constitutional Review Law"@en ,
+                                                                                 "Legge di Revisione Costituzionale"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#CounciliarDecree
+<http://www.cgg.sm/ontology/textual-products#CounciliarDecree> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Decree> ;
+                                                               rdfs:label "Counciliar Decree"@en ,
+                                                                          "Decreto Consiliare"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Decree
+<http://www.cgg.sm/ontology/textual-products#Decree> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                     rdfs:label "Decree"@en ,
+                                                                "Decreto"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Decree-Law
+<http://www.cgg.sm/ontology/textual-products#Decree-Law> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Decree> ;
+                                                         rdfs:label "Decree-Law"@en ,
+                                                                    "Decreto-Legge"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#DecreesRatification
+<http://www.cgg.sm/ontology/textual-products#DecreesRatification> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                                  rdfs:label "Decrees Ratification"@en ,
+                                                                             "Ratifica Decreti"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#DelegatedDecree
+<http://www.cgg.sm/ontology/textual-products#DelegatedDecree> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Decree> ;
+                                                              rdfs:label "Decreto Delegato"@it ,
+                                                                         "Delegated Decree"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Document
+<http://www.cgg.sm/ontology/textual-products#Document> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#TextualProduct> ;
+                                                       rdfs:label "Document"@en ,
+                                                                  "Documento"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#DraftLaw
+<http://www.cgg.sm/ontology/textual-products#DraftLaw> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                       rdfs:label "Draft Law"@en ,
+                                                                  "Progetto di legge"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#ErrataCorrige
+<http://www.cgg.sm/ontology/textual-products#ErrataCorrige> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                            rdfs:label "Errata Corrige"^^xsd:string .
+
+
+###  http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement
+<http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                                      rdfs:label "Accordi di politica estera"@it ,
+                                                                                 "Foreign Affairs Agreement"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#InstanceOfArengo
+<http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                               rdfs:label "Instance of Arengo"@en ,
+                                                                          "Istanza d'Arengo"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations
+<http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                                               rdfs:label "Interpellanze e interrogazioni"@it ,
+                                                                                          "Interpellations and Interrogations"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Law
+<http://www.cgg.sm/ontology/textual-products#Law> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                  rdfs:label "Law"@en ,
+                                                             "Legge"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Motion
+<http://www.cgg.sm/ontology/textual-products#Motion> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                     rdfs:label "Motion"@en ,
+                                                                "Mozione"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Nomination
+<http://www.cgg.sm/ontology/textual-products#Nomination> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                         rdfs:label "Nomina"@it ,
+                                                                    "Nomination"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Norm
+<http://www.cgg.sm/ontology/textual-products#Norm> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResource> ,
+                                                                   <http://www.cgg.sm/ontology/textual-products#TextualProduct> ;
+                                                   rdfs:label "Norm"@en ,
+                                                              "Norma"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Notification
+<http://www.cgg.sm/ontology/textual-products#Notification> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                           rdfs:label "Notifica"@it ,
+                                                                      "Notification"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Order
+<http://www.cgg.sm/ontology/textual-products#Order> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                    rdfs:label "Order"@en ,
+                                                               "Ordine"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#QualifiedLaw
+<http://www.cgg.sm/ontology/textual-products#QualifiedLaw> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Law> ;
+                                                           rdfs:label "Legge Qualificata"@it ,
+                                                                      "Qualified Law"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates
+<http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                                   rdfs:label "References and Debates"@en ,
+                                                                              "Riferimenti e Dibattiti"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#RegentialDecree
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Decree> ;
+                                                              rdfs:label "Decreto Reggenziale"@it ,
+                                                                         "Regential Decree"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Regulation
+<http://www.cgg.sm/ontology/textual-products#Regulation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                         rdfs:label "Regolamento"@it ,
+                                                                    "Regulation"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Resignation
+<http://www.cgg.sm/ontology/textual-products#Resignation> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                          rdfs:label "Dimissioni"@it ,
+                                                                     "Resignation"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Statute
+<http://www.cgg.sm/ontology/textual-products#Statute> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                      rdfs:label "Statute"@en ,
+                                                                 "Statuto"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#TextualProduct
+<http://www.cgg.sm/ontology/textual-products#TextualProduct> rdf:type owl:Class ;
+                                                             rdfs:label "Prodotto testuale"@it ,
+                                                                        "Textual Product"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement
+<http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                                  rdfs:label "Accordi PA-OOSS e Inquadramenti"@it ,
+                                                                             "Trade Union Agreement"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#VariousReport
+<http://www.cgg.sm/ontology/textual-products#VariousReport> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.cgg.sm/ontology/textual-products#Document> ;
+                                                            rdfs:label "Relazioni varie"@it ,
+                                                                       "Various Report"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Verbal
+<http://www.cgg.sm/ontology/textual-products#Verbal> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://data.europa.eu/eli/ontology#ResourceType> ;
+                                                     rdfs:label "Verbal"@en ,
+                                                                "Verbale"@it .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

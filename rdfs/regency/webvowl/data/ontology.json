@@ -1,0 +1,200 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.cgg.sm/ontology/textual-products", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/regency", "http://www.w3.org/2001/XMLSchema", "http://www.cgg.sm/ontology/base", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 6,
+    "objectPropertyCount" : 3,
+    "datatypePropertyCount" : 2,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#RegentialDecree",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegentialDecree"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#Regency",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Regency",
+      "en" : "Regency",
+      "it" : "Reggenza"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#CaptainRegent",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CaptainRegent",
+      "en" : "Captain Regent",
+      "it" : "Capitano Reggente"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrandAndGeneralCouncil"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Institution",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Institution"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#canEmit",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "canEmit"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#elects",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "elects"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#endDate",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "endDate"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#composedByRegents",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "composedByRegents"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#startDate",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "startDate"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "13"
+  } ]
+}

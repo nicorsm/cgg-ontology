@@ -1,0 +1,94 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/regency#composedByRegents
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#composedBy> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/regency#canEmit
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/textual-products#RegentialDecree> .
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/regency#composedByRegents
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#CaptainRegent> .
+# 
+# http://www.cgg.sm/ontology/regency#elects
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/regency#endDate
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.cgg.sm/ontology/regency#startDate
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+# 
+# http://www.cgg.sm/ontology/regency#CaptainRegent
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#label> "Capitano Reggente"@it .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#label> "Captain Regent"@en .
+# 
+# http://www.cgg.sm/ontology/regency#Regency
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#label> "Regency"@en .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#label> "Reggenza"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#RegentialDecree
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

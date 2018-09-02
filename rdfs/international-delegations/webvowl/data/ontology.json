@@ -1,0 +1,184 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/international-delegations", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 4,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeadOfDelegation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#Delegated",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Delegated"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CounciliarDelegationAtInternationalOrganizations",
+      "en" : "Counciliar Delegation at International Organization",
+      "it" : "Delegazione Consiliare presso Organismo Internazionale"
+    },
+    "comment" : {
+      "en" : "Counciliar delegation elected at the international organizations in order to represent the Republic.",
+      "it" : "Delegazioni consiliari elette presso le organizzazioni internazionali al fine di rappresentare la Repubblica."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#composedByDelegates",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "composedByDelegates"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#annualReport",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "annualReport"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#organizationName",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "organizationName",
+      "en" : "organization name",
+      "it" : "nome dell'organizzazione"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Name of the international organization.",
+      "it" : "Nome dell'organizzazione internazionale. "
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "functionsOfDelegation"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "11"
+  } ]
+}
