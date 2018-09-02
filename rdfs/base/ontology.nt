@@ -1,0 +1,135 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#email
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/base#Contact> .
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Email> .
+<http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/2000/01/rdf-schema#comment> "E-mail address."@en .
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/2000/01/rdf-schema#comment> "Indirizzo e-mail."@it .
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/2000/01/rdf-schema#label> "e-mail"@en .
+<http://www.cgg.sm/ontology/base#email> <http://www.w3.org/2000/01/rdf-schema#label> "e-mail"@it .
+# 
+# http://www.cgg.sm/ontology/base#headquarters
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/base#Contact> .
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/2000/01/rdf-schema#comment> "Indirizzo dell'ufficio principale."@it .
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/2000/01/rdf-schema#comment> "Main office address."@en .
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/2000/01/rdf-schema#label> "headquarters"@en .
+<http://www.cgg.sm/ontology/base#headquarters> <http://www.w3.org/2000/01/rdf-schema#label> "sede"@it .
+# 
+# http://www.cgg.sm/ontology/base#phone
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/base#Contact> .
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#phone> .
+<http://www.w3.org/2006/vcard/ns#phone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/2000/01/rdf-schema#comment> "Numero di telefono."@it .
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/2000/01/rdf-schema#comment> "Phone number."@en .
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/2000/01/rdf-schema#label> "phone"@en .
+<http://www.cgg.sm/ontology/base#phone> <http://www.w3.org/2000/01/rdf-schema#label> "telefono"@it .
+# 
+# http://www.cgg.sm/ontology/base#url
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/base#Contact> .
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#URL> .
+<http://www.w3.org/2006/vcard/ns#URL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact's website."@en .
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/2000/01/rdf-schema#comment> "Sito web del contatto."@it .
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/2000/01/rdf-schema#label> "sito web"@it .
+<http://www.cgg.sm/ontology/base#url> <http://www.w3.org/2000/01/rdf-schema#label> "website"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#taxReturn
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/base#Politician> .
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/2000/01/rdf-schema#comment> "La dichiarazione dei redditi presentata da ogni Politico."@it .
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/2000/01/rdf-schema#comment> "The tax return declarated by each Politician."@en .
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/2000/01/rdf-schema#label> "Dichiarazione dei Redditi"@it .
+<http://www.cgg.sm/ontology/base#taxReturn> <http://www.w3.org/2000/01/rdf-schema#label> "Tax Return"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#Contact
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact information of an institution."@en .
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Informazioni di contatto di una istituzione."@it .
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/2000/01/rdf-schema#label> "Contact"@en .
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/2000/01/rdf-schema#label> "Contatto"@it .
+# 
+# http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/2000/01/rdf-schema#comment> "Configurazione di sovrastrutture organizzate giuridicamente e il cui fine \u00E8 di garantire le relazioni sociali e la conservazione e l'attuazione di norme attivit\u00E0 sociali e giuridiche stabilite tra l'individuo e la societ\u00E0 o tra l'individuo e lo Stato sottratte all'arbitrio individuale e del potere in generale."@it .
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/2000/01/rdf-schema#comment> "The configuration of legally organized superstructures whose purpose is to guarantee social relations and the conservation and implementation of norms of social and legal activities established between the individual and the society or between the individual and the State, which are removed from individual arbitrariness and of power in general."@en .
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/2000/01/rdf-schema#label> "Institution"@en .
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/2000/01/rdf-schema#label> "Istituzione"@it .
+# 
+# http://www.cgg.sm/ontology/base#Politician
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/#term_Person> .
+<http://xmlns.com/foaf/0.1/#term_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#comment> "A person with a political office."@en .
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona con una carica politica."@it .
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#label> "Politician"@en .
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#label> "Politico"@it .
+# 
+# http://www.w3.org/2006/vcard/ns#Address
+# 
+# http://www.w3.org/2006/vcard/ns#Email
+# 
+# http://www.w3.org/2006/vcard/ns#URL
+# 
+# http://www.w3.org/2006/vcard/ns#phone
+# 
+# http://xmlns.com/foaf/0.1/#term_Person
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/base#belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A base property of kind \"belongs to\"."@en .
+<http://www.cgg.sm/ontology/base#belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Una propriet\u00E0 di base del tipo \"appartiene a\"."@it .
+<http://www.cgg.sm/ontology/base#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "appartiene a"@it .
+<http://www.cgg.sm/ontology/base#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to"@en .
+# 
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A base property of kind \"composed by\"."@en .
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Una propriet\u00E0 di base del tipo \"composto da\"."@it .
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/2000/01/rdf-schema#label> "composed by"@en .
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/2000/01/rdf-schema#label> "composto da"@it .
+# 
+<http://www.cgg.sm/ontology/base#functions> <http://www.w3.org/2000/01/rdf-schema#comment> "Functions performed by a particular political body or institution."@en .
+<http://www.cgg.sm/ontology/base#functions> <http://www.w3.org/2000/01/rdf-schema#comment> "Funzioni espletate da un particolare corpo politico o istituzione."@it .
+<http://www.cgg.sm/ontology/base#functions> <http://www.w3.org/2000/01/rdf-schema#label> "functions"@en .
+<http://www.cgg.sm/ontology/base#functions> <http://www.w3.org/2000/01/rdf-schema#label> "funzioni"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

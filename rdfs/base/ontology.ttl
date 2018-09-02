@@ -1,0 +1,140 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#email
+<http://www.cgg.sm/ontology/base#email> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://www.cgg.sm/ontology/base#Contact> ;
+                                        rdfs:range <http://www.w3.org/2006/vcard/ns#Email> ;
+                                        rdfs:comment "E-mail address."@en ,
+                                                     "Indirizzo e-mail."@it ;
+                                        rdfs:label "e-mail"@en ,
+                                                   "e-mail"@it .
+
+
+###  http://www.cgg.sm/ontology/base#headquarters
+<http://www.cgg.sm/ontology/base#headquarters> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://www.cgg.sm/ontology/base#Contact> ;
+                                               rdfs:range <http://www.w3.org/2006/vcard/ns#Address> ;
+                                               rdfs:comment "Indirizzo dell'ufficio principale."@it ,
+                                                            "Main office address."@en ;
+                                               rdfs:label "headquarters"@en ,
+                                                          "sede"@it .
+
+
+###  http://www.cgg.sm/ontology/base#phone
+<http://www.cgg.sm/ontology/base#phone> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://www.cgg.sm/ontology/base#Contact> ;
+                                        rdfs:range <http://www.w3.org/2006/vcard/ns#phone> ;
+                                        rdfs:comment "Numero di telefono."@it ,
+                                                     "Phone number."@en ;
+                                        rdfs:label "phone"@en ,
+                                                   "telefono"@it .
+
+
+###  http://www.cgg.sm/ontology/base#url
+<http://www.cgg.sm/ontology/base#url> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://www.cgg.sm/ontology/base#Contact> ;
+                                      rdfs:range <http://www.w3.org/2006/vcard/ns#URL> ;
+                                      rdfs:comment "Contact's website."@en ,
+                                                   "Sito web del contatto."@it ;
+                                      rdfs:label "sito web"@it ,
+                                                 "website"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#taxReturn
+<http://www.cgg.sm/ontology/base#taxReturn> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.cgg.sm/ontology/base#Politician> ;
+                                            rdfs:range rdfs:Literal ;
+                                            rdfs:comment "La dichiarazione dei redditi presentata da ogni Politico."@it ,
+                                                         "The tax return declarated by each Politician."@en ;
+                                            rdfs:label "Dichiarazione dei Redditi"@it ,
+                                                       "Tax Return"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#Contact
+<http://www.cgg.sm/ontology/base#Contact> rdf:type owl:Class ;
+                                          rdfs:comment "Contact information of an institution."@en ,
+                                                       "Informazioni di contatto di una istituzione."@it ;
+                                          rdfs:label "Contact"@en ,
+                                                     "Contatto"@it .
+
+
+###  http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> rdf:type owl:Class ;
+                                              rdfs:comment "Configurazione di sovrastrutture organizzate giuridicamente e il cui fine è di garantire le relazioni sociali e la conservazione e l'attuazione di norme attività sociali e giuridiche stabilite tra l'individuo e la società o tra l'individuo e lo Stato sottratte all'arbitrio individuale e del potere in generale."@it ,
+                                                           "The configuration of legally organized superstructures whose purpose is to guarantee social relations and the conservation and implementation of norms of social and legal activities established between the individual and the society or between the individual and the State, which are removed from individual arbitrariness and of power in general."@en ;
+                                              rdfs:label "Institution"@en ,
+                                                         "Istituzione"@it .
+
+
+###  http://www.cgg.sm/ontology/base#Politician
+<http://www.cgg.sm/ontology/base#Politician> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://xmlns.com/foaf/0.1/#term_Person> ;
+                                             rdfs:comment "A person with a political office."@en ,
+                                                          "Una persona con una carica politica."@it ;
+                                             rdfs:label "Politician"@en ,
+                                                        "Politico"@it .
+
+
+###  http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Email
+<http://www.w3.org/2006/vcard/ns#Email> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#URL
+<http://www.w3.org/2006/vcard/ns#URL> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#phone
+<http://www.w3.org/2006/vcard/ns#phone> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/#term_Person
+<http://xmlns.com/foaf/0.1/#term_Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.cgg.sm/ontology/base#belongsTo> rdfs:comment "A base property of kind \"belongs to\"."@en ,
+                                                         "Una proprietà di base del tipo \"appartiene a\"."@it ;
+                                            rdfs:label "appartiene a"@it ,
+                                                       "belongs to"@en .
+
+
+<http://www.cgg.sm/ontology/base#composedBy> rdfs:comment "A base property of kind \"composed by\"."@en ,
+                                                          "Una proprietà di base del tipo \"composto da\"."@it ;
+                                             rdfs:label "composed by"@en ,
+                                                        "composto da"@it .
+
+
+<http://www.cgg.sm/ontology/base#functions> rdfs:comment "Functions performed by a particular political body or institution."@en ,
+                                                         "Funzioni espletate da un particolare corpo politico o istituzione."@it ;
+                                            rdfs:label "functions"@en ,
+                                                       "funzioni"@it .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

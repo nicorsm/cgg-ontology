@@ -1,0 +1,527 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.cgg.sm/ontology/textual-products", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.cgg.sm/ontology/base", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 13,
+    "objectPropertyCount" : 9,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/base#Politician",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Politician"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Party",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Party",
+      "en" : "Party",
+      "it" : "Partito"
+    },
+    "comment" : {
+      "en" : "Association between people united by the same political purpose or by a common vision on fundamental issues of the management of the state and society or even only on specific and particular topics.",
+      "it" : "Associazione tra persone accomunate da una medesima finalità politica ovvero da una comune visione su questioni fondamentali della gestione dello Stato e della società o anche solo su temi specifici e particolari. "
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Norm",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Norm"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#ParliamentaryGroup",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParliamentaryGroup",
+      "en" : "Parliamentary Group",
+      "it" : "Gruppo parlamentare"
+    },
+    "subClasses" : [ "5", "11" ],
+    "comment" : {
+      "en" : "A parliamentary group is an organ that gathers the political demands and representations within a parliament.",
+      "it" : "Un gruppo parlamentare è un organo che raccoglie le istanze e le rappresentanze politiche all'interno di un parlamento."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Coalition",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coalition",
+      "en" : "Coalition",
+      "it" : "Coalizione"
+    },
+    "comment" : {
+      "en" : "Grouping of several counciliar groups.",
+      "it" : "Raggruppamento di più gruppi consiliari."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#MixedGroup",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MixedGroup",
+      "en" : "Mixed Group",
+      "it" : "Gruppo Misto"
+    },
+    "comment" : {
+      "en" : "A group of Independent Councilors.",
+      "it" : "Gruppo di Consiglieri indipendenti."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrandAndGeneralCouncil",
+      "en" : "Grand and General Council",
+      "it" : "Consiglio Grande e Generale"
+    },
+    "comment" : {
+      "en" : "Institution responsible for the legislative power, the determination of political address and the exercise of control functions. Made up of 60 members called Councilors.",
+      "it" : "Istituzione alla quale spetta il potere legislativo, la determinazione dell’indirizzo politico e l’esercizio delle funzioni di controllo. È composto da 60 membri, chiamati Consiglieri."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#CounciliarGroup",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CounciliarGroup",
+      "en" : "Counciliar Group",
+      "it" : "Gruppo Consiliare"
+    },
+    "comment" : {
+      "en" : "Delegation of a party within the GGC.",
+      "it" : "Rappresentanza parlamentare di un partito."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Contact",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contact"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor",
+      "en" : "Councilor",
+      "it" : "Consigliere"
+    },
+    "comment" : {
+      "en" : "One of the 60 members of the GGC, belonging to a political force or mixed group.",
+      "it" : "Uno dei 60 membri del CGG, appartenente ad una forza politica o al gruppo misto."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Legislature",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Legislature",
+      "en" : "Legislature",
+      "it" : "Legislatura"
+    },
+    "comment" : {
+      "en" : "Period of stay of the Grand and General Council.",
+      "it" : "Periodo di permanenza del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#ParliamentaryBloc",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParliamentaryBloc",
+      "en" : "Parliamentary Bloc",
+      "it" : "Fazione parlamentare"
+    },
+    "comment" : {
+      "en" : "Partitioning of the Parliament in majority and minority.",
+      "it" : "Suddivisione del Parlamento in maggioranza e minoranza."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Institution",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Institution"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/cgg#coalitionComposedBy",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "coalitionComposedBy",
+      "en" : "coalition composed by",
+      "it" : "coalizione composta da"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Grouping link of counciliar groups into coalitions.",
+      "it" : "Legame di raggruppamento di gruppi consiliari in coalizioni."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "9",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#begins",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "begins",
+      "en" : "start date",
+      "it" : "data di inizio"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Start date of the Legislature.",
+      "it" : "Data di inizio della Legislature."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#belongsToBloc",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "belongsToBloc",
+      "en" : "belongs to a bloc",
+      "it" : "appartiene ad una fazione"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Bond of membership of a parliamentary group to a specific faction (majority or minority).",
+      "it" : "Appartenenza di un gruppo parlamentare ad una specifica fazione (maggioranza o minoranza)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#debatesApprovesRejects",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "debatesApprovesRejects",
+      "en" : "debates, approves or rejects",
+      "it" : "dibatte, approva o rigetta"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Actions performable on norms by the Grand and General Council.",
+      "it" : "Azioni eseguibili sulle norme da parte del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#name",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name",
+      "it" : "nome"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Name of the party.",
+      "it" : "Nome del partito."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#electedFor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "electedFor",
+      "en" : "elected for",
+      "it" : "eletto per"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Current Grand and General Council legislature.",
+      "it" : "Legislatura attuale del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#cggComposedBy",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "cggComposedBy",
+      "en" : "GGC composed by",
+      "it" : "CGG composto da"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Composition of the GGC by Parliamentary Groups.",
+      "it" : "Composizione del CGG da parte di Gruppi parlamentari."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#ends",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "ends",
+      "en" : "end date",
+      "it" : "data di fine"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "End date of the Legislature.",
+      "it" : "Data di fine della Legislature."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#headingTo",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "headingTo",
+      "en" : "heading to",
+      "it" : "facente capo a"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Link between the counciliar group and the party.",
+      "it" : "Collegamento tra il gruppo consiliare e il partito."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#contact",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "contact",
+      "en" : "contact",
+      "it" : "contatto"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Contact information of the party.",
+      "it" : "Informazioni di contatto del partito."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#leader",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "leader",
+      "en" : "Leader",
+      "it" : "Capogruppo"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "A Councilor representing the Counciliar Group within the Parliament.",
+      "it" : "Un Consigliere che rappresenta il Gruppo Consiliare all'interno del Parlamento."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#belongsToGroup",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "belongsToGroup",
+      "en" : "belongs to Parliamentary Group",
+      "it" : "appartiene ad un Gruppo parlamentare"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Bond of membership of a Councilor to a Parliamentary Group.",
+      "it" : "Legame di appartenenza di un Consigliere ad un Gruppo parlamentare."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  } ]
+}

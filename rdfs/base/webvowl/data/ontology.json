@@ -1,0 +1,249 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/base", "http://www.w3.org/2006/vcard/ns", "http://xmlns.com/foaf/0.1/" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 8,
+    "objectPropertyCount" : 4,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/base#Politician",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Politician",
+      "en" : "Politician",
+      "it" : "Politico"
+    },
+    "comment" : {
+      "en" : "A person with a political office.",
+      "it" : "Una persona con una carica politica."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Contact",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contact",
+      "en" : "Contact",
+      "it" : "Contatto"
+    },
+    "comment" : {
+      "en" : "Contact information of an institution.",
+      "it" : "Informazioni di contatto di una istituzione."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#URL",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "URL"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#phone",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "phone"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/#term_Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "term_Person"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Address",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Email",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Email"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Institution",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Institution",
+      "en" : "Institution",
+      "it" : "Istituzione"
+    },
+    "comment" : {
+      "en" : "The configuration of legally organized superstructures whose purpose is to guarantee social relations and the conservation and implementation of norms of social and legal activities established between the individual and the society or between the individual and the State, which are removed from individual arbitrariness and of power in general.",
+      "it" : "Configurazione di sovrastrutture organizzate giuridicamente e il cui fine è di garantire le relazioni sociali e la conservazione e l'attuazione di norme attività sociali e giuridiche stabilite tra l'individuo e la società o tra l'individuo e lo Stato sottratte all'arbitrio individuale e del potere in generale."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/base#url",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "url",
+      "en" : "website",
+      "it" : "sito web"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Contact's website.",
+      "it" : "Sito web del contatto."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#email",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "email",
+      "en" : "e-mail",
+      "it" : "e-mail"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "E-mail address.",
+      "it" : "Indirizzo e-mail."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#headquarters",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "headquarters",
+      "en" : "headquarters",
+      "it" : "sede"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Main office address.",
+      "it" : "Indirizzo dell'ufficio principale."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#taxReturn",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "taxReturn",
+      "en" : "Tax Return",
+      "it" : "Dichiarazione dei Redditi"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The tax return declarated by each Politician.",
+      "it" : "La dichiarazione dei redditi presentata da ogni Politico."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#phone",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "phone",
+      "en" : "phone",
+      "it" : "telefono"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Phone number.",
+      "it" : "Numero di telefono."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  } ]
+}
