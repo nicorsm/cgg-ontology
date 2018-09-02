@@ -1,0 +1,95 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/base#functions
+<http://www.cgg.sm/ontology/base#functions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/council-of-12#composedByCouncilors
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#composedBy> .
+# 
+# http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#functions> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/council-of-12#composedByCouncilors
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> .
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> .
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#Councilor
+# 
+# http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves
+<http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#comment> "Institutional body of the Republic of San Marino to which administrative functions are assigned."@en .
+<http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#comment> "Organo istituzionale della Repubblica di San Marino cui sono attribuite funzioni amministrative. "@it .
+<http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#label> "Consiglio dei XII"@it .
+<http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#label> "Council of Twelves"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the Council of Twelves by Councilors."@en .
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione del Consiglio dei Dodici da parte di Consiglieri."@it .
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#label> "composed by Councilors"@en .
+<http://www.cgg.sm/ontology/council-of-12#composedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#label> "composto da Consiglieri"@it .
+# 
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#comment> "Functions assigned to the Council of Twelves."@en .
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#comment> "Funzioni assegnate al Consiglio dei Dodici."@it .
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#label> "functions of the Council of Twelves"@en .
+<http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves> <http://www.w3.org/2000/01/rdf-schema#label> "funzioni del Consiglio dei Dodici"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

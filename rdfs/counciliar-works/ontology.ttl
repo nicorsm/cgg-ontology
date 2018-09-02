@@ -1,0 +1,127 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/counciliar-works#Convocation
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://www.cgg.sm/ontology/counciliar-works#Session> ;
+                                                          rdfs:range <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#isConvenedBy
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://www.cgg.sm/ontology/counciliar-works#Session> ;
+                                                           rdfs:range <http://www.cgg.sm/ontology/counciliar-works#Convocation> ;
+                                                           rdfs:comment "Convocation of a counciliar session."@en ,
+                                                                        "Convocazione di una Sessione del Consiglio."@it ;
+                                                           rdfs:label "is convened by"@en ,
+                                                                      "è convocata da"@it .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#of
+<http://www.cgg.sm/ontology/counciliar-works#of> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.cgg.sm/ontology/counciliar-works#Convocation> ;
+                                                 rdfs:range <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> ;
+                                                 rdfs:comment "Collegamento tra Convocazione e CGG."@it ,
+                                                              "Link between convocation and GGC."@en ;
+                                                 rdfs:label "del"@it ,
+                                                            "of"@en .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#topic
+<http://www.cgg.sm/ontology/counciliar-works#topic> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://www.cgg.sm/ontology/counciliar-works#Paragraph> ;
+                                                    rdfs:range <http://www.cgg.sm/ontology/textual-products#Norm> ;
+                                                    rdfs:comment "L'argomento del comma, tipicamente una Norma."@it ,
+                                                                 "The topic of a paragraph, usually a Norm."@en ;
+                                                    rdfs:label "argomento"@it ,
+                                                               "topic"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/counciliar-works#begins
+<http://www.cgg.sm/ontology/counciliar-works#begins> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://www.cgg.sm/ontology/counciliar-works#Session> ;
+                                                     rdfs:range xsd:dateTime ;
+                                                     rdfs:comment "Data e ora di inizio della sessione. "@it ,
+                                                                  "Start date and time of the session."@en ;
+                                                     rdfs:label "Data e ora di inizio"@it ,
+                                                                "Start date and time"@en .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#ends
+<http://www.cgg.sm/ontology/counciliar-works#ends> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://www.cgg.sm/ontology/counciliar-works#Session> ;
+                                                   rdfs:range xsd:dateTime ;
+                                                   rdfs:comment "Data e ora di fine della sessione. "@it ,
+                                                                "End date and time of the session."@en ;
+                                                   rdfs:label "Data e ora di fine"@it ,
+                                                              "End date and time"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#Convocation
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#Paragraph
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> rdf:type owl:Class ;
+                                                        rdfs:comment "A paragraph of the convocation."@en ,
+                                                                     "Un paragrafo (comma) della convocazione."@it ,
+                                                                     "Topic discussed during a session."^^xsd:string ;
+                                                        rdfs:label "Comma"@it ,
+                                                                   "Paragraph"@en .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#Session
+<http://www.cgg.sm/ontology/counciliar-works#Session> rdf:type owl:Class ;
+                                                      rdfs:comment "A single session of the Grand and General Council."@en ,
+                                                                   "Una singola sessione del Consiglio Grande e Generale. "@it ;
+                                                      rdfs:label "Session"@en ,
+                                                                 "Sessione consiliare"@it .
+
+
+###  http://www.cgg.sm/ontology/counciliar-works#UrgentSession
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.cgg.sm/ontology/counciliar-works#Session> ;
+                                                            rdfs:comment "A urgent session convened if needed."@en ,
+                                                                         "Una sessione urgente convocata se necessario."@it ;
+                                                            rdfs:label "Sessione urgente"@it ,
+                                                                       "Urgent session"@en .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Norm
+<http://www.cgg.sm/ontology/textual-products#Norm> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> rdfs:comment "Convocation of the Grand and General Council."@en ,
+                                                                       "Convocazione del Consiglio Grande e Generale."@it ;
+                                                          rdfs:label "Convocation"@en ,
+                                                                     "Convocazione"@it .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

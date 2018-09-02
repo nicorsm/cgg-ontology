@@ -1,0 +1,242 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.cgg.sm/ontology/textual-products", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.cgg.sm/ontology/counciliar-works", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 6,
+    "objectPropertyCount" : 4,
+    "datatypePropertyCount" : 2,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#Session",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Session",
+      "en" : "Session",
+      "it" : "Sessione consiliare"
+    },
+    "subClasses" : [ "6" ],
+    "comment" : {
+      "en" : "A single session of the Grand and General Council.",
+      "it" : "Una singola sessione del Consiglio Grande e Generale. "
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Norm",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Norm"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#UrgentSession",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UrgentSession",
+      "en" : "Urgent session",
+      "it" : "Sessione urgente"
+    },
+    "comment" : {
+      "en" : "A urgent session convened if needed.",
+      "it" : "Una sessione urgente convocata se necessario."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#Paragraph",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Paragraph",
+      "en" : "Paragraph",
+      "it" : "Comma"
+    },
+    "comment" : {
+      "en" : "A paragraph of the convocation.",
+      "it" : "Un paragrafo (comma) della convocazione.",
+      "undefined" : "Topic discussed during a session."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrandAndGeneralCouncil"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#isConvenedBy",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isConvenedBy",
+      "en" : "is convened by",
+      "it" : "è convocata da"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Convocation of a counciliar session.",
+      "it" : "Convocazione di una Sessione del Consiglio."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#ends",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "ends",
+      "en" : "End date and time",
+      "it" : "Data e ora di fine"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "End date and time of the session.",
+      "it" : "Data e ora di fine della sessione. "
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#of",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "of",
+      "en" : "of",
+      "it" : "del"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Link between convocation and GGC.",
+      "it" : "Collegamento tra Convocazione e CGG."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#Convocation",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "Convocation",
+      "en" : "Convocation",
+      "it" : "Convocazione"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Convocation of the Grand and General Council.",
+      "it" : "Convocazione del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#topic",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "topic",
+      "en" : "topic",
+      "it" : "argomento"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The topic of a paragraph, usually a Norm.",
+      "it" : "L'argomento del comma, tipicamente una Norma."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/counciliar-works#begins",
+    "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "begins",
+      "en" : "Start date and time",
+      "it" : "Data e ora di inizio"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Start date and time of the session.",
+      "it" : "Data e ora di inizio della sessione. "
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "13"
+  } ]
+}

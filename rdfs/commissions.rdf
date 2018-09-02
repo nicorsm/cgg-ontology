@@ -1,78 +1,130 @@
 <?xml version="1.0"?>
 
-<rdf:RDF xml:lang="en" 
+<rdf:RDF  xmlns="http://www.cgg.sm/ontology/commissions#"
+  xml:base="http://www.cgg.sm/ontology/commissions#" 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
   xmlns:cggroot="http://www.cgg.sm/ontology/cgg#" 
   xmlns:cggbase="http://www.cgg.sm/ontology/base#" 
-  xmlns:cggtp="http://www.cgg.sm/ontology/textual-products#" 
-  xmlns:eli="http://data.europa.eu/eli/ontology#" 
-  xmlns:vc="http://www.w3.org/2006/vcard/ns#">
+  xmlns:cggtp="http://www.cgg.sm/ontology/textual-products#">
 
   <!-- COMMISSIONS -->
 
   <rdfs:Class rdf:ID="CouncilCommission">
     <rdfs:label xml:lang="en">Council Commission</rdfs:label>
     <rdfs:label xml:lang="it">Commissione consiliare</rdfs:label>
+    <rdfs:comment xml:lang="en">Parliamentary commission that examines the draft laws.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Commissione parlamentare che esamina i progetti di legge.</rdfs:comment>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="PermanentCouncilCommission">
+    <rdfs:label xml:lang="en">Permanent Council Commission</rdfs:label>
+    <rdfs:label xml:lang="it">Commissione consiliare permanente</rdfs:label>
+    <rdfs:comment xml:lang="en">An ordinary counciliar commission required by law.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Commissione consiliare ordinaria prevista dalla legge.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#CouncilCommission"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="SpecialCouncilCommission">
+    <rdfs:label xml:lang="en">Special Council Commission</rdfs:label>
+    <rdfs:label xml:lang="it">Commissione consiliare speciale</rdfs:label>
+    <rdfs:comment xml:lang="en">Counciliar commission requested by the Council as needed.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Commissione consiliare richiesta dal Consiglio in base alle necessità.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#CouncilCommission"/>
   </rdfs:Class>
 
   <rdf:Property rdf:ID="inChargeFor">
+    <rdfs:label xml:lang="en">in charge for</rdfs:label>
+    <rdfs:label xml:lang="it">in carica per</rdfs:label>
+    <rdfs:comment xml:lang="en">Property that describes the duration of a commission linked to a legislature.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Proprietà che descrive la durata della commissione legata ad una legislatura.</rdfs:comment>
     <rdfs:domain rdf:resource="#CouncilCommission"/>
     <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#Legislature"/>
   </rdf:Property>
 
   <rdf:Property rdf:ID="appointedBy">
+    <rdfs:label xml:lang="en">appointed by</rdfs:label>
+    <rdfs:label xml:lang="it">nominato da</rdfs:label>
+    <rdfs:comment xml:lang="en">Nomination of the Commission by the Grand and General Council.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Nomina della Commissione da parte del Consiglio Grande e Generale.</rdfs:comment>
     <rdfs:domain rdf:resource="#CouncilCommission"/>
     <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
   </rdf:Property>
 
   <rdf:Property rdf:ID="examinesLaws">
+    <rdfs:label xml:lang="en">examines laws</rdfs:label>
+    <rdfs:label xml:lang="it">esamina leggi</rdfs:label>
+    <rdfs:comment xml:lang="en">Examination of Draft Laws by the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Esame della Commissione di Progetti di Legge.</rdfs:comment>
     <rdfs:domain rdf:resource="#CouncilCommission"/>
     <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#DraftLaw"/>
   </rdf:Property>
 
   <rdf:Property rdf:ID="examinesMotions">
+    <rdfs:label xml:lang="en">examines motions</rdfs:label>
+    <rdfs:label xml:lang="it">esamina mozioni</rdfs:label>
+    <rdfs:comment xml:lang="en">Examination of Motions by the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Esame della Commissione di Mozioni.</rdfs:comment>
     <rdfs:domain rdf:resource="#CouncilCommission"/>
     <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#Motion"/>
   </rdf:Property>
 
   <rdf:Property rdf:ID="composedByCommissioners">
+    <rdfs:label xml:lang="en">composed by commissioners</rdfs:label>
+    <rdfs:label xml:lang="it">composto da commissari</rdfs:label>
+    <rdfs:comment xml:lang="en">Composition of the Commission by Commissioners.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Composizione della Commissione da parte di Commissari.</rdfs:comment>
     <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
     <rdfs:domain rdf:resource="#CouncilCommission"/>
     <rdfs:range rdf:resource="#Commissioner"/>
   </rdf:Property>
 
   <rdfs:Class rdf:ID="Commissioner">
+    <rdfs:label xml:lang="en">Commissioner</rdfs:label>
+    <rdfs:label xml:lang="it">Commissario</rdfs:label>
+    <rdfs:comment xml:lang="en">Councilor elected within the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Consigliere eletto all'interno della Commissione.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="President">
+    <rdfs:label xml:lang="en">President</rdfs:label>
+    <rdfs:label xml:lang="it">Presidente</rdfs:label>
+    <rdfs:comment xml:lang="en">President of the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Presidente della Commissione.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Commissioner"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="VicePresident">
+    <rdfs:label xml:lang="en">Vicepresident</rdfs:label>
+    <rdfs:label xml:lang="it">Vicepresidente</rdfs:label>
+    <rdfs:comment xml:lang="en">Vicepesident of the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Vicepresidente della Commissione.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Commissioner"/>
   </rdfs:Class>
 
   <rdfs:Class rdf:ID="CommissionSession">
+    <rdfs:label xml:lang="en">Commission Session</rdfs:label>
+    <rdfs:label xml:lang="it">Sessione della Commissione</rdfs:label>
+    <rdfs:comment xml:lang="en">A meeting of the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Una riunione della Commissione.</rdfs:comment>
   </rdfs:Class>
 
   <rdf:Property rdf:ID="participates">
+    <rdfs:label xml:lang="en">participates</rdfs:label>
+    <rdfs:label xml:lang="it">partecipa</rdfs:label>
+    <rdfs:comment xml:lang="en">Participation of the Commissioner to the Session.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Partecipazione del Commissario alla Sessione.</rdfs:comment>
     <rdfs:domain rdf:resource="#Commissioner"/>
     <rdfs:range rdf:resource="#CommissionSession"/>
   </rdf:Property>
 
   <rdf:Property rdf:ID="convenes">
+    <rdfs:label xml:lang="en">convenes</rdfs:label>
+    <rdfs:label xml:lang="it">convoca</rdfs:label>
+    <rdfs:comment xml:lang="en">Convocation of the Commission by the President.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Convocazione della Commissione da parte del Presidente.</rdfs:comment>
     <rdfs:domain rdf:resource="#President"/>
     <rdfs:range rdf:resource="#CommissionSession"/>
   </rdf:Property>

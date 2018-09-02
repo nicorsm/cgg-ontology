@@ -1,0 +1,10 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://www.cgg.sm/ontology/counciliar-works#> a prov:Entity;
+	 dc:title "Counciliar Works";
+	 prov:wasAttributedTo <http://nicola.giancecchi.com/>;
+	 dc:creator <http://nicola.giancecchi.com/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "September 2018";
+.
