@@ -99,11 +99,6 @@
     <rdfs:subClassOf rdf:resource="#Decree"/>
   </rdfs:Class>
 
-  <rdf:Property rdf:ID="presentedTo">
-    <rdfs:domain rdf:resource="#RegentialDecree"/>
-    <rdfs:range rdf:resource="http://www.cgg.sm/ontology/regency#Regency"/>
-  </rdf:Property>
-
   <rdfs:Class rdf:ID="Decree-Law">
     <rdfs:label xml:lang="en">Decree-Law</rdfs:label>
     <rdfs:label xml:lang="it">Decreto-Legge</rdfs:label>
@@ -133,6 +128,15 @@
     <rdfs:label xml:lang="it">Istanza d'Arengo</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Document"/>
   </rdfs:Class>
+
+  <rdf:Property rdf:ID="presentedTo">
+    <rdfs:label xml:lang="en">presented to</rdfs:label>
+    <rdfs:label xml:lang="it">presentato a</rdfs:label>
+    <rdfs:comment xml:lang="en">Presentation of the Instance of Arengo to the Regency.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Presentazione dell'Istanza d'Arengo alla Reggenza.</rdfs:comment>
+    <rdfs:domain rdf:resource="#InstanceOfArengo"/>
+    <rdfs:range rdf:resource="http://www.cgg.sm/ontology/regency#Regency"/>
+  </rdf:Property>
 
   <rdfs:Class rdf:ID="InterpellationsAndInterrogations">
     <rdfs:label xml:lang="en">Interpellations and Interrogations</rdfs:label>
