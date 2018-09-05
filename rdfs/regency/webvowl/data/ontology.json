@@ -65,6 +65,10 @@
       "en" : "Regency",
       "it" : "Reggenza"
     },
+    "comment" : {
+      "en" : "The Heads of State of the Republic of San Marino.",
+      "it" : "I Capi di Stato della Repubblica di San Marino."
+    },
     "attributes" : [ "external" ],
     "id" : "4",
     "superClasses" : [ "7" ]
@@ -90,6 +94,10 @@
       "IRI-based" : "CaptainRegent",
       "en" : "Captain Regent",
       "it" : "Capitano Reggente"
+    },
+    "comment" : {
+      "en" : "A Councilor elected as Head of State for six months.",
+      "it" : "Un Consigliere eletto come Capo di Stato per sei mesi."
     },
     "attributes" : [ "external" ],
     "id" : "1",
@@ -139,62 +147,92 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "iri" : "http://www.cgg.sm/ontology/regency#canEmit",
     "baseIri" : "http://www.cgg.sm/ontology/regency",
     "range" : "5",
     "label" : {
-      "IRI-based" : "canEmit"
+      "IRI-based" : "canEmit",
+      "en" : "can emit",
+      "it" : "può emettere"
     },
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "comment" : {
+      "en" : "Faculty of the Regency to issue special decrees.",
+      "it" : "Facoltà della Reggenza di emettere decreti speciali."
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "3"
   }, {
     "range" : "7",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "iri" : "http://www.cgg.sm/ontology/regency#elects",
     "baseIri" : "http://www.cgg.sm/ontology/regency",
     "range" : "4",
     "label" : {
-      "IRI-based" : "elects"
+      "IRI-based" : "elects",
+      "en" : "elects",
+      "it" : "elegge"
     },
     "domain" : "9",
-    "attributes" : [ "external", "object" ],
+    "comment" : {
+      "en" : "Election of the Regency by the Grand and General Council.",
+      "it" : "Elezione della Reggenza da parte del Consiglio Grande e Generale. "
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "8"
   }, {
     "iri" : "http://www.cgg.sm/ontology/regency#endDate",
     "baseIri" : "http://www.cgg.sm/ontology/regency",
     "range" : "11",
     "label" : {
-      "IRI-based" : "endDate"
+      "IRI-based" : "endDate",
+      "en" : "end date",
+      "it" : "data di fine"
     },
     "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
+    "comment" : {
+      "en" : "End date for the regential semester.",
+      "it" : "Data di fine del semestre reggenziale."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "10"
   }, {
     "iri" : "http://www.cgg.sm/ontology/regency#composedByRegents",
     "baseIri" : "http://www.cgg.sm/ontology/regency",
     "range" : "1",
     "label" : {
-      "IRI-based" : "composedByRegents"
+      "IRI-based" : "composedByRegents",
+      "en" : "composed by Regents",
+      "it" : "composto dai Reggenti"
     },
     "domain" : "4",
-    "attributes" : [ "external", "object" ],
+    "comment" : {
+      "en" : "Composition of the Regency by the two Captains Regent.",
+      "it" : "Composizione della Reggenza da parte dei due Capitani Reggenti."
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "12"
   }, {
     "iri" : "http://www.cgg.sm/ontology/regency#startDate",
     "baseIri" : "http://www.cgg.sm/ontology/regency",
     "range" : "14",
     "label" : {
-      "IRI-based" : "startDate"
+      "IRI-based" : "startDate",
+      "en" : "start date",
+      "it" : "data di inizio"
     },
     "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
+    "comment" : {
+      "en" : "Start date for the regential semester.",
+      "it" : "Data di inizio del semestre reggenziale."
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "13"
   } ]
 }

@@ -39,7 +39,13 @@
     "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "HeadOfDelegation"
+      "IRI-based" : "HeadOfDelegation",
+      "en" : "Head of Delegation",
+      "it" : "Capo delegazione"
+    },
+    "comment" : {
+      "en" : "The president of the delegation.",
+      "it" : "Il presidente della delegazione. "
     },
     "attributes" : [ "external" ],
     "id" : "0",
@@ -67,9 +73,15 @@
     "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Delegated"
+      "IRI-based" : "Delegated",
+      "en" : "Delegated",
+      "it" : "Delegato"
     },
     "subClasses" : [ "0" ],
+    "comment" : {
+      "en" : "A Councilor that takes part to the delegation for an International Organization.",
+      "it" : "Un Consigliere che prende parte alla delegazione per un'Organizzazione Internazionale. "
+    },
     "attributes" : [ "external" ],
     "id" : "1",
     "superClasses" : [ "3" ]
@@ -139,9 +151,15 @@
     "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
     "range" : "1",
     "label" : {
-      "IRI-based" : "composedByDelegates"
+      "IRI-based" : "composedByDelegates",
+      "en" : "composed by delegates",
+      "it" : "composta da delegati"
     },
     "domain" : "7",
+    "comment" : {
+      "en" : "Composition of the delegation by delegated councilors.",
+      "it" : "Composizione della delegazione da parte di consiglieri delegati. "
+    },
     "attributes" : [ "object", "external" ],
     "id" : "6"
   }, {
@@ -149,10 +167,16 @@
     "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
     "range" : "9",
     "label" : {
-      "IRI-based" : "annualReport"
+      "IRI-based" : "annualReport",
+      "en" : "annual report",
+      "it" : "relazione annuale"
     },
     "domain" : "7",
-    "attributes" : [ "external", "datatype" ],
+    "comment" : {
+      "en" : "The annual report about the activities of the delegation.",
+      "it" : "La relazione annuale relativa alle attività svolte dalla delegazione. "
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "8"
   }, {
     "iri" : "http://www.cgg.sm/ontology/international-delegations#organizationName",
@@ -168,17 +192,23 @@
       "en" : "Name of the international organization.",
       "it" : "Nome dell'organizzazione internazionale. "
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "10"
   }, {
     "iri" : "http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation",
     "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
     "range" : "12",
     "label" : {
-      "IRI-based" : "functionsOfDelegation"
+      "IRI-based" : "functionsOfDelegation",
+      "en" : "functions of the delegation",
+      "it" : "funzioni della delegazione"
     },
     "domain" : "7",
-    "attributes" : [ "external", "datatype" ],
+    "comment" : {
+      "en" : "A list of functions assigned to the delegation.",
+      "it" : "Una lista di funzioni assegnate alla delegazione. "
+    },
+    "attributes" : [ "datatype", "external" ],
     "id" : "11"
   } ]
 }

@@ -14,8 +14,12 @@
 
 ###  http://www.cgg.sm/ontology/textual-products#presentedTo
 <http://www.cgg.sm/ontology/textual-products#presentedTo> rdf:type owl:ObjectProperty ;
-                                                          rdfs:domain <http://www.cgg.sm/ontology/textual-products#RegentialDecree> ;
-                                                          rdfs:range <http://www.cgg.sm/ontology/regency#Regency> .
+                                                          rdfs:domain <http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> ;
+                                                          rdfs:range <http://www.cgg.sm/ontology/regency#Regency> ;
+                                                          rdfs:comment "Presentation of the Instance of Arengo to the Regency."@en ,
+                                                                       "Presentazione dell'Istanza d'Arengo alla Reggenza."@it ;
+                                                          rdfs:label "presentato a"@it ,
+                                                                     "presented to"@en .
 
 
 #################################################################

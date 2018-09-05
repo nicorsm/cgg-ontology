@@ -96,6 +96,10 @@
     <DatatypeProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#annualReport">
         <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">La relazione annuale relativa alle attività svolte dalla delegazione. </rdfs:comment>
+        <rdfs:comment xml:lang="en">The annual report about the activities of the delegation.</rdfs:comment>
+        <rdfs:label xml:lang="en">annual report</rdfs:label>
+        <rdfs:label xml:lang="it">relazione annuale</rdfs:label>
     </DatatypeProperty>
     
 
@@ -160,6 +164,10 @@
 
     <Class rdf:about="http://www.cgg.sm/ontology/international-delegations#Delegated">
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+        <rdfs:comment xml:lang="en">A Councilor that takes part to the delegation for an International Organization.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un Consigliere che prende parte alla delegazione per un&apos;Organizzazione Internazionale. </rdfs:comment>
+        <rdfs:label xml:lang="en">Delegated</rdfs:label>
+        <rdfs:label xml:lang="it">Delegato</rdfs:label>
     </Class>
     
 
@@ -169,7 +177,35 @@
 
     <Class rdf:about="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/international-delegations#Delegated"/>
+        <rdfs:comment xml:lang="it">Il presidente della delegazione. </rdfs:comment>
+        <rdfs:comment xml:lang="en">The president of the delegation.</rdfs:comment>
+        <rdfs:label xml:lang="it">Capo delegazione</rdfs:label>
+        <rdfs:label xml:lang="en">Head of Delegation</rdfs:label>
     </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">
+        <rdfs:comment xml:lang="en">Composition of the delegation by delegated councilors.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Composizione della delegazione da parte di consiglieri delegati. </rdfs:comment>
+        <rdfs:label xml:lang="en">composed by delegates</rdfs:label>
+        <rdfs:label xml:lang="it">composta da delegati</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation">
+        <rdfs:comment xml:lang="en">A list of functions assigned to the delegation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una lista di funzioni assegnate alla delegazione. </rdfs:comment>
+        <rdfs:label xml:lang="en">functions of the delegation</rdfs:label>
+        <rdfs:label xml:lang="it">funzioni della delegazione</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

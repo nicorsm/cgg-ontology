@@ -676,9 +676,15 @@
     "baseIri" : "http://www.cgg.sm/ontology/textual-products",
     "range" : "43",
     "label" : {
-      "IRI-based" : "presentedTo"
+      "IRI-based" : "presentedTo",
+      "en" : "presented to",
+      "it" : "presentato a"
     },
-    "domain" : "29",
+    "domain" : "8",
+    "comment" : {
+      "en" : "Presentation of the Instance of Arengo to the Regency.",
+      "it" : "Presentazione dell'Istanza d'Arengo alla Reggenza."
+    },
     "attributes" : [ "external", "object" ],
     "id" : "42"
   }, {

@@ -26,8 +26,12 @@
 
 
     <ObjectProperty rdf:about="http://www.cgg.sm/ontology/textual-products#presentedTo">
-        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/textual-products#RegentialDecree"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/textual-products#InstanceOfArengo"/>
         <rdfs:range rdf:resource="http://www.cgg.sm/ontology/regency#Regency"/>
+        <rdfs:comment xml:lang="en">Presentation of the Instance of Arengo to the Regency.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Presentazione dell&apos;Istanza d&apos;Arengo alla Reggenza.</rdfs:comment>
+        <rdfs:label xml:lang="it">presentato a</rdfs:label>
+        <rdfs:label xml:lang="en">presented to</rdfs:label>
     </ObjectProperty>
     
 

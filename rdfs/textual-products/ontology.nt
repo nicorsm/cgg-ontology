@@ -10,9 +10,13 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.cgg.sm/ontology/textual-products#presentedTo
 <http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/textual-products#RegentialDecree> .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/textual-products#InstanceOfArengo> .
 <http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
 <http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Presentation of the Instance of Arengo to the Regency."@en .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Presentazione dell'Istanza d'Arengo alla Reggenza."@it .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#label> "presentato a"@it .
+<http://www.cgg.sm/ontology/textual-products#presentedTo> <http://www.w3.org/2000/01/rdf-schema#label> "presented to"@en .
 # 
 # 
 # 

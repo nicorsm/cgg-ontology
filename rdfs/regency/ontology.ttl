@@ -28,7 +28,11 @@
 ###  http://www.cgg.sm/ontology/regency#canEmit
 <http://www.cgg.sm/ontology/regency#canEmit> rdf:type owl:ObjectProperty ;
                                              rdfs:domain <http://www.cgg.sm/ontology/regency#Regency> ;
-                                             rdfs:range <http://www.cgg.sm/ontology/textual-products#RegentialDecree> .
+                                             rdfs:range <http://www.cgg.sm/ontology/textual-products#RegentialDecree> ;
+                                             rdfs:comment "Facoltà della Reggenza di emettere decreti speciali."@it ,
+                                                          "Faculty of the Regency to issue special decrees."@en ;
+                                             rdfs:label "can emit"@en ,
+                                                        "può emettere"@it .
 
 
 ###  http://www.cgg.sm/ontology/regency#composedByRegents
@@ -40,7 +44,11 @@
 ###  http://www.cgg.sm/ontology/regency#elects
 <http://www.cgg.sm/ontology/regency#elects> rdf:type owl:ObjectProperty ;
                                             rdfs:domain <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> ;
-                                            rdfs:range <http://www.cgg.sm/ontology/regency#Regency> .
+                                            rdfs:range <http://www.cgg.sm/ontology/regency#Regency> ;
+                                            rdfs:comment "Election of the Regency by the Grand and General Council."@en ,
+                                                         "Elezione della Reggenza da parte del Consiglio Grande e Generale. "@it ;
+                                            rdfs:label "elects"@en ,
+                                                       "elegge"@it .
 
 
 #################################################################
@@ -50,13 +58,21 @@
 ###  http://www.cgg.sm/ontology/regency#endDate
 <http://www.cgg.sm/ontology/regency#endDate> rdf:type owl:DatatypeProperty ;
                                              rdfs:domain <http://www.cgg.sm/ontology/regency#Regency> ;
-                                             rdfs:range xsd:dateTime .
+                                             rdfs:range xsd:dateTime ;
+                                             rdfs:comment "Data di fine del semestre reggenziale."@it ,
+                                                          "End date for the regential semester."@en ;
+                                             rdfs:label "data di fine"@it ,
+                                                        "end date"@en .
 
 
 ###  http://www.cgg.sm/ontology/regency#startDate
 <http://www.cgg.sm/ontology/regency#startDate> rdf:type owl:DatatypeProperty ;
                                                rdfs:domain <http://www.cgg.sm/ontology/regency#Regency> ;
-                                               rdfs:range xsd:dateTime .
+                                               rdfs:range xsd:dateTime ;
+                                               rdfs:comment "Data di inizio del semestre reggenziale."@it ,
+                                                            "Start date for the regential semester."@en ;
+                                               rdfs:label "data di inizio"@it ,
+                                                          "start date"@en .
 
 
 #################################################################
@@ -78,6 +94,8 @@
 ###  http://www.cgg.sm/ontology/regency#CaptainRegent
 <http://www.cgg.sm/ontology/regency#CaptainRegent> rdf:type owl:Class ;
                                                    rdfs:subClassOf <http://www.cgg.sm/ontology/cgg#Councilor> ;
+                                                   rdfs:comment "A Councilor elected as Head of State for six months."@en ,
+                                                                "Un Consigliere eletto come Capo di Stato per sei mesi."@it ;
                                                    rdfs:label "Capitano Reggente"@it ,
                                                               "Captain Regent"@en .
 
@@ -85,12 +103,24 @@
 ###  http://www.cgg.sm/ontology/regency#Regency
 <http://www.cgg.sm/ontology/regency#Regency> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://www.cgg.sm/ontology/base#Institution> ;
+                                             rdfs:comment "I Capi di Stato della Repubblica di San Marino."@it ,
+                                                          "The Heads of State of the Republic of San Marino."@en ;
                                              rdfs:label "Regency"@en ,
                                                         "Reggenza"@it .
 
 
 ###  http://www.cgg.sm/ontology/textual-products#RegentialDecree
 <http://www.cgg.sm/ontology/textual-products#RegentialDecree> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.cgg.sm/ontology/regency#composedByRegents> rdfs:comment "Composition of the Regency by the two Captains Regent."@en ,
+                                                                    "Composizione della Reggenza da parte dei due Capitani Reggenti."@it ;
+                                                       rdfs:label "composed by Regents"@en ,
+                                                                  "composto dai Reggenti"@it .
 
 
 ###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
