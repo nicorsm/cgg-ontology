@@ -99,7 +99,7 @@
   <rdfs:Class rdf:ID="VicePresident">
     <rdfs:label xml:lang="en">Vicepresident</rdfs:label>
     <rdfs:label xml:lang="it">Vicepresidente</rdfs:label>
-    <rdfs:comment xml:lang="en">Vicepesident of the Commission.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Vicepresident of the Commission.</rdfs:comment>
     <rdfs:comment xml:lang="it">Vicepresidente della Commissione.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="#Commissioner"/>
   </rdfs:Class>

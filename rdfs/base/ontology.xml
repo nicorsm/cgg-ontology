@@ -144,7 +144,7 @@
 
 
     <Class rdf:about="http://www.cgg.sm/ontology/base#Politician">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/spec#term_Person"/>
         <rdfs:comment xml:lang="en">A person with a political office.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una persona con una carica politica.</rdfs:comment>
         <rdfs:label xml:lang="en">Politician</rdfs:label>
@@ -181,10 +181,10 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/#term_Person -->
+    <!-- http://xmlns.com/foaf/spec#term_Person -->
 
 
-    <Class rdf:about="http://xmlns.com/foaf/0.1/#term_Person"/>
+    <Class rdf:about="http://xmlns.com/foaf/spec#term_Person"/>
     
 
 

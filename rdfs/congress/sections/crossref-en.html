@@ -7,7 +7,7 @@ This section provides details for each class and property defined by Congress of
          <a href="#Congress" title="http://www.cgg.sm/ontology/congress#Congress">Congress of State</a>
       </li>
       <li>
-         <a href="#Department" title="http://www.cgg.sm/ontology/congress#Department">Delegation</a>
+         <a href="#Delegation" title="http://www.cgg.sm/ontology/congress#Delegation">Delegation</a>
       </li>
       <li>
          <a href="#CongressMeeting"
@@ -46,23 +46,16 @@ This section provides details for each class and property defined by Congress of
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Department">
+   <div class="entity" id="Delegation">
       <h3>Delegation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Department</p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Delegation</p>
       <div class="comment">
          <span class="markdown">Entrustment of one or more delegations to the Secretariat of State.</span>
       </div>
-      <dl class="description">
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#entrustedOf" title="http://www.cgg.sm/ontology/congress#entrustedOf">entrusted of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
    </div>
    <div class="entity" id="CongressMeeting">
       <h3>Meeting of the Congress of State<sup class="type-c" title="class">c</sup>
@@ -96,6 +89,9 @@ This section provides details for each class and property defined by Congress of
       </h3>
       <p>
          <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Secretariat</p>
+      <div class="comment">
+         <span class="markdown">A ministry led by a secretary of State.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -296,7 +292,7 @@ This section provides details for each class and property defined by Congress of
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Department" title="http://www.cgg.sm/ontology/congress#Department">Delegation</a>
+               <span class="dotted" title="http://www.cgg.sm/ontology/congress#Department">department</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

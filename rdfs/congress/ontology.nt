@@ -75,6 +75,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretariat> .
 <http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Department> .
+<http://www.cgg.sm/ontology/congress#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Affidamento di una o pi\u00F9 deleghe alla Segreteria di Stato."@it .
 <http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrustment of one or more delegations to the Secretariat of State."@en .
 <http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#label> "entrusted of"@en .
@@ -150,16 +151,20 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/2000/01/rdf-schema#label> "Meeting of the Congress of State"@en .
 <http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/2000/01/rdf-schema#label> "Riunione del Congresso di Stato"@it .
 # 
+# http://www.cgg.sm/ontology/congress#Delegation
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Affidamento di una o pi\u00F9 deleghe alla Segreteria di Stato."@it .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrustment of one or more delegations to the Secretariat of State."@en .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#label> "Delega"@it .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#label> "Delegation"@en .
+# 
 # http://www.cgg.sm/ontology/congress#Department
-<http://www.cgg.sm/ontology/congress#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.cgg.sm/ontology/congress#Department> <http://www.w3.org/2000/01/rdf-schema#comment> "Affidamento di una o pi\u00F9 deleghe alla Segreteria di Stato."@it .
-<http://www.cgg.sm/ontology/congress#Department> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrustment of one or more delegations to the Secretariat of State."@en .
-<http://www.cgg.sm/ontology/congress#Department> <http://www.w3.org/2000/01/rdf-schema#label> "Delega"@it .
-<http://www.cgg.sm/ontology/congress#Department> <http://www.w3.org/2000/01/rdf-schema#label> "Delegation"@en .
 # 
 # http://www.cgg.sm/ontology/congress#Secretariat
 <http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#comment> "A ministry led by a secretary of State."@en .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#comment> "Un ministero guidato da un Segretario di Stato."@it .
 <http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#label> "Secretariat of State"@en .
 <http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#label> "Segreteria di Stato"@it .
 # 

@@ -256,10 +256,10 @@
     
 
 
-    <!-- http://www.cgg.sm/ontology/congress#Department -->
+    <!-- http://www.cgg.sm/ontology/congress#Delegation -->
 
 
-    <Class rdf:about="http://www.cgg.sm/ontology/congress#Department">
+    <Class rdf:about="http://www.cgg.sm/ontology/congress#Delegation">
         <rdfs:comment xml:lang="it">Affidamento di una o più deleghe alla Segreteria di Stato.</rdfs:comment>
         <rdfs:comment xml:lang="en">Entrustment of one or more delegations to the Secretariat of State.</rdfs:comment>
         <rdfs:label xml:lang="it">Delega</rdfs:label>
@@ -268,11 +268,20 @@
     
 
 
+    <!-- http://www.cgg.sm/ontology/congress#Department -->
+
+
+    <Class rdf:about="http://www.cgg.sm/ontology/congress#Department"/>
+    
+
+
     <!-- http://www.cgg.sm/ontology/congress#Secretariat -->
 
 
     <Class rdf:about="http://www.cgg.sm/ontology/congress#Secretariat">
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
+        <rdfs:comment xml:lang="en">A ministry led by a secretary of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un ministero guidato da un Segretario di Stato.</rdfs:comment>
         <rdfs:label xml:lang="en">Secretariat of State</rdfs:label>
         <rdfs:label xml:lang="it">Segreteria di Stato</rdfs:label>
     </Class>

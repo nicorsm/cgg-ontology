@@ -162,7 +162,7 @@
 ###  http://www.cgg.sm/ontology/commissions#VicePresident
 <http://www.cgg.sm/ontology/commissions#VicePresident> rdf:type owl:Class ;
                                                        rdfs:subClassOf <http://www.cgg.sm/ontology/commissions#Commissioner> ;
-                                                       rdfs:comment "Vicepesident of the Commission."@en ,
+                                                       rdfs:comment "Vicepresident of the Commission."@en ,
                                                                     "Vicepresidente della Commissione."@it ;
                                                        rdfs:label "Vicepresident"@en ,
                                                                   "Vicepresidente"@it .

@@ -92,6 +92,8 @@
     <rdfs:Class rdf:ID="Secretariat">
         <rdfs:label xml:lang="en">Secretariat of State</rdfs:label>
         <rdfs:label xml:lang="it">Segreteria di Stato</rdfs:label>
+        <rdfs:comment xml:lang="en">A ministry led by a secretary of State.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un ministero guidato da un Segretario di Stato.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/base#Institution"/>
     </rdfs:Class>
 
@@ -113,7 +115,7 @@
         <rdfs:range rdf:resource="#Department"/>
     </rdf:Property>
 
-    <rdfs:Class rdf:ID="Department">
+    <rdfs:Class rdf:ID="Delegation">
         <rdfs:label xml:lang="en">Delegation</rdfs:label>
         <rdfs:label xml:lang="it">Delega</rdfs:label>
         <rdfs:comment xml:lang="en">Entrustment of one or more delegations to the Secretariat of State.</rdfs:comment>

@@ -7,7 +7,7 @@
   },
   "namespace" : [ ],
   "metrics" : {
-    "classCount" : 10,
+    "classCount" : 11,
     "objectPropertyCount" : 7,
     "datatypePropertyCount" : 1,
     "individualCount" : 0
@@ -34,10 +34,13 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -98,13 +101,7 @@
     "baseIri" : "http://www.cgg.sm/ontology/congress",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Department",
-      "en" : "Delegation",
-      "it" : "Delega"
-    },
-    "comment" : {
-      "en" : "Entrustment of one or more delegations to the Secretariat of State.",
-      "it" : "Affidamento di una o più deleghe alla Segreteria di Stato."
+      "IRI-based" : "Department"
     },
     "attributes" : [ "external" ],
     "id" : "12"
@@ -125,6 +122,21 @@
     "attributes" : [ "external" ],
     "id" : "14"
   }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Delegation",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Delegation",
+      "en" : "Delegation",
+      "it" : "Delega"
+    },
+    "comment" : {
+      "en" : "Entrustment of one or more delegations to the Secretariat of State.",
+      "it" : "Affidamento di una o più deleghe alla Segreteria di Stato."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
     "iri" : "http://www.cgg.sm/ontology/base#Contact",
     "baseIri" : "http://www.cgg.sm/ontology/base",
     "instances" : 0,
@@ -132,7 +144,7 @@
       "IRI-based" : "Contact"
     },
     "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "19"
   }, {
     "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
     "baseIri" : "http://www.cgg.sm/ontology/cgg",
@@ -151,7 +163,7 @@
       "IRI-based" : "Regency"
     },
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "21"
   }, {
     "iri" : "http://www.cgg.sm/ontology/congress#Secretariat",
     "baseIri" : "http://www.cgg.sm/ontology/congress",
@@ -160,6 +172,10 @@
       "IRI-based" : "Secretariat",
       "en" : "Secretariat of State",
       "it" : "Segreteria di Stato"
+    },
+    "comment" : {
+      "en" : "A ministry led by a secretary of State.",
+      "it" : "Un ministero guidato da un Segretario di Stato."
     },
     "attributes" : [ "external" ],
     "id" : "11",
@@ -203,10 +219,10 @@
     "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
+    "id" : "22",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -323,7 +339,7 @@
   }, {
     "iri" : "http://www.cgg.sm/ontology/congress#convenedBy",
     "baseIri" : "http://www.cgg.sm/ontology/congress",
-    "range" : "20",
+    "range" : "21",
     "label" : {
       "IRI-based" : "convenedBy",
       "en" : "convened by",
@@ -335,11 +351,11 @@
       "it" : "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "19"
+    "id" : "20"
   }, {
     "iri" : "http://www.cgg.sm/ontology/congress#contact",
     "baseIri" : "http://www.cgg.sm/ontology/congress",
-    "range" : "18",
+    "range" : "19",
     "label" : {
       "IRI-based" : "contact",
       "en" : "contact",
@@ -351,6 +367,6 @@
       "it" : "Informazioni di contatto della Segreteria di Stato."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "21"
+    "id" : "22"
   } ]
 }

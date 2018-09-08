@@ -88,7 +88,7 @@
 
 ###  http://www.cgg.sm/ontology/base#Politician
 <http://www.cgg.sm/ontology/base#Politician> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://xmlns.com/foaf/0.1/#term_Person> ;
+                                             rdfs:subClassOf <http://xmlns.com/foaf/spec#term_Person> ;
                                              rdfs:comment "A person with a political office."@en ,
                                                           "Una persona con una carica politica."@it ;
                                              rdfs:label "Politician"@en ,
@@ -111,8 +111,8 @@
 <http://www.w3.org/2006/vcard/ns#phone> rdf:type owl:Class .
 
 
-###  http://xmlns.com/foaf/0.1/#term_Person
-<http://xmlns.com/foaf/0.1/#term_Person> rdf:type owl:Class .
+###  http://xmlns.com/foaf/spec#term_Person
+<http://xmlns.com/foaf/spec#term_Person> rdf:type owl:Class .
 
 
 #################################################################

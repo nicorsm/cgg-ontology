@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "it" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/base", "http://www.w3.org/2006/vcard/ns", "http://xmlns.com/foaf/0.1/" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/base", "http://www.w3.org/2006/vcard/ns", "http://xmlns.com/foaf/spec" ],
     "iri" : "No IRI set"
   },
   "namespace" : [ ],
@@ -25,9 +25,6 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
@@ -36,6 +33,9 @@
   }, {
     "id" : "10",
     "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
   }, {
     "id" : "14",
     "type" : "owl:Class"
@@ -90,16 +90,6 @@
     "attributes" : [ "external" ],
     "id" : "5"
   }, {
-    "iri" : "http://xmlns.com/foaf/0.1/#term_Person",
-    "baseIri" : "http://xmlns.com/foaf/0.1/",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "term_Person"
-    },
-    "subClasses" : [ "3" ],
-    "attributes" : [ "external" ],
-    "id" : "4"
-  }, {
     "iri" : "http://www.w3.org/2006/vcard/ns#Address",
     "baseIri" : "http://www.w3.org/2006/vcard/ns",
     "instances" : 0,
@@ -125,6 +115,16 @@
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
+  }, {
+    "iri" : "http://xmlns.com/foaf/spec#term_Person",
+    "baseIri" : "http://xmlns.com/foaf/spec",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "term_Person"
+    },
+    "subClasses" : [ "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
   }, {
     "iri" : "http://www.cgg.sm/ontology/base#Institution",
     "baseIri" : "http://www.cgg.sm/ontology/base",

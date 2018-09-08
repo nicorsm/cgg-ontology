@@ -150,17 +150,23 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  "Riunione del Congresso di Stato"@it .
 
 
-###  http://www.cgg.sm/ontology/congress#Department
-<http://www.cgg.sm/ontology/congress#Department> rdf:type owl:Class ;
+###  http://www.cgg.sm/ontology/congress#Delegation
+<http://www.cgg.sm/ontology/congress#Delegation> rdf:type owl:Class ;
                                                  rdfs:comment "Affidamento di una o più deleghe alla Segreteria di Stato."@it ,
                                                               "Entrustment of one or more delegations to the Secretariat of State."@en ;
                                                  rdfs:label "Delega"@it ,
                                                             "Delegation"@en .
 
 
+###  http://www.cgg.sm/ontology/congress#Department
+<http://www.cgg.sm/ontology/congress#Department> rdf:type owl:Class .
+
+
 ###  http://www.cgg.sm/ontology/congress#Secretariat
 <http://www.cgg.sm/ontology/congress#Secretariat> rdf:type owl:Class ;
                                                   rdfs:subClassOf <http://www.cgg.sm/ontology/base#Institution> ;
+                                                  rdfs:comment "A ministry led by a secretary of State."@en ,
+                                                               "Un ministero guidato da un Segretario di Stato."@it ;
                                                   rdfs:label "Secretariat of State"@en ,
                                                              "Segreteria di Stato"@it .
 

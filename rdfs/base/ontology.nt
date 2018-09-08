@@ -91,8 +91,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.cgg.sm/ontology/base#Politician
 <http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/#term_Person> .
-<http://xmlns.com/foaf/0.1/#term_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/spec#term_Person> .
+<http://xmlns.com/foaf/spec#term_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#comment> "A person with a political office."@en .
 <http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona con una carica politica."@it .
 <http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/2000/01/rdf-schema#label> "Politician"@en .
@@ -106,7 +106,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.w3.org/2006/vcard/ns#phone
 # 
-# http://xmlns.com/foaf/0.1/#term_Person
+# http://xmlns.com/foaf/spec#term_Person
 # 
 # 
 # 

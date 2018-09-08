@@ -4,7 +4,7 @@
   xml:base="http://www.cgg.sm/ontology/base#" 
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
-  xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+  xmlns:foaf="http://xmlns.com/foaf/spec#" 
   xmlns:vc="http://www.w3.org/2006/vcard/ns#">
 
   <!-- BASE -->
@@ -41,7 +41,7 @@
     <rdfs:label xml:lang="it">Politico</rdfs:label>
     <rdfs:comment xml:lang="en">A person with a political office.</rdfs:comment>
     <rdfs:comment xml:lang="it">Una persona con una carica politica.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#term_Person"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/spec#term_Person"/>
   </rdfs:Class>
 
   <rdf:Property rdf:ID="taxReturn">
