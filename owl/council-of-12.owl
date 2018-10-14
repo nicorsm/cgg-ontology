@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.cgg.sm/ontology/council-of-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.cgg.sm/ontology/council-of-12">
+    <Prefix name="" IRI="http://www.cgg.sm/ontology/council-of-12#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="cggbase" IRI="http://www.cgg.sm/ontology/cgg#"/>
+    <Prefix name="cggroot" IRI="http://www.cgg.sm/ontology/cgg#"/>
+    <Import>http://www.cgg.sm/ontology/textual-products</Import>
+    <Import>http://www.cgg.sm/ontology/base</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontologia che descrive il Consiglio dei Dodici, il potere amministrativo della Repubblica.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Consiglio dei Dodici</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontology describing the Council of Twelves, the administrative power of the Republic.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Council of Twelves</Literal>
+    </Annotation>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.cgg.sm/ontology/base#composedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CouncilOfTwelves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.cgg.sm/ontology/base#Institution"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.cgg.sm/ontology/base#functions"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="cggroot:Councilor"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CouncilOfTwelves"/>
+        <Class IRI="http://www.cgg.sm/ontology/base#Institution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CouncilOfTwelves"/>
+        <ObjectExactCardinality cardinality="12">
+            <ObjectProperty IRI="#composedByCouncilors"/>
+            <Class abbreviatedIRI="cggroot:Councilor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composedByCouncilors"/>
+        <Class IRI="#CouncilOfTwelves"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedByCouncilors"/>
+        <Class abbreviatedIRI="cggroot:Councilor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#functionsOfCouncilOfTwelves"/>
+        <Class IRI="#CouncilOfTwelves"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#functionsOfCouncilOfTwelves"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CouncilOfTwelves</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Institutional body of the Republic of San Marino to which administrative functions are assigned.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CouncilOfTwelves</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organo istituzionale della Repubblica di San Marino cui sono attribuite funzioni amministrative. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CouncilOfTwelves</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Consiglio dei XII</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CouncilOfTwelves</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Council of Twelves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#composedByCouncilors</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Composition of the Council of Twelves by Councilors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#composedByCouncilors</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Composizione del Consiglio dei Dodici da parte di Consiglieri.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#composedByCouncilors</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">composed by Councilors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#composedByCouncilors</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">composto da Consiglieri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#functionsOfCouncilOfTwelves</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Functions assigned to the Council of Twelves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#functionsOfCouncilOfTwelves</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Funzioni assegnate al Consiglio dei Dodici.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#functionsOfCouncilOfTwelves</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">functions of the Council of Twelves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#functionsOfCouncilOfTwelves</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">funzioni del Consiglio dei Dodici</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="#composedByCouncilors"/>
+        <AnnotationProperty IRI="http://www.cgg.sm/ontology/base#composedBy"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="#functionsOfCouncilOfTwelves"/>
+        <AnnotationProperty IRI="http://www.cgg.sm/ontology/base#functions"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
