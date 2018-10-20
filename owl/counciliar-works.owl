@@ -44,10 +44,10 @@
         <ObjectProperty IRI="#Convocation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#UrgentSession"/>
+        <ObjectProperty IRI="#topic"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#topic"/>
+        <Class IRI="#UrgentSession"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="cggroot:GrandAndGeneralCouncil"/>
@@ -65,10 +65,10 @@
         <ObjectProperty IRI="#isDiscussedDuring"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ends"/>
+        <DataProperty IRI="#begins"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#begins"/>
+        <DataProperty IRI="#ends"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasParagraphs"/>
@@ -97,7 +97,7 @@
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Convocation"/>
-        <Class IRI="#Session"/>
+        <Class IRI="#Convocation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasParagraphs"/>
@@ -121,7 +121,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Convocation"/>
-        <Class IRI="#Convocation"/>
+        <Class IRI="#Session"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasParagraphs"/>

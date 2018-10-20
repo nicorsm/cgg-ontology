@@ -208,13 +208,13 @@
     "iri" : "http://www.cgg.sm/ontology/counciliar-works#Convocation",
     "inverse" : "0",
     "baseIri" : "http://www.cgg.sm/ontology/counciliar-works",
-    "range" : "2",
+    "range" : "1",
     "label" : {
       "IRI-based" : "Convocation",
       "en" : "Convocation",
       "it" : "Convocazione"
     },
-    "domain" : "1",
+    "domain" : "2",
     "comment" : {
       "en" : "Convocation of the Grand and General Council.",
       "it" : "Convocazione del Consiglio Grande e Generale."

@@ -33,8 +33,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/counciliar-works#Convocation">
         <owl:inverseOf rdf:resource="http://www.cgg.sm/ontology/counciliar-works#isConvenedBy"/>
-        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/counciliar-works#Session"/>
-        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/counciliar-works#Convocation"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/counciliar-works#Convocation"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/counciliar-works#Session"/>
     </owl:ObjectProperty>
     
 

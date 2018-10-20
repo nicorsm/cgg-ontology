@@ -20,8 +20,8 @@
 ###  http://www.cgg.sm/ontology/counciliar-works#Convocation
 :Convocation rdf:type owl:ObjectProperty ;
              owl:inverseOf :isConvenedBy ;
-             rdfs:domain :Session ;
-             rdfs:range :Convocation .
+             rdfs:domain :Convocation ;
+             rdfs:range :Session .
 
 
 ###  http://www.cgg.sm/ontology/counciliar-works#hasParagraphs
