@@ -1,0 +1,1980 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://data.europa.eu/eli/ontology", "http://www.cgg.sm/ontology/textual-products", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/regency", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.cgg.sm/ontology/textual-products",
+    "labels" : {
+      "en" : "Textual Products",
+      "it" : "Prodotti testuali"
+    },
+    "comments" : {
+      "en" : "Classes and properties about the textual products of the GGC, like norms or documents.",
+      "it" : "Classi e proprietà relative ai prodotti testuali del CGG, come norme e documenti."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 34,
+    "objectPropertyCount" : 2,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Decree-Law",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Decree-Law",
+      "en" : "Decree-Law",
+      "it" : "Decreto-Legge"
+    },
+    "id" : "17",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Statute",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Statute",
+      "en" : "Statute",
+      "it" : "Statuto"
+    },
+    "id" : "16",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Order",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Order",
+      "en" : "Order",
+      "it" : "Ordine"
+    },
+    "id" : "12",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstitutionalLaw",
+      "en" : "Constitutional Law",
+      "it" : "Legge Costituzionale"
+    },
+    "id" : "29",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#DraftLaw",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DraftLaw",
+      "en" : "Draft Law",
+      "it" : "Progetto di legge"
+    },
+    "id" : "1",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForeignAffairsAgreement",
+      "en" : "Foreign Affairs Agreement",
+      "it" : "Accordi di politica estera"
+    },
+    "id" : "39",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#ErrataCorrige",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ErrataCorrige",
+      "undefined" : "Errata Corrige"
+    },
+    "id" : "6",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Regulation",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Regulation",
+      "en" : "Regulation",
+      "it" : "Regolamento"
+    },
+    "id" : "14",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#DelegatedDecree",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DelegatedDecree",
+      "en" : "Delegated Decree",
+      "it" : "Decreto Delegato"
+    },
+    "id" : "20",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Motion",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Motion",
+      "en" : "Motion",
+      "it" : "Mozione"
+    },
+    "id" : "53",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#TextualProduct",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TextualProduct",
+      "en" : "Textual Product",
+      "it" : "Prodotto testuale"
+    },
+    "subClasses" : [ "40", "42" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReferencesAndDebates",
+      "en" : "References and Debates",
+      "it" : "Riferimenti e Dibattiti"
+    },
+    "id" : "68",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Communication",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Communication",
+      "en" : "Communication",
+      "it" : "Comunicazione"
+    },
+    "id" : "79",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstitutionalReviewLaw",
+      "en" : "Constitutional Review Law",
+      "it" : "Legge di Revisione Costituzionale"
+    },
+    "id" : "31",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://data.europa.eu/eli/ontology#ResourceType",
+    "baseIri" : "http://data.europa.eu/eli/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceType"
+    },
+    "subClasses" : [ "10", "8", "6", "16", "4", "14", "12", "1", "61" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Nomination",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nomination",
+      "en" : "Nomination",
+      "it" : "Nomina"
+    },
+    "id" : "91",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Law",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Law",
+      "en" : "Law",
+      "it" : "Legge"
+    },
+    "subClasses" : [ "22", "29", "31" ],
+    "id" : "8",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TradeUnionAgreement",
+      "en" : "Trade Union Agreement",
+      "it" : "Accordi PA-OOSS e Inquadramenti"
+    },
+    "id" : "49",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Decree",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Decree",
+      "en" : "Decree",
+      "it" : "Decreto"
+    },
+    "subClasses" : [ "20", "2", "33", "17" ],
+    "id" : "4",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#Regency",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Regency"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#RegentialDecree",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegentialDecree",
+      "en" : "Regential Decree",
+      "it" : "Decreto Reggenziale"
+    },
+    "id" : "2",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Norm",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Norm",
+      "en" : "Norm",
+      "it" : "Norma"
+    },
+    "id" : "42",
+    "superClasses" : [ "43", "66" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#CounciliarDecree",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CounciliarDecree",
+      "en" : "Counciliar Decree",
+      "it" : "Decreto Consiliare"
+    },
+    "id" : "33",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Agenda",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agenda",
+      "en" : "Agenda",
+      "it" : "Ordine del Giorno"
+    },
+    "id" : "45",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://data.europa.eu/eli/ontology#LegalResource",
+    "baseIri" : "http://data.europa.eu/eli/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LegalResource"
+    },
+    "subClasses" : [ "42" ],
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#InstanceOfArengo",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InstanceOfArengo",
+      "en" : "Instance of Arengo",
+      "it" : "Istanza d'Arengo"
+    },
+    "id" : "59",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#VariousReport",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariousReport",
+      "en" : "Various Report",
+      "it" : "Relazioni varie"
+    },
+    "id" : "108",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#QualifiedLaw",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualifiedLaw",
+      "en" : "Qualified Law",
+      "it" : "Legge Qualificata"
+    },
+    "id" : "22",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Document",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Document",
+      "it" : "Documento"
+    },
+    "subClasses" : [ "45", "47", "49", "79", "97", "96", "59", "68", "53", "91", "108", "39" ],
+    "id" : "40",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Resignation",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resignation",
+      "en" : "Resignation",
+      "it" : "Dimissioni"
+    },
+    "id" : "97",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Verbal",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Verbal",
+      "en" : "Verbal",
+      "it" : "Verbale"
+    },
+    "id" : "61",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Notification",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Notification",
+      "en" : "Notification",
+      "it" : "Notifica"
+    },
+    "id" : "10",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterpellationsAndInterrogations",
+      "en" : "Interpellations and Interrogations",
+      "it" : "Interpellanze e interrogazioni"
+    },
+    "id" : "47",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#DecreesRatification",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DecreesRatification",
+      "en" : "Decrees Ratification",
+      "it" : "Ratifica Decreti"
+    },
+    "id" : "96",
+    "superClasses" : [ "40" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "13",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "69",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "12",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "14",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "16",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "22",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "17",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "22",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "2",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "29",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "31",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "40",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "40",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "40",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "8",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "8",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "4",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#receives",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "receives",
+      "en" : "receives",
+      "it" : "riceve"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Reception of the Instance of Arengo by the Regency.",
+      "it" : "Ricezione dell'Istanza d'Arengo dalla Reggenza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "range" : "61",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "61",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "61",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "8",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "14",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "16",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "61",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "12",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "14",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "16",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "61",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "12",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "14",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "16",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "61",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "10",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "14",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "16",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "61",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "61",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "97",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "68",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "42",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "96",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "96",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "91",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "53",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "79",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "97",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "39",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "108",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#presentedTo",
+    "inverse" : "57",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "presentedTo",
+      "en" : "presented to",
+      "it" : "presentato a"
+    },
+    "domain" : "59",
+    "comment" : {
+      "en" : "Presentation of the Instance of Arengo to the Regency.",
+      "it" : "Presentazione dell'Istanza d'Arengo alla Reggenza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "range" : "42",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "91",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "68",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "59",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "39",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "53",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "79",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "49",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "96",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "108",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "53",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "18",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "18",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "42",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "91",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "97",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "66",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "68",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "18",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "108",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "18",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "59",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "18",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "53",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "18",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "59",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "18",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "42",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "18",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "91",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "18",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "40",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "108",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "66",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "39",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "97",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "39",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "39",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "40",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "68",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "40",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "39",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "40",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "108",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "40",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "96",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "40",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "39",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "40",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "39",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "40",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "68",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "108",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "68",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "68",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "42",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "97",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "68",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "97",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "68",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "108",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "91",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "53",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "97",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "42",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "108",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "42",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "91",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "68",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "97",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "68",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "108",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "49",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "22",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "20",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "17",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "2",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "17",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "4",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "39",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "59",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "47",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "53",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "91",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "42",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "68",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "97",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "79",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "96",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "17",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "31",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "31",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "31",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "29",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "29",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "31",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "2",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "17",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "29",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "29",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "108",
+    "domain" : "97",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "97",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "31",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "108",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  } ]
+}

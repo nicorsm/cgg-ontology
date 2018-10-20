@@ -1,0 +1,247 @@
+@prefix : <http://www.cgg.sm/ontology/commissions#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.cgg.sm/ontology/commissions> .
+
+<http://www.cgg.sm/ontology/commissions> rdf:type owl:Ontology ;
+                                          owl:imports <http://www.cgg.sm/ontology/base> ,
+                                                      <http://www.cgg.sm/ontology/cgg> ,
+                                                      <http://www.cgg.sm/ontology/textual-products> ;
+                                          rdfs:comment "Ontologia che descrive le Commissioni Consiliari che esaminano i progetti di legge."@it ,
+                                                       "Ontology describing the Counciliar Commissions that examines the draft laws."@en ;
+                                          rdfs:label "Commissioni"@it ,
+                                                     "Commissions"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.cgg.sm/ontology/commissions#composedByCommissioners
+:composedByCommissioners rdf:type owl:AnnotationProperty ;
+                         rdfs:subPropertyOf <http://www.cgg.sm/ontology/base#composedBy> ;
+                         rdfs:range :Commissioner .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/commissions#appointedBy
+:appointedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :CouncilCommission ;
+             rdfs:range <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> ;
+             rdfs:comment "Nomina della Commissione da parte del Consiglio Grande e Generale."@it ,
+                          "Nomination of the Commission by the Grand and General Council."@en ;
+             rdfs:label "appointed by"@en ,
+                        "nominato da"@it .
+
+
+###  http://www.cgg.sm/ontology/commissions#belongsToCommission
+:belongsToCommission rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :composedByCommissioners ;
+                     rdfs:domain :Commissioner ;
+                     rdfs:range :CouncilCommission ;
+                     rdfs:comment "Appartenenza dei Commissari alla Commissione."@it ,
+                                  "Membership of the Commissioners to the Commission."@en ;
+                     rdfs:label "appartiene alla commissione"@it ,
+                                "belongs to commission"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#composedByCommissioners
+:composedByCommissioners rdf:type owl:ObjectProperty ;
+                         rdfs:domain :CouncilCommission ;
+                         rdfs:range :Commissioner .
+
+
+###  http://www.cgg.sm/ontology/commissions#convenes
+:convenes rdf:type owl:ObjectProperty ;
+          rdfs:domain :President ;
+          rdfs:range :CommissionSession ;
+          rdfs:comment "Convocation of the Commission by the President."@en ,
+                       "Convocazione della Commissione da parte del Presidente."@it ;
+          rdfs:label "convenes"@en ,
+                     "convoca"@it .
+
+
+###  http://www.cgg.sm/ontology/commissions#examinesLaws
+:examinesLaws rdf:type owl:ObjectProperty ;
+              rdfs:domain :CouncilCommission ;
+              rdfs:range <http://www.cgg.sm/ontology/textual-products#DraftLaw> ;
+              rdfs:comment "Esame della Commissione di Progetti di Legge."@it ,
+                           "Examination of Draft Laws by the Commission."@en ;
+              rdfs:label "esamina leggi"@it ,
+                         "examines laws"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#examinesMotions
+:examinesMotions rdf:type owl:ObjectProperty ;
+                 rdfs:domain :CouncilCommission ;
+                 rdfs:range <http://www.cgg.sm/ontology/textual-products#Motion> ;
+                 rdfs:comment "Esame della Commissione di Mozioni."@it ,
+                              "Examination of Motions by the Commission."@en ;
+                 rdfs:label "esamina mozioni"@it ,
+                            "examines motions"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#hasRepresentative
+:hasRepresentative rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CouncilCommission ;
+                   rdfs:range :President ,
+                              :VicePresident .
+
+
+###  http://www.cgg.sm/ontology/commissions#inChargeFor
+:inChargeFor rdf:type owl:ObjectProperty ;
+             rdfs:domain :CouncilCommission ;
+             rdfs:range <http://www.cgg.sm/ontology/cgg#Legislature> ;
+             rdfs:comment "Property that describes the duration of a commission linked to a legislature."@en ,
+                          "Proprietà che descrive la durata della commissione legata ad una legislatura."@it ;
+             rdfs:label "in carica per"@it ,
+                        "in charge for"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#isParticipatedBy
+:isParticipatedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :participates ;
+                  rdfs:domain :CommissionSession ;
+                  rdfs:range :Commissioner ;
+                  rdfs:comment "Partecipazione della Sessione da parte dei Commissari."@it ,
+                               "Participation of the Session by the Commissioner."@en ;
+                  rdfs:label "is participated by"@en ,
+                             "è partecipata da"@it .
+
+
+###  http://www.cgg.sm/ontology/commissions#participates
+:participates rdf:type owl:ObjectProperty ;
+              rdfs:domain :Commissioner ;
+              rdfs:range :CommissionSession ;
+              rdfs:comment "Partecipazione del Commissario alla Sessione."@it ,
+                           "Participation of the Commissioner to the Session."@en ;
+              rdfs:label "partecipa"@it ,
+                         "participates"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/cgg#Legislature
+<http://www.cgg.sm/ontology/cgg#Legislature> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/commissions#CommissionSession
+:CommissionSession rdf:type owl:Class ;
+                   rdfs:comment "A meeting of the Commission."@en ,
+                                "Una riunione della Commissione."@it ;
+                   rdfs:label "Commission Session"@en ,
+                              "Sessione della Commissione"@it .
+
+
+###  http://www.cgg.sm/ontology/commissions#Commissioner
+:Commissioner rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.cgg.sm/ontology/cgg#Councilor> ;
+              rdfs:comment "Consigliere eletto all'interno della Commissione."@it ,
+                           "Councilor elected within the Commission."@en ;
+              rdfs:label "Commissario"@it ,
+                         "Commissioner"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#CouncilCommission
+:CouncilCommission rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :composedByCommissioners ;
+                                     owl:qualifiedCardinality "15"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Commissioner
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasRepresentative ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :President
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasRepresentative ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :VicePresident
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :inChargeFor ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.cgg.sm/ontology/cgg#Legislature>
+                                   ] ;
+                   rdfs:comment "Commissione parlamentare che esamina i progetti di legge."@it ,
+                                "Parliamentary commission that examines the draft laws."@en ;
+                   rdfs:label "Commissione consiliare"@it ,
+                              "Council Commission"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission
+:PermanentCouncilCommission rdf:type owl:Class ;
+                            rdfs:subClassOf :CouncilCommission ;
+                            owl:disjointWith :SpecialCouncilCommission ;
+                            rdfs:comment "An ordinary counciliar commission required by law."@en ,
+                                         "Commissione consiliare ordinaria prevista dalla legge."@it ;
+                            rdfs:label "Commissione consiliare permanente"@it ,
+                                       "Permanent Council Commission"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#President
+:President rdf:type owl:Class ;
+           rdfs:subClassOf :Commissioner ;
+           rdfs:comment "President of the Commission."@en ,
+                        "Presidente della Commissione."@it ;
+           rdfs:label "President"@en ,
+                      "Presidente"@it .
+
+
+###  http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission
+:SpecialCouncilCommission rdf:type owl:Class ;
+                          rdfs:subClassOf :CouncilCommission ;
+                          rdfs:comment "Commissione consiliare richiesta dal Consiglio in base alle necessità."@it ,
+                                       "Counciliar commission requested by the Council as needed."@en ;
+                          rdfs:label "Commissione consiliare speciale"@it ,
+                                     "Special Council Commission"@en .
+
+
+###  http://www.cgg.sm/ontology/commissions#VicePresident
+:VicePresident rdf:type owl:Class ;
+               rdfs:subClassOf :Commissioner ;
+               rdfs:comment "Vicepresident of the Commission."@en ,
+                            "Vicepresidente della Commissione."@it ;
+               rdfs:label "Vicepresident"@en ,
+                          "Vicepresidente"@it .
+
+
+###  http://www.cgg.sm/ontology/textual-products#DraftLaw
+<http://www.cgg.sm/ontology/textual-products#DraftLaw> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/textual-products#Motion
+<http://www.cgg.sm/ontology/textual-products#Motion> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:composedByCommissioners rdfs:comment "Composition of the Commission by Commissioners."@en ,
+                                      "Composizione della Commissione da parte di Commissari."@it ;
+                         rdfs:label "composed by commissioners"@en ,
+                                    "composto da commissari"@it .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

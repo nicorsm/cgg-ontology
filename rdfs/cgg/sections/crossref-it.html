@@ -1,0 +1,624 @@
+<h2  id="crossreference" class="list">Cross reference for Grand and General Council classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Grand and General Council.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#Coalition" title="http://www.cgg.sm/ontology/cgg#Coalition">Coalizione</a>
+      </li>
+      <li>
+         <a href="#Councilor" title="http://www.cgg.sm/ontology/cgg#Councilor">Consigliere</a>
+      </li>
+      <li>
+         <a href="#GrandAndGeneralCouncil"
+            title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">Consiglio Grande e Generale</a>
+      </li>
+      <li>
+         <a href="#ParliamentaryBloc" title="http://www.cgg.sm/ontology/cgg#ParliamentaryBloc">Fazione parlamentare</a>
+      </li>
+      <li>
+         <a href="#CounciliarGroup" title="http://www.cgg.sm/ontology/cgg#CounciliarGroup">Gruppo Consiliare</a>
+      </li>
+      <li>
+         <a href="#MixedGroup" title="http://www.cgg.sm/ontology/cgg#MixedGroup">Gruppo Misto</a>
+      </li>
+      <li>
+         <a href="#ParliamentaryGroup"
+            title="http://www.cgg.sm/ontology/cgg#ParliamentaryGroup">Gruppo parlamentare</a>
+      </li>
+      <li>
+         <a href="#Legislature" title="http://www.cgg.sm/ontology/cgg#Legislature">Legislatura</a>
+      </li>
+      <li>
+         <a href="#Party" title="http://www.cgg.sm/ontology/cgg#Party">Partito</a>
+      </li>
+   </ul>
+   <div class="entity" id="Coalition">
+      <h3>Coalizione<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#Coalition</p>
+      <div class="comment">
+         <span class="markdown">Raggruppamento di più gruppi consiliari.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#coalitionComposedBy"
+               title="http://www.cgg.sm/ontology/cgg#coalitionComposedBy">coalizione composta da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Councilor">
+      <h3>Consigliere<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#Councilor</p>
+      <div class="comment">
+         <span class="markdown">Uno dei 60 membri del CGG, appartenente ad una forza politica o al gruppo misto.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/base#Politician">politician</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#belongsToGroup" title="http://www.cgg.sm/ontology/cgg#belongsToGroup">appartiene ad un Gruppo parlamentare</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#leader" title="http://www.cgg.sm/ontology/cgg#leader">Capogruppo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GrandAndGeneralCouncil">
+      <h3>Consiglio Grande e Generale<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil</p>
+      <div class="comment">
+         <span class="markdown">Istituzione alla quale spetta il potere legislativo, la determinazione dell’indirizzo politico e l’esercizio delle funzioni di controllo. È composto da 60 membri, chiamati Consiglieri.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/base#Institution">institution</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#cggComposedBy" title="http://www.cgg.sm/ontology/cgg#cggComposedBy">CGG composto da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#debatesApprovesRejects"
+               title="http://www.cgg.sm/ontology/cgg#debatesApprovesRejects">dibatte, approva o rigetta</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#electedFor" title="http://www.cgg.sm/ontology/cgg#electedFor">eletto per</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ParliamentaryBloc">
+      <h3>Fazione parlamentare<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#ParliamentaryBloc</p>
+      <div class="comment">
+         <span class="markdown">Suddivisione del Parlamento in maggioranza e minoranza.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#belongsToBloc" title="http://www.cgg.sm/ontology/cgg#belongsToBloc">appartiene ad una fazione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CounciliarGroup">
+      <h3>Gruppo Consiliare<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#CounciliarGroup</p>
+      <div class="comment">
+         <span class="markdown">Rappresentanza parlamentare di un partito.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#ParliamentaryGroup"
+               title="http://www.cgg.sm/ontology/cgg#ParliamentaryGroup">Gruppo parlamentare</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#leader" title="http://www.cgg.sm/ontology/cgg#leader">Capogruppo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#headingTo" title="http://www.cgg.sm/ontology/cgg#headingTo">facente capo a</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#coalitionComposedBy"
+               title="http://www.cgg.sm/ontology/cgg#coalitionComposedBy">coalizione composta da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MixedGroup">
+      <h3>Gruppo Misto<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#MixedGroup</p>
+      <div class="comment">
+         <span class="markdown">Gruppo di Consiglieri indipendenti.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#ParliamentaryGroup"
+               title="http://www.cgg.sm/ontology/cgg#ParliamentaryGroup">Gruppo parlamentare</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ParliamentaryGroup">
+      <h3>Gruppo parlamentare<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#ParliamentaryGroup</p>
+      <div class="comment">
+         <span class="markdown">Un gruppo parlamentare è un organo che raccoglie le istanze e le rappresentanze politiche all'interno di un parlamento.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come sotto-classi</dt>
+         <dd>
+            <a href="#CounciliarGroup" title="http://www.cgg.sm/ontology/cgg#CounciliarGroup">Gruppo Consiliare</a>
+            <sup class="type-c" title="classe">c</sup>, <a href="#MixedGroup" title="http://www.cgg.sm/ontology/cgg#MixedGroup">Gruppo Misto</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#belongsToBloc" title="http://www.cgg.sm/ontology/cgg#belongsToBloc">appartiene ad una fazione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#cggComposedBy" title="http://www.cgg.sm/ontology/cgg#cggComposedBy">CGG composto da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#belongsToGroup" title="http://www.cgg.sm/ontology/cgg#belongsToGroup">appartiene ad un Gruppo parlamentare</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Legislature">
+      <h3>Legislatura<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#Legislature</p>
+      <div class="comment">
+         <span class="markdown">Periodo di permanenza del Consiglio Grande e Generale.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#ends" title="http://www.cgg.sm/ontology/cgg#ends">data di fine</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#begins" title="http://www.cgg.sm/ontology/cgg#begins">data di inizio</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#electedFor" title="http://www.cgg.sm/ontology/cgg#electedFor">eletto per</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Party">
+      <h3>Partito<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#Party</p>
+      <div class="comment">
+         <span class="markdown">Associazione tra persone accomunate da una medesima finalità politica ovvero da una comune visione su questioni fondamentali della gestione dello Stato e della società o anche solo su temi specifici e particolari. </span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#contact" title="http://www.cgg.sm/ontology/cgg#contact">contatto</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#name" title="http://www.cgg.sm/ontology/cgg#name">nome</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#headingTo" title="http://www.cgg.sm/ontology/cgg#headingTo">facente capo a</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#belongsToGroup" title="http://www.cgg.sm/ontology/cgg#belongsToGroup">
+            <span>appartiene ad un Gruppo parlamentare</span>
+         </a>
+      </li>
+      <li>
+         <a href="#belongsToBloc" title="http://www.cgg.sm/ontology/cgg#belongsToBloc">
+            <span>appartiene ad una fazione</span>
+         </a>
+      </li>
+      <li>
+         <a href="#leader" title="http://www.cgg.sm/ontology/cgg#leader">Capogruppo</a>
+      </li>
+      <li>
+         <a href="#cggComposedBy" title="http://www.cgg.sm/ontology/cgg#cggComposedBy">
+            <span>CGG composto da</span>
+         </a>
+      </li>
+      <li>
+         <a href="#coalitionComposedBy"
+            title="http://www.cgg.sm/ontology/cgg#coalitionComposedBy">
+            <span>coalizione composta da</span>
+         </a>
+      </li>
+      <li>
+         <a href="#contact" title="http://www.cgg.sm/ontology/cgg#contact">contatto</a>
+      </li>
+      <li>
+         <a href="#debatesApprovesRejects"
+            title="http://www.cgg.sm/ontology/cgg#debatesApprovesRejects">dibatte, approva o rigetta</a>
+      </li>
+      <li>
+         <a href="#electedFor" title="http://www.cgg.sm/ontology/cgg#electedFor">eletto per</a>
+      </li>
+      <li>
+         <a href="#headingTo" title="http://www.cgg.sm/ontology/cgg#headingTo">facente capo a</a>
+      </li>
+   </ul>
+   <div class="entity" id="belongsToGroup">
+      <h3>appartiene ad un Gruppo parlamentare<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#belongsToGroup</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Councilor" title="http://www.cgg.sm/ontology/cgg#Councilor">Consigliere</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ParliamentaryGroup"
+                  title="http://www.cgg.sm/ontology/cgg#ParliamentaryGroup">Gruppo parlamentare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#belongsToGroup">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="belongsToBloc">
+      <h3>appartiene ad una fazione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#belongsToBloc</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#ParliamentaryGroup"
+                  title="http://www.cgg.sm/ontology/cgg#ParliamentaryGroup">Gruppo parlamentare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ParliamentaryBloc" title="http://www.cgg.sm/ontology/cgg#ParliamentaryBloc">Fazione parlamentare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#belongsToBloc">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="leader">
+      <h3>Capogruppo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#leader</p>
+      <div class="comment">
+         <span class="markdown">Un Consigliere che rappresenta il Gruppo Consiliare all'interno del Parlamento.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarGroup" title="http://www.cgg.sm/ontology/cgg#CounciliarGroup">Gruppo Consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Councilor" title="http://www.cgg.sm/ontology/cgg#Councilor">Consigliere</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="cggComposedBy">
+      <h3>CGG composto da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#cggComposedBy</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#GrandAndGeneralCouncil"
+                  title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">Consiglio Grande e Generale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#ParliamentaryGroup"
+                  title="http://www.cgg.sm/ontology/cgg#ParliamentaryGroup">Gruppo parlamentare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#cggComposedBy">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="coalitionComposedBy">
+      <h3>coalizione composta da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#coalitionComposedBy</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Coalition" title="http://www.cgg.sm/ontology/cgg#Coalition">Coalizione</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CounciliarGroup" title="http://www.cgg.sm/ontology/cgg#CounciliarGroup">Gruppo Consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#coalitionComposedBy">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contact">
+      <h3>contatto<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#contact</p>
+      <div class="comment">
+         <span class="markdown">Informazioni di contatto del partito.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Party" title="http://www.cgg.sm/ontology/cgg#Party">Partito</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/base#Contact">contact</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="debatesApprovesRejects">
+      <h3>dibatte, approva o rigetta<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#debatesApprovesRejects</p>
+      <div class="comment">
+         <span class="markdown">Azioni eseguibili sulle norme da parte del Consiglio Grande e Generale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#GrandAndGeneralCouncil"
+                  title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">Consiglio Grande e Generale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/textual-products#Norm">norm</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="electedFor">
+      <h3>eletto per<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#electedFor</p>
+      <div class="comment">
+         <span class="markdown">Legislatura attuale del Consiglio Grande e Generale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#GrandAndGeneralCouncil"
+                  title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">Consiglio Grande e Generale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Legislature" title="http://www.cgg.sm/ontology/cgg#Legislature">Legislatura</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="headingTo">
+      <h3>facente capo a<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#headingTo</p>
+      <div class="comment">
+         <span class="markdown">Collegamento tra il gruppo consiliare e il partito.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarGroup" title="http://www.cgg.sm/ontology/cgg#CounciliarGroup">Gruppo Consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Party" title="http://www.cgg.sm/ontology/cgg#Party">Partito</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#ends" title="http://www.cgg.sm/ontology/cgg#ends">data di fine</a>
+      </li>
+      <li>
+         <a href="#begins" title="http://www.cgg.sm/ontology/cgg#begins">data di inizio</a>
+      </li>
+      <li>
+         <a href="#name" title="http://www.cgg.sm/ontology/cgg#name">nome</a>
+      </li>
+   </ul>
+   <div class="entity" id="ends">
+      <h3>data di fine<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#ends</p>
+      <div class="comment">
+         <span class="markdown">Data di fine della Legislature.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Legislature" title="http://www.cgg.sm/ontology/cgg#Legislature">Legislatura</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="begins">
+      <h3>data di inizio<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#begins</p>
+      <div class="comment">
+         <span class="markdown">Data di inizio della Legislature.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Legislature" title="http://www.cgg.sm/ontology/cgg#Legislature">Legislatura</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>nome<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/cgg#name</p>
+      <div class="comment">
+         <span class="markdown">Nome del partito.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Party" title="http://www.cgg.sm/ontology/cgg#Party">Partito</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

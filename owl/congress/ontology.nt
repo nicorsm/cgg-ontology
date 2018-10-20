@@ -1,0 +1,275 @@
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/base> .
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/textual-products> .
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia che descrive il Congresso di Stato, il potere esecutivo della Repubblica."@it .
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology describing the Congress of State, the executive power of the Republic."@en .
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/2000/01/rdf-schema#label> "Congress of State"@en .
+<http://www.cgg.sm/ontology/congress> <http://www.w3.org/2000/01/rdf-schema#label> "Congresso di Stato"@it .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/congress#composedBySecretaries
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#composedBy> .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Secretary> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/congress#composedBySecretaries
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/congress#composesCongress> .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Congress> .
+# 
+# http://www.cgg.sm/ontology/congress#composesCongress
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Congress> .
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione del Congresso di Stato da parte  del Segretario."@it .
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/2000/01/rdf-schema#comment> "Congress composition by the Secretary."@en .
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/2000/01/rdf-schema#label> "compone Congresso"@it .
+<http://www.cgg.sm/ontology/congress#composesCongress> <http://www.w3.org/2000/01/rdf-schema#label> "composes Congress"@en .
+# 
+# http://www.cgg.sm/ontology/congress#contact
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/base#Contact> .
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact information for the Secretariat of State."@en .
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Informazioni di contatto della Segreteria di Stato."@it .
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/2000/01/rdf-schema#label> "contact"@en .
+<http://www.cgg.sm/ontology/congress#contact> <http://www.w3.org/2000/01/rdf-schema#label> "contatto"@it .
+# 
+# http://www.cgg.sm/ontology/congress#convenedBy
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/congress#convenes> .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#CongressMeeting> .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocation of the Congress Meeting by the Regency."@en .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."@it .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2000/01/rdf-schema#label> "convened by"@en .
+<http://www.cgg.sm/ontology/congress#convenedBy> <http://www.w3.org/2000/01/rdf-schema#label> "convocata da"@it .
+# 
+# http://www.cgg.sm/ontology/congress#convenes
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#CongressMeeting> .
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocation of the Congress Meeting by the Regency."@en .
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."@it .
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/2000/01/rdf-schema#label> "convenes"@en .
+<http://www.cgg.sm/ontology/congress#convenes> <http://www.w3.org/2000/01/rdf-schema#label> "convoca"@it .
+# 
+# http://www.cgg.sm/ontology/congress#delegationBelongsTo
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/congress#entrustedOf> .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Delegation> .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Appartenenza di una o pi\u00F9 deleghe ad una Segreteria di Stato."@it .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Belonging of one or more delegations to a Secretariat of State."@en .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "appartiene a"@it .
+<http://www.cgg.sm/ontology/congress#delegationBelongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to"@en .
+# 
+# http://www.cgg.sm/ontology/congress#electedBy
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/congress#electsSecretaries> .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Election of the Secretary by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Elezione del Segretario di Stato da parte del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2000/01/rdf-schema#label> "elected by"@en .
+<http://www.cgg.sm/ontology/congress#electedBy> <http://www.w3.org/2000/01/rdf-schema#label> "eletto da"@it .
+# 
+# http://www.cgg.sm/ontology/congress#electsSecretaries
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/2000/01/rdf-schema#comment> "Election of the Secretary by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/2000/01/rdf-schema#comment> "Elezione del Segretario di Stato da parte del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/2000/01/rdf-schema#label> "elects"@en .
+<http://www.cgg.sm/ontology/congress#electsSecretaries> <http://www.w3.org/2000/01/rdf-schema#label> "elegge"@it .
+# 
+# http://www.cgg.sm/ontology/congress#entrustedOf
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Delegation> .
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Affidamento di una o pi\u00F9 deleghe alla Segreteria di Stato."@it .
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrustment of one or more delegations to the Secretariat of State."@en .
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#label> "entrusted of"@en .
+<http://www.cgg.sm/ontology/congress#entrustedOf> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 affidata"@it .
+# 
+# http://www.cgg.sm/ontology/congress#holds
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/congress#isHeldBy> .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2000/01/rdf-schema#comment> "Ownership of the Secretariat of State by the Secretary."@en .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2000/01/rdf-schema#comment> "Titolarit\u00E0 della Segreteria di Stato da parte del Segretario."@it .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2000/01/rdf-schema#label> "holds"@en .
+<http://www.cgg.sm/ontology/congress#holds> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 titolare di"@it .
+# 
+# http://www.cgg.sm/ontology/congress#isHeldBy
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Ownership of the Secretariat of State by the Secretary."@en .
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Titolarit\u00E0 della Segreteria di Stato da parte del Segretario."@it .
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/2000/01/rdf-schema#label> "is held by"@en .
+<http://www.cgg.sm/ontology/congress#isHeldBy> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 guidata da"@it .
+# 
+# http://www.cgg.sm/ontology/congress#participatesTo
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#Congress> .
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/congress#CongressMeeting> .
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Partecipazione del Congresso alle loro Riunioni."@it .
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Participation of the Congress to their Meetings."@en .
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "partecipa a"@it .
+<http://www.cgg.sm/ontology/congress#participatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "participates to"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/congress#date
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/congress#CongressMeeting> .
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/2000/01/rdf-schema#comment> "Data della Riunione del Congresso di Stato."@it .
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/2000/01/rdf-schema#comment> "Meeting date for the Congress of State."@en .
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/2000/01/rdf-schema#label> "data della riunione"@it .
+<http://www.cgg.sm/ontology/congress#date> <http://www.w3.org/2000/01/rdf-schema#label> "meeting date"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#Contact
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/congress#Congress
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/congress#composedBySecretaries> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "7"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/congress#composedBySecretaries> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "9"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/congress#Secretary> .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#comment> "Il Congresso di Stato \u00E8 l'organo esecutivo della Repubblica di San Marino."@it .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#comment> "The Congress of State is the executive body of the Republic of San Marino."@en .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#label> "Congress of State"@en .
+<http://www.cgg.sm/ontology/congress#Congress> <http://www.w3.org/2000/01/rdf-schema#label> "Congresso di Stato"@it .
+# 
+# http://www.cgg.sm/ontology/congress#CongressMeeting
+<http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/2000/01/rdf-schema#comment> "Riunione settimanale del Congresso di Stato."@it .
+<http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/2000/01/rdf-schema#comment> "Weekly meeting of the Congress of State."@en .
+<http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/2000/01/rdf-schema#label> "Meeting of the Congress of State"@en .
+<http://www.cgg.sm/ontology/congress#CongressMeeting> <http://www.w3.org/2000/01/rdf-schema#label> "Riunione del Congresso di Stato"@it .
+# 
+# http://www.cgg.sm/ontology/congress#Delegation
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Affidamento di una o pi\u00F9 deleghe alla Segreteria di Stato."@it .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrustment of one or more delegations to the Secretariat of State."@en .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#label> "Delega"@it .
+<http://www.cgg.sm/ontology/congress#Delegation> <http://www.w3.org/2000/01/rdf-schema#label> "Delegation"@en .
+# 
+# http://www.cgg.sm/ontology/congress#Secretariat
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/congress#entrustedOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/congress#Delegation> .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#comment> "A ministry led by a secretary of State."@en .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#comment> "Un ministero guidato da un Segretario di Stato."@it .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#label> "Secretariat of State"@en .
+<http://www.cgg.sm/ontology/congress#Secretariat> <http://www.w3.org/2000/01/rdf-schema#label> "Segreteria di Stato"@it .
+# 
+# http://www.cgg.sm/ontology/congress#Secretary
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/congress#holds> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/congress#holds> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/congress#Secretariat> .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#comment> "Component of the Congress."@en .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#comment> "Componente del Congresso di Stato."@it .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#label> "Secretary"@en .
+<http://www.cgg.sm/ontology/congress#Secretary> <http://www.w3.org/2000/01/rdf-schema#label> "Segretario di Stato"@it .
+# 
+# http://www.cgg.sm/ontology/regency#Regency
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione del Congresso di Stato da parte di Segretari di Stato."@it .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#comment> "Congress composition by Secretaries."@en .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#label> "composed by Secretaries"@en .
+<http://www.cgg.sm/ontology/congress#composedBySecretaries> <http://www.w3.org/2000/01/rdf-schema#label> "composto da Segretari di Stato"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

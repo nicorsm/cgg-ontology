@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cgg.sm/ontology/base#"
+     xml:base="http://www.cgg.sm/ontology/base"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.cgg.sm/ontology/base">
+        <owl:imports rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:comment xml:lang="it">Ontologia che descrive le entità base del Consiglio Grande e Generale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ontology describing the base constructs of the Grand and General Council.</rdfs:comment>
+        <rdfs:label xml:lang="en">Base Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia di Base</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#email -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/base#email">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/base#Contact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Email"/>
+        <rdfs:comment xml:lang="en">E-mail address.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indirizzo e-mail.</rdfs:comment>
+        <rdfs:label xml:lang="en">e-mail</rdfs:label>
+        <rdfs:label xml:lang="it">e-mail</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#headquarters -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/base#headquarters">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/base#Contact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:comment xml:lang="it">Indirizzo dell&apos;ufficio principale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Main office address.</rdfs:comment>
+        <rdfs:label xml:lang="en">headquarters</rdfs:label>
+        <rdfs:label xml:lang="it">sede</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#phone -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/base#phone">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/base#Contact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#phone"/>
+        <rdfs:comment xml:lang="it">Numero di telefono.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Phone number.</rdfs:comment>
+        <rdfs:label xml:lang="en">phone</rdfs:label>
+        <rdfs:label xml:lang="it">telefono</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#url -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/base#url">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/base#Contact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#URL"/>
+        <rdfs:comment xml:lang="en">Contact&apos;s website.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Sito web del contatto.</rdfs:comment>
+        <rdfs:label xml:lang="it">sito web</rdfs:label>
+        <rdfs:label xml:lang="en">website</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#taxReturn -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.cgg.sm/ontology/base#taxReturn">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/base#Politician"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">La dichiarazione dei redditi presentata da ogni Politico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The tax return declarated by each Politician.</rdfs:comment>
+        <rdfs:label xml:lang="it">Dichiarazione dei Redditi</rdfs:label>
+        <rdfs:label xml:lang="en">Tax Return</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#Contact -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/base#Contact">
+        <rdfs:comment xml:lang="en">Contact information of an institution.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Informazioni di contatto di una istituzione.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contact</rdfs:label>
+        <rdfs:label xml:lang="it">Contatto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#Institution -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/base#Institution">
+        <rdfs:comment xml:lang="it">Configurazione di sovrastrutture organizzate giuridicamente e il cui fine è di garantire le relazioni sociali e la conservazione e l&apos;attuazione di norme attività sociali e giuridiche stabilite tra l&apos;individuo e la società o tra l&apos;individuo e lo Stato sottratte all&apos;arbitrio individuale e del potere in generale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The configuration of legally organized superstructures whose purpose is to guarantee social relations and the conservation and implementation of norms of social and legal activities established between the individual and the society or between the individual and the State, which are removed from individual arbitrariness and of power in general.</rdfs:comment>
+        <rdfs:label xml:lang="en">Institution</rdfs:label>
+        <rdfs:label xml:lang="it">Istituzione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#Politician -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/base#Politician">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/spec#Person"/>
+        <rdfs:comment xml:lang="en">A person with a political office.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una persona con una carica politica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Politician</rdfs:label>
+        <rdfs:label xml:lang="it">Politico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Email -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Email"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#URL -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#URL"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#phone -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#phone"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/spec#Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/spec#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/base#belongsTo">
+        <rdfs:comment xml:lang="en">A base property of kind &quot;belongs to&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una proprietà di base del tipo &quot;appartiene a&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="it">appartiene a</rdfs:label>
+        <rdfs:label xml:lang="en">belongs to</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/base#composedBy">
+        <rdfs:comment xml:lang="en">A base property of kind &quot;composed by&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una proprietà di base del tipo &quot;composto da&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">composed by</rdfs:label>
+        <rdfs:label xml:lang="it">composto da</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/base#functions">
+        <rdfs:comment xml:lang="en">Functions performed by a particular political body or institution.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Funzioni espletate da un particolare corpo politico o istituzione.</rdfs:comment>
+        <rdfs:label xml:lang="en">functions</rdfs:label>
+        <rdfs:label xml:lang="it">funzioni</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

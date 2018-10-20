@@ -1,0 +1,101 @@
+@prefix : <http://www.cgg.sm/ontology/council-of-12#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.cgg.sm/ontology/council-of-12> .
+
+<http://www.cgg.sm/ontology/council-of-12> rdf:type owl:Ontology ;
+                                            owl:imports <http://www.cgg.sm/ontology/base> ,
+                                                        <http://www.cgg.sm/ontology/textual-products> ;
+                                            rdfs:comment "Ontologia che descrive il Consiglio dei Dodici, il potere amministrativo della Repubblica."@it ,
+                                                         "Ontology describing the Council of Twelves, the administrative power of the Republic."@en ;
+                                            rdfs:label "Consiglio dei Dodici"@it ,
+                                                       "Council of Twelves"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.cgg.sm/ontology/base#functions
+<http://www.cgg.sm/ontology/base#functions> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.cgg.sm/ontology/council-of-12#composedByCouncilors
+:composedByCouncilors rdf:type owl:AnnotationProperty ;
+                      rdfs:subPropertyOf <http://www.cgg.sm/ontology/base#composedBy> .
+
+
+###  http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves
+:functionsOfCouncilOfTwelves rdf:type owl:AnnotationProperty ;
+                             rdfs:subPropertyOf <http://www.cgg.sm/ontology/base#functions> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/council-of-12#composedByCouncilors
+:composedByCouncilors rdf:type owl:ObjectProperty ;
+                      rdfs:domain :CouncilOfTwelves ;
+                      rdfs:range <http://www.cgg.sm/ontology/cgg#Councilor> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves
+:functionsOfCouncilOfTwelves rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :CouncilOfTwelves ;
+                             rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> rdf:type owl:Class .
+
+
+###  http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves
+:CouncilOfTwelves rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.cgg.sm/ontology/base#Institution> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :composedByCouncilors ;
+                                    owl:qualifiedCardinality "12"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://www.cgg.sm/ontology/cgg#Councilor>
+                                  ] ;
+                  rdfs:comment "Institutional body of the Republic of San Marino to which administrative functions are assigned."@en ,
+                               "Organo istituzionale della Repubblica di San Marino cui sono attribuite funzioni amministrative. "@it ;
+                  rdfs:label "Consiglio dei XII"@it ,
+                             "Council of Twelves"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:composedByCouncilors rdfs:comment "Composition of the Council of Twelves by Councilors."@en ,
+                                   "Composizione del Consiglio dei Dodici da parte di Consiglieri."@it ;
+                      rdfs:label "composed by Councilors"@en ,
+                                 "composto da Consiglieri"@it .
+
+
+:functionsOfCouncilOfTwelves rdfs:comment "Functions assigned to the Council of Twelves."@en ,
+                                          "Funzioni assegnate al Consiglio dei Dodici."@it ;
+                             rdfs:label "functions of the Council of Twelves"@en ,
+                                        "funzioni del Consiglio dei Dodici"@it .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

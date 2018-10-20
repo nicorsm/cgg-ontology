@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cgg.sm/ontology/commissions#"
+     xml:base="http://www.cgg.sm/ontology/commissions"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:commissions="http://www.cgg.sm/ontology/commissions#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:base="http://www.cgg.sm/ontology/base#">
+    <owl:Ontology rdf:about="http://www.cgg.sm/ontology/commissions">
+        <owl:imports rdf:resource="http://www.cgg.sm/ontology/base"/>
+        <owl:imports rdf:resource="http://www.cgg.sm/ontology/cgg"/>
+        <owl:imports rdf:resource="http://www.cgg.sm/ontology/textual-products"/>
+        <rdfs:comment xml:lang="it">Ontologia che descrive le Commissioni Consiliari che esaminano i progetti di legge.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ontology describing the Counciliar Commissions that examines the draft laws.</rdfs:comment>
+        <rdfs:label xml:lang="it">Commissioni</rdfs:label>
+        <rdfs:label xml:lang="en">Commissions</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#composedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.cgg.sm/ontology/base#composedBy"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#composedByCommissioners -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.cgg.sm/ontology/commissions#composedByCommissioners">
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#appointedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#appointedBy">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
+        <rdfs:comment xml:lang="it">Nomina della Commissione da parte del Consiglio Grande e Generale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Nomination of the Commission by the Grand and General Council.</rdfs:comment>
+        <rdfs:label xml:lang="en">appointed by</rdfs:label>
+        <rdfs:label xml:lang="it">nominato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#belongsToCommission -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#belongsToCommission">
+        <owl:inverseOf rdf:resource="http://www.cgg.sm/ontology/commissions#composedByCommissioners"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:comment xml:lang="it">Appartenenza dei Commissari alla Commissione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Membership of the Commissioners to the Commission.</rdfs:comment>
+        <rdfs:label xml:lang="it">appartiene alla commissione</rdfs:label>
+        <rdfs:label xml:lang="en">belongs to commission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#composedByCommissioners -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#composedByCommissioners">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#convenes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#convenes">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#President"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#CommissionSession"/>
+        <rdfs:comment xml:lang="en">Convocation of the Commission by the President.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Convocazione della Commissione da parte del Presidente.</rdfs:comment>
+        <rdfs:label xml:lang="en">convenes</rdfs:label>
+        <rdfs:label xml:lang="it">convoca</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#examinesLaws -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#examinesLaws">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#DraftLaw"/>
+        <rdfs:comment xml:lang="it">Esame della Commissione di Progetti di Legge.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Examination of Draft Laws by the Commission.</rdfs:comment>
+        <rdfs:label xml:lang="it">esamina leggi</rdfs:label>
+        <rdfs:label xml:lang="en">examines laws</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#examinesMotions -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#examinesMotions">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#Motion"/>
+        <rdfs:comment xml:lang="it">Esame della Commissione di Mozioni.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Examination of Motions by the Commission.</rdfs:comment>
+        <rdfs:label xml:lang="it">esamina mozioni</rdfs:label>
+        <rdfs:label xml:lang="en">examines motions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#hasRepresentative -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#hasRepresentative">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#President"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#VicePresident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#inChargeFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#inChargeFor">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/cgg#Legislature"/>
+        <rdfs:comment xml:lang="en">Property that describes the duration of a commission linked to a legislature.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che descrive la durata della commissione legata ad una legislatura.</rdfs:comment>
+        <rdfs:label xml:lang="it">in carica per</rdfs:label>
+        <rdfs:label xml:lang="en">in charge for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#isParticipatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#isParticipatedBy">
+        <owl:inverseOf rdf:resource="http://www.cgg.sm/ontology/commissions#participates"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#CommissionSession"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+        <rdfs:comment xml:lang="it">Partecipazione della Sessione da parte dei Commissari.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Participation of the Session by the Commissioner.</rdfs:comment>
+        <rdfs:label xml:lang="en">is participated by</rdfs:label>
+        <rdfs:label xml:lang="it">è partecipata da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#participates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/commissions#participates">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/commissions#CommissionSession"/>
+        <rdfs:comment xml:lang="it">Partecipazione del Commissario alla Sessione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Participation of the Commissioner to the Session.</rdfs:comment>
+        <rdfs:label xml:lang="it">partecipa</rdfs:label>
+        <rdfs:label xml:lang="en">participates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/cgg#Councilor -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/cgg#Councilor"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/cgg#Legislature -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/cgg#Legislature"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#CommissionSession -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#CommissionSession">
+        <rdfs:comment xml:lang="en">A meeting of the Commission.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una riunione della Commissione.</rdfs:comment>
+        <rdfs:label xml:lang="en">Commission Session</rdfs:label>
+        <rdfs:label xml:lang="it">Sessione della Commissione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#Commissioner -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#Commissioner">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+        <rdfs:comment xml:lang="it">Consigliere eletto all&apos;interno della Commissione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Councilor elected within the Commission.</rdfs:comment>
+        <rdfs:label xml:lang="it">Commissario</rdfs:label>
+        <rdfs:label xml:lang="en">Commissioner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#CouncilCommission -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#CouncilCommission">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgg.sm/ontology/commissions#composedByCommissioners"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgg.sm/ontology/commissions#hasRepresentative"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgg.sm/ontology/commissions#President"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgg.sm/ontology/commissions#hasRepresentative"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgg.sm/ontology/commissions#VicePresident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgg.sm/ontology/commissions#inChargeFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgg.sm/ontology/cgg#Legislature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Commissione parlamentare che esamina i progetti di legge.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Parliamentary commission that examines the draft laws.</rdfs:comment>
+        <rdfs:label xml:lang="it">Commissione consiliare</rdfs:label>
+        <rdfs:label xml:lang="en">Council Commission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <owl:disjointWith rdf:resource="http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission"/>
+        <rdfs:comment xml:lang="en">An ordinary counciliar commission required by law.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Commissione consiliare ordinaria prevista dalla legge.</rdfs:comment>
+        <rdfs:label xml:lang="it">Commissione consiliare permanente</rdfs:label>
+        <rdfs:label xml:lang="en">Permanent Council Commission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#President -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#President">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+        <rdfs:comment xml:lang="en">President of the Commission.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Presidente della Commissione.</rdfs:comment>
+        <rdfs:label xml:lang="en">President</rdfs:label>
+        <rdfs:label xml:lang="it">Presidente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/commissions#CouncilCommission"/>
+        <rdfs:comment xml:lang="it">Commissione consiliare richiesta dal Consiglio in base alle necessità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Counciliar commission requested by the Council as needed.</rdfs:comment>
+        <rdfs:label xml:lang="it">Commissione consiliare speciale</rdfs:label>
+        <rdfs:label xml:lang="en">Special Council Commission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/commissions#VicePresident -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/commissions#VicePresident">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/commissions#Commissioner"/>
+        <rdfs:comment xml:lang="en">Vicepresident of the Commission.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Vicepresidente della Commissione.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vicepresident</rdfs:label>
+        <rdfs:label xml:lang="it">Vicepresidente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#DraftLaw -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#DraftLaw"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Motion -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Motion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/commissions#composedByCommissioners">
+        <rdfs:comment xml:lang="en">Composition of the Commission by Commissioners.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Composizione della Commissione da parte di Commissari.</rdfs:comment>
+        <rdfs:label xml:lang="en">composed by commissioners</rdfs:label>
+        <rdfs:label xml:lang="it">composto da commissari</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

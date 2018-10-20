@@ -1,0 +1,158 @@
+<http://www.cgg.sm/ontology/counciliar-works> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.cgg.sm/ontology/counciliar-works> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/textual-products> .
+<http://www.cgg.sm/ontology/counciliar-works> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia che descrive i Lavori Consiliari del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/counciliar-works> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology describing the Counciliar Works of the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/counciliar-works> <http://www.w3.org/2000/01/rdf-schema#label> "Counciliar Works"@en .
+<http://www.cgg.sm/ontology/counciliar-works> <http://www.w3.org/2000/01/rdf-schema#label> "Lavori Consiliari"@it .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/counciliar-works#Convocation
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Session> .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#hasParagraphs
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/counciliar-works#Paragraph> .
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the convocation by one or more paragraphs."@en .
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione della convocazione da parte di uno o pi\u00F9 commi."@it .
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/2000/01/rdf-schema#label> "ha commi"@it .
+<http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> <http://www.w3.org/2000/01/rdf-schema#label> "has paragraphs"@en .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#isConvenedBy
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Session> .
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocation of a counciliar session."@en .
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocazione di una Sessione del Consiglio."@it .
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is convened by"@en .
+<http://www.cgg.sm/ontology/counciliar-works#isConvenedBy> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 convocata da"@it .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/textual-products#Norm> .
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/2000/01/rdf-schema#comment> "Discussion of a norm during the convocation of a Council session."@en .
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/2000/01/rdf-schema#comment> "Discussione di una norma durante una convocazione della Sessione del Consiglio."@it .
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/2000/01/rdf-schema#label> "is discussed during"@en .
+<http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 discusso durante"@it .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#of
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/2000/01/rdf-schema#comment> "Collegamento tra Convocazione e CGG."@it .
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/2000/01/rdf-schema#comment> "Link between convocation and GGC."@en .
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/2000/01/rdf-schema#label> "del"@it .
+<http://www.cgg.sm/ontology/counciliar-works#of> <http://www.w3.org/2000/01/rdf-schema#label> "of"@en .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#topic
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Paragraph> .
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/textual-products#Norm> .
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/2000/01/rdf-schema#comment> "L'argomento del comma, tipicamente una Norma."@it .
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/2000/01/rdf-schema#comment> "The topic of a paragraph, usually a Norm."@en .
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/2000/01/rdf-schema#label> "argomento"@it .
+<http://www.cgg.sm/ontology/counciliar-works#topic> <http://www.w3.org/2000/01/rdf-schema#label> "topic"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/counciliar-works#begins
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Session> .
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/2000/01/rdf-schema#comment> "Data e ora di inizio della sessione. "@it .
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/2000/01/rdf-schema#comment> "Start date and time of the session."@en .
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/2000/01/rdf-schema#label> "Data e ora di inizio"@it .
+<http://www.cgg.sm/ontology/counciliar-works#begins> <http://www.w3.org/2000/01/rdf-schema#label> "Start date and time"@en .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#ends
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/counciliar-works#Session> .
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/2000/01/rdf-schema#comment> "Data e ora di fine della sessione. "@it .
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/2000/01/rdf-schema#comment> "End date and time of the session."@en .
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/2000/01/rdf-schema#label> "Data e ora di fine"@it .
+<http://www.cgg.sm/ontology/counciliar-works#ends> <http://www.w3.org/2000/01/rdf-schema#label> "End date and time"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#Convocation
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/counciliar-works#hasParagraphs> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.cgg.sm/ontology/counciliar-works#Paragraph> .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#Paragraph
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> <http://www.w3.org/2000/01/rdf-schema#comment> "A paragraph of the convocation."@en .
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> <http://www.w3.org/2000/01/rdf-schema#comment> "Un paragrafo (comma) della convocazione."@it .
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> <http://www.w3.org/2000/01/rdf-schema#comment> "Topic discussed during a session." .
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> <http://www.w3.org/2000/01/rdf-schema#label> "Comma"@it .
+<http://www.cgg.sm/ontology/counciliar-works#Paragraph> <http://www.w3.org/2000/01/rdf-schema#label> "Paragraph"@en .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#Session
+<http://www.cgg.sm/ontology/counciliar-works#Session> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/counciliar-works#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/counciliar-works#Convocation> .
+<http://www.cgg.sm/ontology/counciliar-works#Session> <http://www.w3.org/2000/01/rdf-schema#comment> "A single session of the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/counciliar-works#Session> <http://www.w3.org/2000/01/rdf-schema#comment> "Una singola sessione del Consiglio Grande e Generale. "@it .
+<http://www.cgg.sm/ontology/counciliar-works#Session> <http://www.w3.org/2000/01/rdf-schema#label> "Session"@en .
+<http://www.cgg.sm/ontology/counciliar-works#Session> <http://www.w3.org/2000/01/rdf-schema#label> "Sessione consiliare"@it .
+# 
+# http://www.cgg.sm/ontology/counciliar-works#UrgentSession
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/counciliar-works#Session> .
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> <http://www.w3.org/2000/01/rdf-schema#comment> "A urgent session convened if needed."@en .
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Una sessione urgente convocata se necessario."@it .
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> <http://www.w3.org/2000/01/rdf-schema#label> "Sessione urgente"@it .
+<http://www.cgg.sm/ontology/counciliar-works#UrgentSession> <http://www.w3.org/2000/01/rdf-schema#label> "Urgent session"@en .
+# 
+# http://www.cgg.sm/ontology/textual-products#Norm
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocation of the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Convocazione del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#label> "Convocation"@en .
+<http://www.cgg.sm/ontology/counciliar-works#Convocation> <http://www.w3.org/2000/01/rdf-schema#label> "Convocazione"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

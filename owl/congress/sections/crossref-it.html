@@ -1,0 +1,662 @@
+<h2  id="crossreference" class="list">Cross reference for Congress of State classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Congress of State.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#Congress" title="http://www.cgg.sm/ontology/congress#Congress">Congresso di Stato</a>
+      </li>
+      <li>
+         <a href="#Delegation" title="http://www.cgg.sm/ontology/congress#Delegation">Delega</a>
+      </li>
+      <li>
+         <a href="#CongressMeeting"
+            title="http://www.cgg.sm/ontology/congress#CongressMeeting">Riunione del Congresso di Stato</a>
+      </li>
+      <li>
+         <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+      </li>
+      <li>
+         <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+      </li>
+   </ul>
+   <div class="entity" id="Congress">
+      <h3>Congresso di Stato<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Congress</p>
+      <div class="comment">
+         <span class="markdown">Il Congresso di Stato è l'organo esecutivo della Repubblica di San Marino.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/base#Institution">institution</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#composedBySecretaries"
+               title="http://www.cgg.sm/ontology/congress#composedBySecretaries">composto da Segretari di Stato</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 7 <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#composedBySecretaries"
+               title="http://www.cgg.sm/ontology/congress#composedBySecretaries">composto da Segretari di Stato</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">max</span> 9 <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composedBySecretaries"
+               title="http://www.cgg.sm/ontology/congress#composedBySecretaries">composto da Segretari di Stato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#participatesTo"
+               title="http://www.cgg.sm/ontology/congress#participatesTo">partecipa a</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composesCongress"
+               title="http://www.cgg.sm/ontology/congress#composesCongress">compone Congresso</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è disgiuta da</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/regency#Regency">regency</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Delegation">
+      <h3>Delega<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Delegation</p>
+      <div class="comment">
+         <span class="markdown">Affidamento di una o più deleghe alla Segreteria di Stato.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#delegationBelongsTo"
+               title="http://www.cgg.sm/ontology/congress#delegationBelongsTo">appartiene a</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#entrustedOf" title="http://www.cgg.sm/ontology/congress#entrustedOf">è affidata</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CongressMeeting">
+      <h3>Riunione del Congresso di Stato<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#CongressMeeting</p>
+      <div class="comment">
+         <span class="markdown">Riunione settimanale del Congresso di Stato.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#convenedBy" title="http://www.cgg.sm/ontology/congress#convenedBy">convocata da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#date" title="http://www.cgg.sm/ontology/congress#date">data della riunione</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#convenes" title="http://www.cgg.sm/ontology/congress#convenes">convoca</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#participatesTo"
+               title="http://www.cgg.sm/ontology/congress#participatesTo">partecipa a</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Secretary">
+      <h3>Segretario di Stato<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Secretary</p>
+      <div class="comment">
+         <span class="markdown">Componente del Congresso di Stato.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/cgg#Councilor">councilor</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#holds" title="http://www.cgg.sm/ontology/congress#holds">è titolare di</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1 <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#holds" title="http://www.cgg.sm/ontology/congress#holds">è titolare di</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">max</span> 2 <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composesCongress"
+               title="http://www.cgg.sm/ontology/congress#composesCongress">compone Congresso</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#electedBy" title="http://www.cgg.sm/ontology/congress#electedBy">eletto da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#holds" title="http://www.cgg.sm/ontology/congress#holds">è titolare di</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composedBySecretaries"
+               title="http://www.cgg.sm/ontology/congress#composedBySecretaries">composto da Segretari di Stato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#composedBySecretaries"
+               title="http://www.cgg.sm/ontology/congress#composedBySecretaries">composto da Segretari di Stato</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#electsSecretaries"
+               title="http://www.cgg.sm/ontology/congress#electsSecretaries">elegge</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isHeldBy" title="http://www.cgg.sm/ontology/congress#isHeldBy">è guidata da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Secretariat">
+      <h3>Segreteria di Stato<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#Secretariat</p>
+      <div class="comment">
+         <span class="markdown">Un ministero guidato da un Segretario di Stato.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/base#Institution">institution</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#entrustedOf" title="http://www.cgg.sm/ontology/congress#entrustedOf">è affidata</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 1 <a href="#Delegation" title="http://www.cgg.sm/ontology/congress#Delegation">Delega</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#contact" title="http://www.cgg.sm/ontology/congress#contact">contatto</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#entrustedOf" title="http://www.cgg.sm/ontology/congress#entrustedOf">è affidata</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isHeldBy" title="http://www.cgg.sm/ontology/congress#isHeldBy">è guidata da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#delegationBelongsTo"
+               title="http://www.cgg.sm/ontology/congress#delegationBelongsTo">appartiene a</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#holds" title="http://www.cgg.sm/ontology/congress#holds">è titolare di</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#delegationBelongsTo"
+            title="http://www.cgg.sm/ontology/congress#delegationBelongsTo">appartiene a</a>
+      </li>
+      <li>
+         <a href="#composesCongress"
+            title="http://www.cgg.sm/ontology/congress#composesCongress">compone Congresso</a>
+      </li>
+      <li>
+         <a href="#composedBySecretaries"
+            title="http://www.cgg.sm/ontology/congress#composedBySecretaries">
+            <span>composto da Segretari di Stato</span>
+         </a>
+      </li>
+      <li>
+         <a href="#contact" title="http://www.cgg.sm/ontology/congress#contact">contatto</a>
+      </li>
+      <li>
+         <a href="#convenes" title="http://www.cgg.sm/ontology/congress#convenes">convoca</a>
+      </li>
+      <li>
+         <a href="#convenedBy" title="http://www.cgg.sm/ontology/congress#convenedBy">convocata da</a>
+      </li>
+      <li>
+         <a href="#electsSecretaries"
+            title="http://www.cgg.sm/ontology/congress#electsSecretaries">elegge</a>
+      </li>
+      <li>
+         <a href="#electedBy" title="http://www.cgg.sm/ontology/congress#electedBy">eletto da</a>
+      </li>
+      <li>
+         <a href="#participatesTo"
+            title="http://www.cgg.sm/ontology/congress#participatesTo">partecipa a</a>
+      </li>
+      <li>
+         <a href="#entrustedOf" title="http://www.cgg.sm/ontology/congress#entrustedOf">è affidata</a>
+      </li>
+      <li>
+         <a href="#isHeldBy" title="http://www.cgg.sm/ontology/congress#isHeldBy">è guidata da</a>
+      </li>
+      <li>
+         <a href="#holds" title="http://www.cgg.sm/ontology/congress#holds">è titolare di</a>
+      </li>
+   </ul>
+   <div class="entity" id="delegationBelongsTo">
+      <h3>appartiene a<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#delegationBelongsTo</p>
+      <div class="comment">
+         <span class="markdown">Appartenenza di una o più deleghe ad una Segreteria di Stato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come super-propietà</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Delegation" title="http://www.cgg.sm/ontology/congress#Delegation">Delega</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#entrustedOf" title="http://www.cgg.sm/ontology/congress#entrustedOf">è affidata</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="composesCongress">
+      <h3>compone Congresso<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#composesCongress</p>
+      <div class="comment">
+         <span class="markdown">Composizione del Congresso di Stato da parte  del Segretario.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Congress" title="http://www.cgg.sm/ontology/congress#Congress">Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composedBySecretaries"
+                  title="http://www.cgg.sm/ontology/congress#composedBySecretaries">composto da Segretari di Stato</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="composedBySecretaries">
+      <h3>composto da Segretari di Stato<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#composedBySecretaries</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Congress" title="http://www.cgg.sm/ontology/congress#Congress">Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composesCongress"
+                  title="http://www.cgg.sm/ontology/congress#composesCongress">compone Congresso</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#composedBySecretaries">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contact">
+      <h3>contatto<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#contact</p>
+      <div class="comment">
+         <span class="markdown">Informazioni di contatto della Segreteria di Stato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/base#Contact">contact</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="convenes">
+      <h3>convoca<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#convenes</p>
+      <div class="comment">
+         <span class="markdown">Convocazione della Riunione del Congresso di Stato da parte della Reggenza.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/regency#Regency">regency</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CongressMeeting"
+                  title="http://www.cgg.sm/ontology/congress#CongressMeeting">Riunione del Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#convenedBy" title="http://www.cgg.sm/ontology/congress#convenedBy">convocata da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="convenedBy">
+      <h3>convocata da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#convenedBy</p>
+      <div class="comment">
+         <span class="markdown">Convocazione della Riunione del Congresso di Stato da parte della Reggenza.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CongressMeeting"
+                  title="http://www.cgg.sm/ontology/congress#CongressMeeting">Riunione del Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/regency#Regency">regency</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#convenes" title="http://www.cgg.sm/ontology/congress#convenes">convoca</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="electsSecretaries">
+      <h3>elegge<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#electsSecretaries</p>
+      <div class="comment">
+         <span class="markdown">Elezione del Segretario di Stato da parte del Consiglio Grande e Generale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">grand and general council</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#electedBy" title="http://www.cgg.sm/ontology/congress#electedBy">eletto da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="electedBy">
+      <h3>eletto da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#electedBy</p>
+      <div class="comment">
+         <span class="markdown">Elezione del Segretario di Stato da parte del Consiglio Grande e Generale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">grand and general council</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#electsSecretaries"
+                  title="http://www.cgg.sm/ontology/congress#electsSecretaries">elegge</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="participatesTo">
+      <h3>partecipa a<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#participatesTo</p>
+      <div class="comment">
+         <span class="markdown">Partecipazione del Congresso alle loro Riunioni.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Congress" title="http://www.cgg.sm/ontology/congress#Congress">Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CongressMeeting"
+                  title="http://www.cgg.sm/ontology/congress#CongressMeeting">Riunione del Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="entrustedOf">
+      <h3>è affidata<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#entrustedOf</p>
+      <div class="comment">
+         <span class="markdown">Affidamento di una o più deleghe alla Segreteria di Stato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Delegation" title="http://www.cgg.sm/ontology/congress#Delegation">Delega</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#delegationBelongsTo"
+                  title="http://www.cgg.sm/ontology/congress#delegationBelongsTo">appartiene a</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isHeldBy">
+      <h3>è guidata da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#isHeldBy</p>
+      <div class="comment">
+         <span class="markdown">Titolarità della Segreteria di Stato da parte del Segretario.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#holds" title="http://www.cgg.sm/ontology/congress#holds">è titolare di</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="holds">
+      <h3>è titolare di<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#holds</p>
+      <div class="comment">
+         <span class="markdown">Titolarità della Segreteria di Stato da parte del Segretario.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Secretary" title="http://www.cgg.sm/ontology/congress#Secretary">Segretario di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Secretariat" title="http://www.cgg.sm/ontology/congress#Secretariat">Segreteria di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#isHeldBy" title="http://www.cgg.sm/ontology/congress#isHeldBy">è guidata da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#date" title="http://www.cgg.sm/ontology/congress#date">data della riunione</a>
+      </li>
+   </ul>
+   <div class="entity" id="date">
+      <h3>data della riunione<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/congress#date</p>
+      <div class="comment">
+         <span class="markdown">Data della Riunione del Congresso di Stato.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CongressMeeting"
+                  title="http://www.cgg.sm/ontology/congress#CongressMeeting">Riunione del Congresso di Stato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

@@ -1,0 +1,168 @@
+<http://www.cgg.sm/ontology/regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.cgg.sm/ontology/regency> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/base> .
+<http://www.cgg.sm/ontology/regency> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia che descrive la Reggenza, i Capi di Stato della Repubblica."@it .
+<http://www.cgg.sm/ontology/regency> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology describing the Regency, the Heads of State of the Republic."@en .
+<http://www.cgg.sm/ontology/regency> <http://www.w3.org/2000/01/rdf-schema#label> "Regency"@en .
+<http://www.cgg.sm/ontology/regency> <http://www.w3.org/2000/01/rdf-schema#label> "Reggenza"@it .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/regency#composedByRegents
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#composedBy> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#CaptainRegent> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/regency#canEmit
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/regency#isEmittedBy> .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/textual-products#RegentialDecree> .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#comment> "Facolt\u00E0 della Reggenza di emettere decreti speciali."@it .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#comment> "Faculty of the Regency to issue special decrees."@en .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#label> "can emit"@en .
+<http://www.cgg.sm/ontology/regency#canEmit> <http://www.w3.org/2000/01/rdf-schema#label> "pu\u00F2 emettere"@it .
+# 
+# http://www.cgg.sm/ontology/regency#composedByRegents
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/regency#composes> .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+# 
+# http://www.cgg.sm/ontology/regency#composes
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#CaptainRegent> .
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the Regency by the two Captains Regent."@en .
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione della Reggenza da parte dei due Capitani Reggenti."@it .
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/2000/01/rdf-schema#label> "compongono"@it .
+<http://www.cgg.sm/ontology/regency#composes> <http://www.w3.org/2000/01/rdf-schema#label> "composes"@en .
+# 
+# http://www.cgg.sm/ontology/regency#elects
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/regency#regencyIsElectedBy> .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#comment> "Election of the Regency by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#comment> "Elezione della Reggenza da parte del Consiglio Grande e Generale. "@it .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#label> "elects"@en .
+<http://www.cgg.sm/ontology/regency#elects> <http://www.w3.org/2000/01/rdf-schema#label> "elegge"@it .
+# 
+# http://www.cgg.sm/ontology/regency#isEmittedBy
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/textual-products#RegentialDecree> .
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Emissione di decreti speciali da parte della Reggenza."@it .
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Issuing of special decrees by the Regency."@en .
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is emitted by"@en .
+<http://www.cgg.sm/ontology/regency#isEmittedBy> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 emesso da"@it .
+# 
+# http://www.cgg.sm/ontology/regency#regencyIsElectedBy
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Election of the Regency by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Elezione della Reggenza da parte del Consiglio Grande e Generale. "@it .
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "elected by"@en .
+<http://www.cgg.sm/ontology/regency#regencyIsElectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "eletta da"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/regency#endDate
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Data di fine del semestre reggenziale."@it .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "End date for the regential semester."@en .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di fine"@it .
+<http://www.cgg.sm/ontology/regency#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+# 
+# http://www.cgg.sm/ontology/regency#startDate
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Data di inizio del semestre reggenziale."@it .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Start date for the regential semester."@en .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di inizio"@it .
+<http://www.cgg.sm/ontology/regency#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/regency#CaptainRegent
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#comment> "A Councilor elected as Head of State for six months."@en .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Consigliere eletto come Capo di Stato per sei mesi."@it .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#label> "Capitano Reggente"@it .
+<http://www.cgg.sm/ontology/regency#CaptainRegent> <http://www.w3.org/2000/01/rdf-schema#label> "Captain Regent"@en .
+# 
+# http://www.cgg.sm/ontology/regency#Regency
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/regency#composedByRegents> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/regency#CaptainRegent> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#comment> "I Capi di Stato della Repubblica di San Marino."@it .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#comment> "The Heads of State of the Republic of San Marino."@en .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#label> "Regency"@en .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/2000/01/rdf-schema#label> "Reggenza"@it .
+# 
+# http://www.cgg.sm/ontology/textual-products#RegentialDecree
+<http://www.cgg.sm/ontology/textual-products#RegentialDecree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the Regency by the two Captains Regent."@en .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione della Reggenza da parte dei due Capitani Reggenti."@it .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#label> "composed by Regents"@en .
+<http://www.cgg.sm/ontology/regency#composedByRegents> <http://www.w3.org/2000/01/rdf-schema#label> "composto dai Reggenti"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

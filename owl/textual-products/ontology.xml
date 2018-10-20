@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cgg.sm/ontology/textual-products#"
+     xml:base="http://www.cgg.sm/ontology/textual-products"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cgg.sm/ontology/textual-products">
+        <owl:imports rdf:resource="http://www.cgg.sm/ontology/regency"/>
+        <rdfs:comment xml:lang="en">Classes and properties about the textual products of the GGC, like norms or documents.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classi e proprietà relative ai prodotti testuali del CGG, come norme e documenti.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prodotti testuali</rdfs:label>
+        <rdfs:label xml:lang="en">Textual Products</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#presentedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/textual-products#presentedTo">
+        <owl:inverseOf rdf:resource="http://www.cgg.sm/ontology/textual-products#receives"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/textual-products#InstanceOfArengo"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/regency#Regency"/>
+        <rdfs:comment xml:lang="en">Presentation of the Instance of Arengo to the Regency.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Presentazione dell&apos;Istanza d&apos;Arengo alla Reggenza.</rdfs:comment>
+        <rdfs:label xml:lang="it">presentato a</rdfs:label>
+        <rdfs:label xml:lang="en">presented to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#receives -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/textual-products#receives">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/regency#Regency"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/textual-products#InstanceOfArengo"/>
+        <rdfs:comment xml:lang="en">Reception of the Instance of Arengo by the Regency.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ricezione dell&apos;Istanza d&apos;Arengo dalla Reggenza.</rdfs:comment>
+        <rdfs:label xml:lang="en">receives</rdfs:label>
+        <rdfs:label xml:lang="it">riceve</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#LegalResource -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#LegalResource"/>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#ResourceType -->
+
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#ResourceType"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/regency#Regency -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/regency#Regency"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Agenda -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Agenda">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="en">Agenda</rdfs:label>
+        <rdfs:label xml:lang="it">Ordine del Giorno</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Communication -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="en">Communication</rdfs:label>
+        <rdfs:label xml:lang="it">Comunicazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Law"/>
+        <rdfs:label xml:lang="en">Constitutional Law</rdfs:label>
+        <rdfs:label xml:lang="it">Legge Costituzionale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Law"/>
+        <rdfs:label xml:lang="en">Constitutional Review Law</rdfs:label>
+        <rdfs:label xml:lang="it">Legge di Revisione Costituzionale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#CounciliarDecree -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#CounciliarDecree">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Decree"/>
+        <rdfs:label xml:lang="en">Counciliar Decree</rdfs:label>
+        <rdfs:label xml:lang="it">Decreto Consiliare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Decree -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Decree">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="en">Decree</rdfs:label>
+        <rdfs:label xml:lang="it">Decreto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Decree-Law -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Decree-Law">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Decree"/>
+        <rdfs:label xml:lang="en">Decree-Law</rdfs:label>
+        <rdfs:label xml:lang="it">Decreto-Legge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#DecreesRatification -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#DecreesRatification">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="en">Decrees Ratification</rdfs:label>
+        <rdfs:label xml:lang="it">Ratifica Decreti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#DelegatedDecree -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#DelegatedDecree">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Decree"/>
+        <rdfs:label xml:lang="it">Decreto Delegato</rdfs:label>
+        <rdfs:label xml:lang="en">Delegated Decree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Document -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Document">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#TextualProduct"/>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <rdfs:label xml:lang="it">Documento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#DraftLaw -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#DraftLaw">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="en">Draft Law</rdfs:label>
+        <rdfs:label xml:lang="it">Progetto di legge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#ErrataCorrige -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#ErrataCorrige">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Errata Corrige</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="it">Accordi di politica estera</rdfs:label>
+        <rdfs:label xml:lang="en">Foreign Affairs Agreement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#InstanceOfArengo -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#InstanceOfArengo">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="en">Instance of Arengo</rdfs:label>
+        <rdfs:label xml:lang="it">Istanza d&apos;Arengo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="it">Interpellanze e interrogazioni</rdfs:label>
+        <rdfs:label xml:lang="en">Interpellations and Interrogations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Law -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Law">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="en">Law</rdfs:label>
+        <rdfs:label xml:lang="it">Legge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Motion -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Motion">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="en">Motion</rdfs:label>
+        <rdfs:label xml:lang="it">Mozione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Nomination -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Nomination">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="it">Nomina</rdfs:label>
+        <rdfs:label xml:lang="en">Nomination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Norm -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Norm">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#TextualProduct"/>
+        <rdfs:label xml:lang="en">Norm</rdfs:label>
+        <rdfs:label xml:lang="it">Norma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Notification -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Notification">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="it">Notifica</rdfs:label>
+        <rdfs:label xml:lang="en">Notification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Order -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Order">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="en">Order</rdfs:label>
+        <rdfs:label xml:lang="it">Ordine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#QualifiedLaw -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#QualifiedLaw">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Law"/>
+        <rdfs:label xml:lang="it">Legge Qualificata</rdfs:label>
+        <rdfs:label xml:lang="en">Qualified Law</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="en">References and Debates</rdfs:label>
+        <rdfs:label xml:lang="it">Riferimenti e Dibattiti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#RegentialDecree -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#RegentialDecree">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Decree"/>
+        <rdfs:label xml:lang="it">Decreto Reggenziale</rdfs:label>
+        <rdfs:label xml:lang="en">Regential Decree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Regulation -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Regulation">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="it">Regolamento</rdfs:label>
+        <rdfs:label xml:lang="en">Regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Resignation -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Resignation">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="it">Dimissioni</rdfs:label>
+        <rdfs:label xml:lang="en">Resignation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Statute -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Statute">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="en">Statute</rdfs:label>
+        <rdfs:label xml:lang="it">Statuto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#TextualProduct -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#TextualProduct">
+        <rdfs:label xml:lang="it">Prodotto testuale</rdfs:label>
+        <rdfs:label xml:lang="en">Textual Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="it">Accordi PA-OOSS e Inquadramenti</rdfs:label>
+        <rdfs:label xml:lang="en">Trade Union Agreement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#VariousReport -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#VariousReport">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/textual-products#Document"/>
+        <rdfs:label xml:lang="it">Relazioni varie</rdfs:label>
+        <rdfs:label xml:lang="en">Various Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/textual-products#Verbal -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/textual-products#Verbal">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/eli/ontology#ResourceType"/>
+        <rdfs:label xml:lang="en">Verbal</rdfs:label>
+        <rdfs:label xml:lang="it">Verbale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Agenda"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Communication"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#DecreesRatification"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ForeignAffairsAgreement"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#InstanceOfArengo"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#InterpellationsAndInterrogations"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Motion"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Nomination"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Norm"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ReferencesAndDebates"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Resignation"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#TradeUnionAgreement"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#VariousReport"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#CounciliarDecree"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Decree"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Decree-Law"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#DelegatedDecree"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#QualifiedLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#RegentialDecree"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ConstitutionalLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ConstitutionalReviewLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#CounciliarDecree"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Decree-Law"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#DelegatedDecree"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#DraftLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#QualifiedLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#RegentialDecree"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Decree"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#DraftLaw"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#ErrataCorrige"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Law"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Notification"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Order"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Regulation"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Statute"/>
+            <rdf:Description rdf:about="http://www.cgg.sm/ontology/textual-products#Verbal"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,169 @@
+<http://www.cgg.sm/ontology/international-delegations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.cgg.sm/ontology/international-delegations> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/base> .
+<http://www.cgg.sm/ontology/international-delegations> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia che descrive le Delegazioni del Consiglio Grande e Generale attive presso gli Organismi Internazionali."@en .
+<http://www.cgg.sm/ontology/international-delegations> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology describing the Delegations of the Grand and General Council at the International Organizations."@en .
+<http://www.cgg.sm/ontology/international-delegations> <http://www.w3.org/2000/01/rdf-schema#label> "Counciliar Delegations at International Organizations"@en .
+<http://www.cgg.sm/ontology/international-delegations> <http://www.w3.org/2000/01/rdf-schema#label> "Delegazioni Consiliari presso gli Organismi Internazionali"@it .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/base#functions
+<http://www.cgg.sm/ontology/base#functions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/international-delegations#composedByDelegates
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#composedBy> .
+# 
+# http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#functions> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/international-delegations#composedByDelegates
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/international-delegations#composesDelegation> .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/international-delegations#Delegated> .
+# 
+# http://www.cgg.sm/ontology/international-delegations#composesDelegation
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#Delegated> .
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the delegation by delegated councilors."@en .
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione della delegazione da parte di consiglieri delegati. "@it .
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/2000/01/rdf-schema#label> "compone la delegazione"@it .
+<http://www.cgg.sm/ontology/international-delegations#composesDelegation> <http://www.w3.org/2000/01/rdf-schema#label> "composes delegation"@en .
+# 
+# http://www.cgg.sm/ontology/international-delegations#hasHead
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/international-delegations#isHeadOf> .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Presence of the head of delegation."@en .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Presenza del capodelegazione."@it .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2000/01/rdf-schema#label> "ha capodelegazione"@it .
+<http://www.cgg.sm/ontology/international-delegations#hasHead> <http://www.w3.org/2000/01/rdf-schema#label> "has head of delegation"@en .
+# 
+# http://www.cgg.sm/ontology/international-delegations#isHeadOf
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> .
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Presence of the head of delegation."@en .
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Presenza del capodelegazione."@it .
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#label> "is head of delegation"@en .
+<http://www.cgg.sm/ontology/international-delegations#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 capo della delegazione"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/international-delegations#annualReport
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/2000/01/rdf-schema#comment> "La relazione annuale relativa alle attivit\u00E0 svolte dalla delegazione. "@it .
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/2000/01/rdf-schema#comment> "The annual report about the activities of the delegation."@en .
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/2000/01/rdf-schema#label> "annual report"@en .
+<http://www.cgg.sm/ontology/international-delegations#annualReport> <http://www.w3.org/2000/01/rdf-schema#label> "relazione annuale"@it .
+# 
+# http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.cgg.sm/ontology/international-delegations#organizationName
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> .
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the international organization."@en .
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nome dell'organizzazione internazionale. "@it .
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/2000/01/rdf-schema#label> "nome dell'organizzazione"@it .
+<http://www.cgg.sm/ontology/international-delegations#organizationName> <http://www.w3.org/2000/01/rdf-schema#label> "organization name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/international-delegations#composedByDelegates> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/international-delegations#Delegated> .
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/international-delegations#hasHead> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> .
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/2000/01/rdf-schema#comment> "Counciliar delegation elected at the international organizations in order to represent the Republic."@en .
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/2000/01/rdf-schema#comment> "Delegazioni consiliari elette presso le organizzazioni internazionali al fine di rappresentare la Repubblica."@it .
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/2000/01/rdf-schema#label> "Counciliar Delegation at International Organization"@en .
+<http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations> <http://www.w3.org/2000/01/rdf-schema#label> "Delegazione Consiliare presso Organismo Internazionale"@it .
+# 
+# http://www.cgg.sm/ontology/international-delegations#Delegated
+<http://www.cgg.sm/ontology/international-delegations#Delegated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/international-delegations#Delegated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/international-delegations#Delegated> <http://www.w3.org/2000/01/rdf-schema#comment> "A Councilor that takes part to the delegation for an International Organization."@en .
+<http://www.cgg.sm/ontology/international-delegations#Delegated> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Consigliere che prende parte alla delegazione per un'Organizzazione Internazionale. "@it .
+<http://www.cgg.sm/ontology/international-delegations#Delegated> <http://www.w3.org/2000/01/rdf-schema#label> "Delegated"@en .
+<http://www.cgg.sm/ontology/international-delegations#Delegated> <http://www.w3.org/2000/01/rdf-schema#label> "Delegato"@it .
+# 
+# http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation
+<http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/international-delegations#Delegated> .
+<http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Il presidente della delegazione. "@it .
+<http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> <http://www.w3.org/2000/01/rdf-schema#comment> "The president of the delegation."@en .
+<http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> <http://www.w3.org/2000/01/rdf-schema#label> "Capo delegazione"@it .
+<http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation> <http://www.w3.org/2000/01/rdf-schema#label> "Head of Delegation"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the delegation by delegated councilors."@en .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione della delegazione da parte di consiglieri delegati. "@it .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#label> "composed by delegates"@en .
+<http://www.cgg.sm/ontology/international-delegations#composedByDelegates> <http://www.w3.org/2000/01/rdf-schema#label> "composta da delegati"@it .
+# 
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of functions assigned to the delegation."@en .
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#comment> "Una lista di funzioni assegnate alla delegazione. "@it .
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#label> "functions of the delegation"@en .
+<http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation> <http://www.w3.org/2000/01/rdf-schema#label> "funzioni della delegazione"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

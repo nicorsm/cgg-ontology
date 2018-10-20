@@ -1,0 +1,127 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/council-of-12", "http://www.cgg.sm/ontology/base", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "http://www.cgg.sm/ontology/council-of-12",
+    "labels" : {
+      "en" : "Council of Twelves",
+      "it" : "Consiglio dei Dodici"
+    },
+    "comments" : {
+      "en" : "Ontology describing the Council of Twelves, the administrative power of the Republic.",
+      "it" : "Ontologia che descrive il Consiglio dei Dodici, il potere amministrativo della Repubblica."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 3,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/council-of-12#CouncilOfTwelves",
+    "baseIri" : "http://www.cgg.sm/ontology/council-of-12",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CouncilOfTwelves",
+      "en" : "Council of Twelves",
+      "it" : "Consiglio dei XII"
+    },
+    "comment" : {
+      "en" : "Institutional body of the Republic of San Marino to which administrative functions are assigned.",
+      "it" : "Organo istituzionale della Repubblica di San Marino cui sono attribuite funzioni amministrative. "
+    },
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Institution",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Institution"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/council-of-12#composedByCouncilors",
+    "baseIri" : "http://www.cgg.sm/ontology/council-of-12",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "composedByCouncilors",
+      "en" : "composed by Councilors",
+      "it" : "composto da Consiglieri"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Composition of the Council of Twelves by Councilors.",
+      "it" : "Composizione del Consiglio dei Dodici da parte di Consiglieri."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/council-of-12#functionsOfCouncilOfTwelves",
+    "baseIri" : "http://www.cgg.sm/ontology/council-of-12",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "functionsOfCouncilOfTwelves",
+      "en" : "functions of the Council of Twelves",
+      "it" : "funzioni del Consiglio dei Dodici"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Functions assigned to the Council of Twelves.",
+      "it" : "Funzioni assegnate al Consiglio dei Dodici."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  } ]
+}

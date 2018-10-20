@@ -1,0 +1,631 @@
+<h2  id="crossreference" class="list">Cross reference for Commissions classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Commissions.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#Commissioner"
+            title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+      </li>
+      <li>
+         <a href="#CouncilCommission"
+            title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+      </li>
+      <li>
+         <a href="#PermanentCouncilCommission"
+            title="http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission">Commissione consiliare permanente</a>
+      </li>
+      <li>
+         <a href="#SpecialCouncilCommission"
+            title="http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission">Commissione consiliare speciale</a>
+      </li>
+      <li>
+         <a href="#President" title="http://www.cgg.sm/ontology/commissions#President">Presidente</a>
+      </li>
+      <li>
+         <a href="#CommissionSession"
+            title="http://www.cgg.sm/ontology/commissions#CommissionSession">Sessione della Commissione</a>
+      </li>
+      <li>
+         <a href="#VicePresident"
+            title="http://www.cgg.sm/ontology/commissions#VicePresident">Vicepresidente</a>
+      </li>
+   </ul>
+   <div class="entity" id="Commissioner">
+      <h3>Commissario<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#Commissioner</p>
+      <div class="comment">
+         <span class="markdown">Consigliere eletto all'interno della Commissione.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/cgg#Councilor">councilor</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>ha come sotto-classi</dt>
+         <dd>
+            <a href="#President" title="http://www.cgg.sm/ontology/commissions#President">Presidente</a>
+            <sup class="type-c" title="classe">c</sup>, <a href="#VicePresident"
+               title="http://www.cgg.sm/ontology/commissions#VicePresident">Vicepresidente</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#belongsToCommission"
+               title="http://www.cgg.sm/ontology/commissions#belongsToCommission">appartiene alla commissione</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#participates"
+               title="http://www.cgg.sm/ontology/commissions#participates">partecipa</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composedByCommissioners"
+               title="http://www.cgg.sm/ontology/commissions#composedByCommissioners">composto da commissari</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#composedByCommissioners"
+               title="http://www.cgg.sm/ontology/commissions#composedByCommissioners">composto da commissari</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isParticipatedBy"
+               title="http://www.cgg.sm/ontology/commissions#isParticipatedBy">è partecipata da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CouncilCommission">
+      <h3>Commissione consiliare<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#CouncilCommission</p>
+      <div class="comment">
+         <span class="markdown">Commissione parlamentare che esamina i progetti di legge.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#composedByCommissioners"
+               title="http://www.cgg.sm/ontology/commissions#composedByCommissioners">composto da commissari</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 15 <a href="#Commissioner"
+               title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasRepresentative"
+               title="http://www.cgg.sm/ontology/commissions#hasRepresentative">has representative</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#President" title="http://www.cgg.sm/ontology/commissions#President">Presidente</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasRepresentative"
+               title="http://www.cgg.sm/ontology/commissions#hasRepresentative">has representative</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#VicePresident"
+               title="http://www.cgg.sm/ontology/commissions#VicePresident">Vicepresidente</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#inChargeFor"
+               title="http://www.cgg.sm/ontology/commissions#inChargeFor">in carica per</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <span class="dotted" title="http://www.cgg.sm/ontology/cgg#Legislature">legislature</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>ha come sotto-classi</dt>
+         <dd>
+            <a href="#PermanentCouncilCommission"
+               title="http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission">Commissione consiliare permanente</a>
+            <sup class="type-c" title="classe">c</sup>, <a href="#SpecialCouncilCommission"
+               title="http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission">Commissione consiliare speciale</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composedByCommissioners"
+               title="http://www.cgg.sm/ontology/commissions#composedByCommissioners">composto da commissari</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#examinesLaws"
+               title="http://www.cgg.sm/ontology/commissions#examinesLaws">esamina leggi</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#examinesMotions"
+               title="http://www.cgg.sm/ontology/commissions#examinesMotions">esamina mozioni</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRepresentative"
+               title="http://www.cgg.sm/ontology/commissions#hasRepresentative">has representative</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inChargeFor"
+               title="http://www.cgg.sm/ontology/commissions#inChargeFor">in carica per</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#appointedBy"
+               title="http://www.cgg.sm/ontology/commissions#appointedBy">nominato da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#belongsToCommission"
+               title="http://www.cgg.sm/ontology/commissions#belongsToCommission">appartiene alla commissione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PermanentCouncilCommission">
+      <h3>Commissione consiliare permanente<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission</p>
+      <div class="comment">
+         <span class="markdown">Commissione consiliare ordinaria prevista dalla legge.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#CouncilCommission"
+               title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è disgiuta da</dt>
+         <dd>
+            <a href="#SpecialCouncilCommission"
+               title="http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission">Commissione consiliare speciale</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpecialCouncilCommission">
+      <h3>Commissione consiliare speciale<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission</p>
+      <div class="comment">
+         <span class="markdown">Commissione consiliare richiesta dal Consiglio in base alle necessità.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#CouncilCommission"
+               title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è disgiuta da</dt>
+         <dd>
+            <a href="#PermanentCouncilCommission"
+               title="http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission">Commissione consiliare permanente</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="President">
+      <h3>Presidente<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#President</p>
+      <div class="comment">
+         <span class="markdown">Presidente della Commissione.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#Commissioner"
+               title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#convenes" title="http://www.cgg.sm/ontology/commissions#convenes">convoca</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#hasRepresentative"
+               title="http://www.cgg.sm/ontology/commissions#hasRepresentative">has representative</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CommissionSession">
+      <h3>Sessione della Commissione<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#CommissionSession</p>
+      <div class="comment">
+         <span class="markdown">Una riunione della Commissione.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#isParticipatedBy"
+               title="http://www.cgg.sm/ontology/commissions#isParticipatedBy">è partecipata da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#convenes" title="http://www.cgg.sm/ontology/commissions#convenes">convoca</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#participates"
+               title="http://www.cgg.sm/ontology/commissions#participates">partecipa</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VicePresident">
+      <h3>Vicepresidente<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#VicePresident</p>
+      <div class="comment">
+         <span class="markdown">Vicepresidente della Commissione.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#Commissioner"
+               title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#hasRepresentative"
+               title="http://www.cgg.sm/ontology/commissions#hasRepresentative">has representative</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#belongsToCommission"
+            title="http://www.cgg.sm/ontology/commissions#belongsToCommission">appartiene alla commissione</a>
+      </li>
+      <li>
+         <a href="#composedByCommissioners"
+            title="http://www.cgg.sm/ontology/commissions#composedByCommissioners">
+            <span>composto da commissari</span>
+         </a>
+      </li>
+      <li>
+         <a href="#convenes" title="http://www.cgg.sm/ontology/commissions#convenes">convoca</a>
+      </li>
+      <li>
+         <a href="#examinesLaws"
+            title="http://www.cgg.sm/ontology/commissions#examinesLaws">esamina leggi</a>
+      </li>
+      <li>
+         <a href="#examinesMotions"
+            title="http://www.cgg.sm/ontology/commissions#examinesMotions">esamina mozioni</a>
+      </li>
+      <li>
+         <a href="#hasRepresentative"
+            title="http://www.cgg.sm/ontology/commissions#hasRepresentative">
+            <span>has representative</span>
+         </a>
+      </li>
+      <li>
+         <a href="#inChargeFor"
+            title="http://www.cgg.sm/ontology/commissions#inChargeFor">in carica per</a>
+      </li>
+      <li>
+         <a href="#appointedBy"
+            title="http://www.cgg.sm/ontology/commissions#appointedBy">nominato da</a>
+      </li>
+      <li>
+         <a href="#participates"
+            title="http://www.cgg.sm/ontology/commissions#participates">partecipa</a>
+      </li>
+      <li>
+         <a href="#isParticipatedBy"
+            title="http://www.cgg.sm/ontology/commissions#isParticipatedBy">è partecipata da</a>
+      </li>
+   </ul>
+   <div class="entity" id="belongsToCommission">
+      <h3>appartiene alla commissione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#belongsToCommission</p>
+      <div class="comment">
+         <span class="markdown">Appartenenza dei Commissari alla Commissione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Commissioner"
+                  title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composedByCommissioners"
+                  title="http://www.cgg.sm/ontology/commissions#composedByCommissioners">composto da commissari</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="composedByCommissioners">
+      <h3>composto da commissari<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#composedByCommissioners</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Commissioner"
+                  title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#belongsToCommission"
+                  title="http://www.cgg.sm/ontology/commissions#belongsToCommission">appartiene alla commissione</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#composedByCommissioners">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="convenes">
+      <h3>convoca<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#convenes</p>
+      <div class="comment">
+         <span class="markdown">Convocazione della Commissione da parte del Presidente.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#President" title="http://www.cgg.sm/ontology/commissions#President">Presidente</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CommissionSession"
+                  title="http://www.cgg.sm/ontology/commissions#CommissionSession">Sessione della Commissione</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="examinesLaws">
+      <h3>esamina leggi<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#examinesLaws</p>
+      <div class="comment">
+         <span class="markdown">Esame della Commissione di Progetti di Legge.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/textual-products#DraftLaw">draft law</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="examinesMotions">
+      <h3>esamina mozioni<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#examinesMotions</p>
+      <div class="comment">
+         <span class="markdown">Esame della Commissione di Mozioni.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/textual-products#Motion">motion</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRepresentative">
+      <h3>has representative<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#hasRepresentative</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#President" title="http://www.cgg.sm/ontology/commissions#President">Presidente</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dd>
+               <a href="#VicePresident"
+                  title="http://www.cgg.sm/ontology/commissions#VicePresident">Vicepresidente</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inChargeFor">
+      <h3>in carica per<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#inChargeFor</p>
+      <div class="comment">
+         <span class="markdown">Proprietà che descrive la durata della commissione legata ad una legislatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/cgg#Legislature">legislature</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="appointedBy">
+      <h3>nominato da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#appointedBy</p>
+      <div class="comment">
+         <span class="markdown">Nomina della Commissione da parte del Consiglio Grande e Generale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CouncilCommission"
+                  title="http://www.cgg.sm/ontology/commissions#CouncilCommission">Commissione consiliare</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">grand and general council</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="participates">
+      <h3>partecipa<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#participates</p>
+      <div class="comment">
+         <span class="markdown">Partecipazione del Commissario alla Sessione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Commissioner"
+                  title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CommissionSession"
+                  title="http://www.cgg.sm/ontology/commissions#CommissionSession">Sessione della Commissione</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#isParticipatedBy"
+                  title="http://www.cgg.sm/ontology/commissions#isParticipatedBy">è partecipata da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isParticipatedBy">
+      <h3>è partecipata da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/commissions#isParticipatedBy</p>
+      <div class="comment">
+         <span class="markdown">Partecipazione della Sessione da parte dei Commissari.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CommissionSession"
+                  title="http://www.cgg.sm/ontology/commissions#CommissionSession">Sessione della Commissione</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Commissioner"
+                  title="http://www.cgg.sm/ontology/commissions#Commissioner">Commissario</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#participates"
+                  title="http://www.cgg.sm/ontology/commissions#participates">partecipa</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

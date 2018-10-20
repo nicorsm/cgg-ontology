@@ -1,0 +1,496 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/regency", "http://www.w3.org/2001/XMLSchema", "http://www.cgg.sm/ontology/base", "http://www.cgg.sm/ontology/congress", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "http://www.cgg.sm/ontology/congress",
+    "labels" : {
+      "en" : "Congress of State",
+      "it" : "Congresso di Stato"
+    },
+    "comments" : {
+      "en" : "Ontology describing the Congress of State, the executive power of the Republic.",
+      "it" : "Ontologia che descrive il Congresso di Stato, il potere esecutivo della Repubblica."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 10,
+    "objectPropertyCount" : 13,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/congress#Congress",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Congress",
+      "en" : "Congress of State",
+      "it" : "Congresso di Stato"
+    },
+    "comment" : {
+      "en" : "The Congress of State is the executive body of the Republic of San Marino.",
+      "it" : "Il Congresso di Stato è l'organo esecutivo della Repubblica di San Marino."
+    },
+    "id" : "1",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Secretary",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Secretary",
+      "en" : "Secretary",
+      "it" : "Segretario di Stato"
+    },
+    "comment" : {
+      "en" : "Component of the Congress.",
+      "it" : "Componente del Congresso di Stato."
+    },
+    "id" : "7",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#CongressMeeting",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CongressMeeting",
+      "en" : "Meeting of the Congress of State",
+      "it" : "Riunione del Congresso di Stato"
+    },
+    "comment" : {
+      "en" : "Weekly meeting of the Congress of State.",
+      "it" : "Riunione settimanale del Congresso di Stato."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrandAndGeneralCouncil"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Delegation",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Delegation",
+      "en" : "Delegation",
+      "it" : "Delega"
+    },
+    "comment" : {
+      "en" : "Entrustment of one or more delegations to the Secretariat of State.",
+      "it" : "Affidamento di una o più deleghe alla Segreteria di Stato."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Contact",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contact"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/regency#Regency",
+    "baseIri" : "http://www.cgg.sm/ontology/regency",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Regency"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#Secretariat",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Secretariat",
+      "en" : "Secretariat of State",
+      "it" : "Segreteria di Stato"
+    },
+    "comment" : {
+      "en" : "A ministry led by a secretary of State.",
+      "it" : "Un ministero guidato da un Segretario di Stato."
+    },
+    "id" : "14",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/base#Institution",
+    "baseIri" : "http://www.cgg.sm/ontology/base",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Institution"
+    },
+    "subClasses" : [ "1", "14" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/congress#participatesTo",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "participatesTo",
+      "en" : "participates to",
+      "it" : "partecipa a"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Participation of the Congress to their Meetings.",
+      "it" : "Partecipazione del Congresso alle loro Riunioni."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#date",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "meeting date",
+      "it" : "data della riunione"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Meeting date for the Congress of State.",
+      "it" : "Data della Riunione del Congresso di Stato."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#composedBySecretaries",
+    "inverse" : "8",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "composedBySecretaries",
+      "en" : "composed by Secretaries",
+      "it" : "composto da Segretari di Stato"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Congress composition by Secretaries.",
+      "it" : "Composizione del Congresso di Stato da parte di Segretari di Stato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "3",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "3",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#convenes",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "convenes",
+      "en" : "convenes",
+      "it" : "convoca"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Convocation of the Congress Meeting by the Regency.",
+      "it" : "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#electedBy",
+    "inverse" : "19",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "electedBy",
+      "en" : "elected by",
+      "it" : "eletto da"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Election of the Secretary by the Grand and General Council.",
+      "it" : "Elezione del Segretario di Stato da parte del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "10",
+    "subproperty" : [ "21" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "16",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#delegationBelongsTo",
+    "inverse" : "24",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "delegationBelongsTo",
+      "en" : "belongs to",
+      "it" : "appartiene a"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "23",
+    "comment" : {
+      "en" : "Belonging of one or more delegations to a Secretariat of State.",
+      "it" : "Appartenenza di una o più deleghe ad una Segreteria di Stato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#entrustedOf",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "entrustedOf",
+      "en" : "entrusted of",
+      "it" : "è affidata"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Entrustment of one or more delegations to the Secretariat of State.",
+      "it" : "Affidamento di una o più deleghe alla Segreteria di Stato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#holds",
+    "inverse" : "26",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "holds",
+      "en" : "holds",
+      "it" : "è titolare di"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Ownership of the Secretariat of State by the Secretary.",
+      "it" : "Titolarità della Segreteria di Stato da parte del Segretario."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#convenedBy",
+    "inverse" : "15",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "convenedBy",
+      "en" : "convened by",
+      "it" : "convocata da"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Convocation of the Congress Meeting by the Regency.",
+      "it" : "Convocazione della Riunione del Congresso di Stato da parte della Reggenza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#contact",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "contact",
+      "en" : "contact",
+      "it" : "contatto"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Contact information for the Secretariat of State.",
+      "it" : "Informazioni di contatto della Segreteria di Stato."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#composesCongress",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "composesCongress",
+      "en" : "composes Congress",
+      "it" : "compone Congresso"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Congress composition by the Secretary.",
+      "it" : "Composizione del Congresso di Stato da parte  del Segretario."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#electsSecretaries",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "electsSecretaries",
+      "en" : "elects",
+      "it" : "elegge"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Election of the Secretary by the Grand and General Council.",
+      "it" : "Elezione del Segretario di Stato da parte del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/congress#isHeldBy",
+    "baseIri" : "http://www.cgg.sm/ontology/congress",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isHeldBy",
+      "en" : "is held by",
+      "it" : "è guidata da"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Ownership of the Secretariat of State by the Secretary.",
+      "it" : "Titolarità della Segreteria di Stato da parte del Segretario."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  } ]
+}

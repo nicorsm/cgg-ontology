@@ -1,0 +1,366 @@
+<h2  id="crossreference" class="list">Cross reference for Regency classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Regency.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#CaptainRegent" title="http://www.cgg.sm/ontology/regency#CaptainRegent">Capitano Reggente</a>
+      </li>
+      <li>
+         <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+      </li>
+   </ul>
+   <div class="entity" id="CaptainRegent">
+      <h3>Capitano Reggente<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#CaptainRegent</p>
+      <div class="comment">
+         <span class="markdown">Un Consigliere eletto come Capo di Stato per sei mesi.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/cgg#Councilor">councilor</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composes" title="http://www.cgg.sm/ontology/regency#composes">compongono</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composedByRegents"
+               title="http://www.cgg.sm/ontology/regency#composedByRegents">composto dai Reggenti</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#composedByRegents"
+               title="http://www.cgg.sm/ontology/regency#composedByRegents">composto dai Reggenti</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Regency">
+      <h3>Reggenza<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#Regency</p>
+      <div class="comment">
+         <span class="markdown">I Capi di Stato della Repubblica di San Marino.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/base#Institution">institution</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#composedByRegents"
+               title="http://www.cgg.sm/ontology/regency#composedByRegents">composto dai Reggenti</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 2 <a href="#CaptainRegent" title="http://www.cgg.sm/ontology/regency#CaptainRegent">Capitano Reggente</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composedByRegents"
+               title="http://www.cgg.sm/ontology/regency#composedByRegents">composto dai Reggenti</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#endDate" title="http://www.cgg.sm/ontology/regency#endDate">data di fine</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#startDate" title="http://www.cgg.sm/ontology/regency#startDate">data di inizio</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#regencyIsElectedBy"
+               title="http://www.cgg.sm/ontology/regency#regencyIsElectedBy">eletta da</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#canEmit" title="http://www.cgg.sm/ontology/regency#canEmit">può emettere</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composes" title="http://www.cgg.sm/ontology/regency#composes">compongono</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#elects" title="http://www.cgg.sm/ontology/regency#elects">elegge</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEmittedBy" title="http://www.cgg.sm/ontology/regency#isEmittedBy">è emesso da</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#composes" title="http://www.cgg.sm/ontology/regency#composes">compongono</a>
+      </li>
+      <li>
+         <a href="#composedByRegents"
+            title="http://www.cgg.sm/ontology/regency#composedByRegents">
+            <span>composto dai Reggenti</span>
+         </a>
+      </li>
+      <li>
+         <a href="#elects" title="http://www.cgg.sm/ontology/regency#elects">elegge</a>
+      </li>
+      <li>
+         <a href="#regencyIsElectedBy"
+            title="http://www.cgg.sm/ontology/regency#regencyIsElectedBy">eletta da</a>
+      </li>
+      <li>
+         <a href="#canEmit" title="http://www.cgg.sm/ontology/regency#canEmit">può emettere</a>
+      </li>
+      <li>
+         <a href="#isEmittedBy" title="http://www.cgg.sm/ontology/regency#isEmittedBy">è emesso da</a>
+      </li>
+   </ul>
+   <div class="entity" id="composes">
+      <h3>compongono<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#composes</p>
+      <div class="comment">
+         <span class="markdown">Composizione della Reggenza da parte dei due Capitani Reggenti.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CaptainRegent" title="http://www.cgg.sm/ontology/regency#CaptainRegent">Capitano Reggente</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composedByRegents"
+                  title="http://www.cgg.sm/ontology/regency#composedByRegents">composto dai Reggenti</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="composedByRegents">
+      <h3>composto dai Reggenti<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#composedByRegents</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CaptainRegent" title="http://www.cgg.sm/ontology/regency#CaptainRegent">Capitano Reggente</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composes" title="http://www.cgg.sm/ontology/regency#composes">compongono</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#composedByRegents">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="elects">
+      <h3>elegge<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#elects</p>
+      <div class="comment">
+         <span class="markdown">Elezione della Reggenza da parte del Consiglio Grande e Generale. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">grand and general council</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#regencyIsElectedBy"
+                  title="http://www.cgg.sm/ontology/regency#regencyIsElectedBy">eletta da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="regencyIsElectedBy">
+      <h3>eletta da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#regencyIsElectedBy</p>
+      <div class="comment">
+         <span class="markdown">Elezione della Reggenza da parte del Consiglio Grande e Generale. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">grand and general council</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#elects" title="http://www.cgg.sm/ontology/regency#elects">elegge</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="canEmit">
+      <h3>può emettere<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#canEmit</p>
+      <div class="comment">
+         <span class="markdown">Facoltà della Reggenza di emettere decreti speciali.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/textual-products#RegentialDecree">regential decree</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#isEmittedBy" title="http://www.cgg.sm/ontology/regency#isEmittedBy">è emesso da</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEmittedBy">
+      <h3>è emesso da<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#isEmittedBy</p>
+      <div class="comment">
+         <span class="markdown">Emissione di decreti speciali da parte della Reggenza.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/textual-products#RegentialDecree">regential decree</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#canEmit" title="http://www.cgg.sm/ontology/regency#canEmit">può emettere</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#endDate" title="http://www.cgg.sm/ontology/regency#endDate">data di fine</a>
+      </li>
+      <li>
+         <a href="#startDate" title="http://www.cgg.sm/ontology/regency#startDate">data di inizio</a>
+      </li>
+   </ul>
+   <div class="entity" id="endDate">
+      <h3>data di fine<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#endDate</p>
+      <div class="comment">
+         <span class="markdown">Data di fine del semestre reggenziale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startDate">
+      <h3>data di inizio<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/regency#startDate</p>
+      <div class="comment">
+         <span class="markdown">Data di inizio del semestre reggenziale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Regency" title="http://www.cgg.sm/ontology/regency#Regency">Reggenza</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

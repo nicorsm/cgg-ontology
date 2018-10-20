@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cgg.sm/ontology/international-delegations#"
+     xml:base="http://www.cgg.sm/ontology/international-delegations"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:international-delegations="http://www.cgg.sm/ontology/international-delegations#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:base="http://www.cgg.sm/ontology/base#">
+    <owl:Ontology rdf:about="http://www.cgg.sm/ontology/international-delegations">
+        <owl:imports rdf:resource="http://www.cgg.sm/ontology/base"/>
+        <rdfs:comment xml:lang="en">Ontologia che descrive le Delegazioni del Consiglio Grande e Generale attive presso gli Organismi Internazionali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Ontology describing the Delegations of the Grand and General Council at the International Organizations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Counciliar Delegations at International Organizations</rdfs:label>
+        <rdfs:label xml:lang="it">Delegazioni Consiliari presso gli Organismi Internazionali</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#composedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.cgg.sm/ontology/base#composedBy"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/base#functions -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.cgg.sm/ontology/base#functions"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#composedByDelegates -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#composedBy"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation">
+        <rdfs:subPropertyOf rdf:resource="http://www.cgg.sm/ontology/base#functions"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#composedByDelegates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">
+        <owl:inverseOf rdf:resource="http://www.cgg.sm/ontology/international-delegations#composesDelegation"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/international-delegations#Delegated"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#composesDelegation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#composesDelegation">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#Delegated"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:comment xml:lang="en">Composition of the delegation by delegated councilors.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Composizione della delegazione da parte di consiglieri delegati. </rdfs:comment>
+        <rdfs:label xml:lang="it">compone la delegazione</rdfs:label>
+        <rdfs:label xml:lang="en">composes delegation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#hasHead -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#hasHead">
+        <owl:inverseOf rdf:resource="http://www.cgg.sm/ontology/international-delegations#isHeadOf"/>
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation"/>
+        <rdfs:comment xml:lang="en">Presence of the head of delegation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Presenza del capodelegazione.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha capodelegazione</rdfs:label>
+        <rdfs:label xml:lang="en">has head of delegation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#isHeadOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#isHeadOf">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation"/>
+        <rdfs:range rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:comment xml:lang="en">Presence of the head of delegation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Presenza del capodelegazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">is head of delegation</rdfs:label>
+        <rdfs:label xml:lang="it">è capo della delegazione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#annualReport -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#annualReport">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">La relazione annuale relativa alle attività svolte dalla delegazione. </rdfs:comment>
+        <rdfs:comment xml:lang="en">The annual report about the activities of the delegation.</rdfs:comment>
+        <rdfs:label xml:lang="en">annual report</rdfs:label>
+        <rdfs:label xml:lang="it">relazione annuale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#organizationName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.cgg.sm/ontology/international-delegations#organizationName">
+        <rdfs:domain rdf:resource="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Name of the international organization.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Nome dell&apos;organizzazione internazionale. </rdfs:comment>
+        <rdfs:label xml:lang="it">nome dell&apos;organizzazione</rdfs:label>
+        <rdfs:label xml:lang="en">organization name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cgg.sm/ontology/cgg#Councilor -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/cgg#Councilor"/>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgg.sm/ontology/international-delegations#composedByDelegates"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgg.sm/ontology/international-delegations#Delegated"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgg.sm/ontology/international-delegations#hasHead"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Counciliar delegation elected at the international organizations in order to represent the Republic.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Delegazioni consiliari elette presso le organizzazioni internazionali al fine di rappresentare la Repubblica.</rdfs:comment>
+        <rdfs:label xml:lang="en">Counciliar Delegation at International Organization</rdfs:label>
+        <rdfs:label xml:lang="it">Delegazione Consiliare presso Organismo Internazionale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#Delegated -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/international-delegations#Delegated">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/cgg#Councilor"/>
+        <rdfs:comment xml:lang="en">A Councilor that takes part to the delegation for an International Organization.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un Consigliere che prende parte alla delegazione per un&apos;Organizzazione Internazionale. </rdfs:comment>
+        <rdfs:label xml:lang="en">Delegated</rdfs:label>
+        <rdfs:label xml:lang="it">Delegato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation -->
+
+
+    <owl:Class rdf:about="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">
+        <rdfs:subClassOf rdf:resource="http://www.cgg.sm/ontology/international-delegations#Delegated"/>
+        <rdfs:comment xml:lang="it">Il presidente della delegazione. </rdfs:comment>
+        <rdfs:comment xml:lang="en">The president of the delegation.</rdfs:comment>
+        <rdfs:label xml:lang="it">Capo delegazione</rdfs:label>
+        <rdfs:label xml:lang="en">Head of Delegation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">
+        <rdfs:comment xml:lang="en">Composition of the delegation by delegated councilors.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Composizione della delegazione da parte di consiglieri delegati. </rdfs:comment>
+        <rdfs:label xml:lang="en">composed by delegates</rdfs:label>
+        <rdfs:label xml:lang="it">composta da delegati</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation">
+        <rdfs:comment xml:lang="en">A list of functions assigned to the delegation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una lista di funzioni assegnate alla delegazione. </rdfs:comment>
+        <rdfs:label xml:lang="en">functions of the delegation</rdfs:label>
+        <rdfs:label xml:lang="it">funzioni della delegazione</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

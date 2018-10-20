@@ -1,0 +1,395 @@
+<h2  id="crossreference" class="list">Cross reference for Counciliar Delegations at International Organizations classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Counciliar Delegations at International Organizations.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#HeadOfDelegation"
+            title="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">Capo delegazione</a>
+      </li>
+      <li>
+         <a href="#Delegated"
+            title="http://www.cgg.sm/ontology/international-delegations#Delegated">Delegato</a>
+      </li>
+      <li>
+         <a href="#CounciliarDelegationAtInternationalOrganizations"
+            title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+      </li>
+   </ul>
+   <div class="entity" id="HeadOfDelegation">
+      <h3>Capo delegazione<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation</p>
+      <div class="comment">
+         <span class="markdown">Il presidente della delegazione. </span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#Delegated"
+               title="http://www.cgg.sm/ontology/international-delegations#Delegated">Delegato</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#isHeadOf"
+               title="http://www.cgg.sm/ontology/international-delegations#isHeadOf">è capo della delegazione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#hasHead"
+               title="http://www.cgg.sm/ontology/international-delegations#hasHead">ha capodelegazione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Delegated">
+      <h3>Delegato<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#Delegated</p>
+      <div class="comment">
+         <span class="markdown">Un Consigliere che prende parte alla delegazione per un'Organizzazione Internazionale. </span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://www.cgg.sm/ontology/cgg#Councilor">councilor</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>ha come sotto-classi</dt>
+         <dd>
+            <a href="#HeadOfDelegation"
+               title="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">Capo delegazione</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composesDelegation"
+               title="http://www.cgg.sm/ontology/international-delegations#composesDelegation">compone la delegazione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composedByDelegates"
+               title="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">composta da delegati</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CounciliarDelegationAtInternationalOrganizations">
+      <h3>Delegazione Consiliare presso Organismo Internazionale<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations</p>
+      <div class="comment">
+         <span class="markdown">Delegazioni consiliari elette presso le organizzazioni internazionali al fine di rappresentare la Repubblica.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <a href="#composedByDelegates"
+               title="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">composta da delegati</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">min</span> 2 <a href="#Delegated"
+               title="http://www.cgg.sm/ontology/international-delegations#Delegated">Delegato</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasHead"
+               title="http://www.cgg.sm/ontology/international-delegations#hasHead">ha capodelegazione</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#HeadOfDelegation"
+               title="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">Capo delegazione</a>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#composedByDelegates"
+               title="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">composta da delegati</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#functionsOfDelegation"
+               title="http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation">funzioni della delegazione</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHead"
+               title="http://www.cgg.sm/ontology/international-delegations#hasHead">ha capodelegazione</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#organizationName"
+               title="http://www.cgg.sm/ontology/international-delegations#organizationName">nome dell'organizzazione</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#annualReport"
+               title="http://www.cgg.sm/ontology/international-delegations#annualReport">relazione annuale</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>è nel codominio di</dt>
+         <dd>
+            <a href="#composesDelegation"
+               title="http://www.cgg.sm/ontology/international-delegations#composesDelegation">compone la delegazione</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isHeadOf"
+               title="http://www.cgg.sm/ontology/international-delegations#isHeadOf">è capo della delegazione</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#composesDelegation"
+            title="http://www.cgg.sm/ontology/international-delegations#composesDelegation">compone la delegazione</a>
+      </li>
+      <li>
+         <a href="#composedByDelegates"
+            title="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">
+            <span>composta da delegati</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasHead"
+            title="http://www.cgg.sm/ontology/international-delegations#hasHead">ha capodelegazione</a>
+      </li>
+      <li>
+         <a href="#isHeadOf"
+            title="http://www.cgg.sm/ontology/international-delegations#isHeadOf">è capo della delegazione</a>
+      </li>
+   </ul>
+   <div class="entity" id="composesDelegation">
+      <h3>compone la delegazione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#composesDelegation</p>
+      <div class="comment">
+         <span class="markdown">Composizione della delegazione da parte di consiglieri delegati. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Delegated"
+                  title="http://www.cgg.sm/ontology/international-delegations#Delegated">Delegato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composedByDelegates"
+                  title="http://www.cgg.sm/ontology/international-delegations#composedByDelegates">composta da delegati</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="composedByDelegates">
+      <h3>composta da delegati<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#composedByDelegates</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#Delegated"
+                  title="http://www.cgg.sm/ontology/international-delegations#Delegated">Delegato</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#composesDelegation"
+                  title="http://www.cgg.sm/ontology/international-delegations#composesDelegation">compone la delegazione</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#composedByDelegates">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasHead">
+      <h3>ha capodelegazione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#hasHead</p>
+      <div class="comment">
+         <span class="markdown">Presenza del capodelegazione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#HeadOfDelegation"
+                  title="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">Capo delegazione</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#isHeadOf"
+                  title="http://www.cgg.sm/ontology/international-delegations#isHeadOf">è capo della delegazione</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isHeadOf">
+      <h3>è capo della delegazione<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#isHeadOf</p>
+      <div class="comment">
+         <span class="markdown">Presenza del capodelegazione.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#HeadOfDelegation"
+                  title="http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation">Capo delegazione</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>è l'inversa di</dt>
+            <dd>
+               <a href="#hasHead"
+                  title="http://www.cgg.sm/ontology/international-delegations#hasHead">ha capodelegazione</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#functionsOfDelegation"
+            title="http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation">
+            <span>funzioni della delegazione</span>
+         </a>
+      </li>
+      <li>
+         <a href="#organizationName"
+            title="http://www.cgg.sm/ontology/international-delegations#organizationName">nome dell'organizzazione</a>
+      </li>
+      <li>
+         <a href="#annualReport"
+            title="http://www.cgg.sm/ontology/international-delegations#annualReport">relazione annuale</a>
+      </li>
+   </ul>
+   <div class="entity" id="functionsOfDelegation">
+      <h3>funzioni della delegazione<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation</p>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+            <dt>è definita anche come</dt>
+            <dd>
+               <a href="#functionsOfDelegation">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="organizationName">
+      <h3>nome dell'organizzazione<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#organizationName</p>
+      <div class="comment">
+         <span class="markdown">Nome dell'organizzazione internazionale. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="annualReport">
+      <h3>relazione annuale<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/international-delegations#annualReport</p>
+      <div class="comment">
+         <span class="markdown">La relazione annuale relativa alle attività svolte dalla delegazione. </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#CounciliarDelegationAtInternationalOrganizations"
+                  title="http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations">Delegazione Consiliare presso Organismo Internazionale</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

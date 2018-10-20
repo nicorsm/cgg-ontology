@@ -1,0 +1,277 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/international-delegations", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "http://www.cgg.sm/ontology/international-delegations",
+    "labels" : {
+      "en" : "Counciliar Delegations at International Organizations",
+      "it" : "Delegazioni Consiliari presso gli Organismi Internazionali"
+    },
+    "comments" : {
+      "en" : "Ontologia che descrive le Delegazioni del Consiglio Grande e Generale attive presso gli Organismi Internazionali."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 4,
+    "objectPropertyCount" : 4,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#HeadOfDelegation",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeadOfDelegation",
+      "en" : "Head of Delegation",
+      "it" : "Capo delegazione"
+    },
+    "comment" : {
+      "en" : "The president of the delegation.",
+      "it" : "Il presidente della delegazione. "
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#Delegated",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Delegated",
+      "en" : "Delegated",
+      "it" : "Delegato"
+    },
+    "subClasses" : [ "0" ],
+    "comment" : {
+      "en" : "A Councilor that takes part to the delegation for an International Organization.",
+      "it" : "Un Consigliere che prende parte alla delegazione per un'Organizzazione Internazionale. "
+    },
+    "id" : "1",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#CounciliarDelegationAtInternationalOrganizations",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CounciliarDelegationAtInternationalOrganizations",
+      "en" : "Counciliar Delegation at International Organization",
+      "it" : "Delegazione Consiliare presso Organismo Internazionale"
+    },
+    "comment" : {
+      "en" : "Counciliar delegation elected at the international organizations in order to represent the Republic.",
+      "it" : "Delegazioni consiliari elette presso le organizzazioni internazionali al fine di rappresentare la Repubblica."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#hasHead",
+    "inverse" : "4",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasHead",
+      "en" : "has head of delegation",
+      "it" : "ha capodelegazione"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Presence of the head of delegation.",
+      "it" : "Presenza del capodelegazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#composesDelegation",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "composesDelegation",
+      "en" : "composes delegation",
+      "it" : "compone la delegazione"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Composition of the delegation by delegated councilors.",
+      "it" : "Composizione della delegazione da parte di consiglieri delegati. "
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#composedByDelegates",
+    "inverse" : "5",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "composedByDelegates",
+      "en" : "composed by delegates",
+      "it" : "composta da delegati"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Composition of the delegation by delegated councilors.",
+      "it" : "Composizione della delegazione da parte di consiglieri delegati. "
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#annualReport",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "annualReport",
+      "en" : "annual report",
+      "it" : "relazione annuale"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The annual report about the activities of the delegation.",
+      "it" : "La relazione annuale relativa alle attività svolte dalla delegazione. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#organizationName",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "organizationName",
+      "en" : "organization name",
+      "it" : "nome dell'organizzazione"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Name of the international organization.",
+      "it" : "Nome dell'organizzazione internazionale. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#functionsOfDelegation",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "functionsOfDelegation",
+      "en" : "functions of the delegation",
+      "it" : "funzioni della delegazione"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "A list of functions assigned to the delegation.",
+      "it" : "Una lista di funzioni assegnate alla delegazione. "
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/international-delegations#isHeadOf",
+    "baseIri" : "http://www.cgg.sm/ontology/international-delegations",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isHeadOf",
+      "en" : "is head of delegation",
+      "it" : "è capo della delegazione"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Presence of the head of delegation.",
+      "it" : "Presenza del capodelegazione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  } ]
+}

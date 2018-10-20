@@ -1,0 +1,226 @@
+<h2  id="crossreference" class="list">Cross reference for Base classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Base.
+<div id="classes">
+   <h2>Classi</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#Contact" title="http://www.cgg.sm/ontology/base#Contact">Contatto</a>
+      </li>
+      <li>
+         <a href="#Institution" title="http://www.cgg.sm/ontology/base#Institution">Istituzione</a>
+      </li>
+      <li>
+         <a href="#Politician" title="http://www.cgg.sm/ontology/base#Politician">Politico</a>
+      </li>
+   </ul>
+   <div class="entity" id="Contact">
+      <h3>Contatto<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#Contact</p>
+      <div class="comment">
+         <span class="markdown">Informazioni di contatto di una istituzione.</span>
+      </div>
+      <dl class="description">
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#email" title="http://www.cgg.sm/ontology/base#email">e-mail</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#headquarters" title="http://www.cgg.sm/ontology/base#headquarters">sede</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#url" title="http://www.cgg.sm/ontology/base#url">sito web</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#phone" title="http://www.cgg.sm/ontology/base#phone">telefono</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Institution">
+      <h3>Istituzione<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#Institution</p>
+      <div class="comment">
+         <span class="markdown">Configurazione di sovrastrutture organizzate giuridicamente e il cui fine è di garantire le relazioni sociali e la conservazione e l'attuazione di norme attività sociali e giuridiche stabilite tra l'individuo e la società o tra l'individuo e lo Stato sottratte all'arbitrio individuale e del potere in generale.</span>
+      </div>
+   </div>
+   <div class="entity" id="Politician">
+      <h3>Politico<sup class="type-c" title="classe">c</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#classes">indice delle Classi</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#Politician</p>
+      <div class="comment">
+         <span class="markdown">Una persona con una carica politica.</span>
+      </div>
+      <dl class="description">
+         <dt>ha come super-classi</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/spec#term_Person">term person</span>
+            <sup class="type-c" title="classe">c</sup>
+         </dd>
+         <dt>è nel dominio di</dt>
+         <dd>
+            <a href="#taxReturn" title="http://www.cgg.sm/ontology/base#taxReturn">Dichiarazione dei Redditi</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Object Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#email" title="http://www.cgg.sm/ontology/base#email">e-mail</a>
+      </li>
+      <li>
+         <a href="#headquarters" title="http://www.cgg.sm/ontology/base#headquarters">sede</a>
+      </li>
+      <li>
+         <a href="#url" title="http://www.cgg.sm/ontology/base#url">sito web</a>
+      </li>
+      <li>
+         <a href="#phone" title="http://www.cgg.sm/ontology/base#phone">telefono</a>
+      </li>
+   </ul>
+   <div class="entity" id="email">
+      <h3>e-mail<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#email</p>
+      <div class="comment">
+         <span class="markdown">Indirizzo e-mail.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Contact" title="http://www.cgg.sm/ontology/base#Contact">Contatto</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2006/vcard/ns#Email">email</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="headquarters">
+      <h3>sede<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#headquarters</p>
+      <div class="comment">
+         <span class="markdown">Indirizzo dell'ufficio principale.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Contact" title="http://www.cgg.sm/ontology/base#Contact">Contatto</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2006/vcard/ns#Address">address</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="url">
+      <h3>sito web<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#url</p>
+      <div class="comment">
+         <span class="markdown">Sito web del contatto.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Contact" title="http://www.cgg.sm/ontology/base#Contact">Contatto</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2006/vcard/ns#URL">u r l</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="phone">
+      <h3>telefono<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#phone</p>
+      <div class="comment">
+         <span class="markdown">Numero di telefono.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Contact" title="http://www.cgg.sm/ontology/base#Contact">Contatto</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2006/vcard/ns#phone">phone</span>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h2>Data Property</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#taxReturn" title="http://www.cgg.sm/ontology/base#taxReturn">Dichiarazione dei Redditi</a>
+      </li>
+   </ul>
+   <div class="entity" id="taxReturn">
+      <h3>Dichiarazione dei Redditi<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#dataproperties">indice delle Data PropertyC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/base#taxReturn</p>
+      <div class="comment">
+         <span class="markdown">La dichiarazione dei redditi presentata da ogni Politico.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>ha come dominio</dt>
+            <dd>
+               <a href="#Politician" title="http://www.cgg.sm/ontology/base#Politician">Politico</a>
+               <sup class="type-c" title="classe">c</sup>
+            </dd>
+            <dt>ha come codominio</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

@@ -1,0 +1,405 @@
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/base> .
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/2002/07/owl#imports> <http://www.cgg.sm/ontology/textual-products> .
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia che descrive il Consiglio Grande e Generale, il parlamento con potere legislativo della Repubblica."@en .
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology describing the Grand and General Council, the parliament and legislative power of the Republic."@en .
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/2000/01/rdf-schema#label> "Consiglio Grande e Generale"@it .
+<http://www.cgg.sm/ontology/cgg> <http://www.w3.org/2000/01/rdf-schema#label> "Grand and General Council"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#belongsTo
+<http://www.cgg.sm/ontology/base#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/base#composedBy
+<http://www.cgg.sm/ontology/base#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/cgg#belongsTo
+<http://www.cgg.sm/ontology/cgg#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cgg.sm/ontology/cgg#belongsToBloc
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/cgg#belongsTo> .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> .
+# 
+# http://www.cgg.sm/ontology/cgg#belongsToGroup
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#belongsTo> .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+# 
+# http://www.cgg.sm/ontology/cgg#cggComposedBy
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/base#composedBy> .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+# 
+# http://www.cgg.sm/ontology/cgg#coalitionComposedBy
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cgg.sm/ontology/cgg#composedBy> .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#CounciliarGroup> .
+# 
+# http://www.cgg.sm/ontology/cgg#composedBy
+<http://www.cgg.sm/ontology/cgg#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/cgg#belongsToBloc
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/cgg#composedByGroups> .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+# 
+# http://www.cgg.sm/ontology/cgg#belongsToGroup
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/cgg#groupComposedBy> .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#Councilor> .
+# 
+# http://www.cgg.sm/ontology/cgg#cggComposedBy
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/cgg#groupsCompose> .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Councilor> .
+# 
+# http://www.cgg.sm/ontology/cgg#cggComposedByCouncilors
+<http://www.cgg.sm/ontology/cgg#cggComposedByCouncilors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#cggComposedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#cggComposedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/cgg#cggComposedByCouncilors> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Councilor> .
+# 
+# http://www.cgg.sm/ontology/cgg#coalitionComposedBy
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#Coalition> .
+# 
+# http://www.cgg.sm/ontology/cgg#composedByGroups
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> .
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/2000/01/rdf-schema#comment> "Appartenenza di un gruppo parlamentare ad una specifica fazione (maggioranza o minoranza)."@it .
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/2000/01/rdf-schema#comment> "Bond of membership of a parliamentary group to a specific faction (majority or minority)."@en .
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/2000/01/rdf-schema#label> "bloc composed by groups"@en .
+<http://www.cgg.sm/ontology/cgg#composedByGroups> <http://www.w3.org/2000/01/rdf-schema#label> "fazione composta da gruppi"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#contact
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#Party> .
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/base#Contact> .
+<http://www.cgg.sm/ontology/base#Contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact information of the party."@en .
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/2000/01/rdf-schema#comment> "Informazioni di contatto del partito."@it .
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/2000/01/rdf-schema#label> "contact"@en .
+<http://www.cgg.sm/ontology/cgg#contact> <http://www.w3.org/2000/01/rdf-schema#label> "contatto"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#CounciliarGroup> .
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Coalition> .
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Grouping link of counciliar groups into coalitions."@en .
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Legame di raggruppamento di gruppi consiliari in coalizioni."@it .
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "counciliar group is part of"@en .
+<http://www.cgg.sm/ontology/cgg#counciliarGroupIsPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "gruppo consiliare parte di"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#debatesApprovesRejects
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/textual-products#Norm> .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions performable on norms by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2000/01/rdf-schema#comment> "Azioni eseguibili sulle norme da parte del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2000/01/rdf-schema#label> "debates, approves or rejects"@en .
+<http://www.cgg.sm/ontology/cgg#debatesApprovesRejects> <http://www.w3.org/2000/01/rdf-schema#label> "dibatte, approva o rigetta"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#electedFor
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Legislature> .
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Current Grand and General Council legislature."@en .
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Legislatura attuale del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/2000/01/rdf-schema#label> "elected for"@en .
+<http://www.cgg.sm/ontology/cgg#electedFor> <http://www.w3.org/2000/01/rdf-schema#label> "eletto per"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#groupComposedBy
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the Parliamentary Group by councilors."@en .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione del Gruppo parlamentare da parte dei consiglieri."@it .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Parliamentary group composed by"@en .
+<http://www.cgg.sm/ontology/cgg#groupComposedBy> <http://www.w3.org/2000/01/rdf-schema#label> "gruppo parlamentare composto da"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#groupsCompose
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> .
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions performable on norms by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione del CGG da parte dei gruppi parlamentari."@it .
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/2000/01/rdf-schema#label> "groups compose"@en .
+<http://www.cgg.sm/ontology/cgg#groupsCompose> <http://www.w3.org/2000/01/rdf-schema#label> "gruppi compongono"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#headingTo
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cgg.sm/ontology/cgg#isRepresentedBy> .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#CounciliarGroup> .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Party> .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Collegamento tra il gruppo consiliare e il partito."@it .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Link between the counciliar group and the party."@en .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2000/01/rdf-schema#label> "facente capo a"@it .
+<http://www.cgg.sm/ontology/cgg#headingTo> <http://www.w3.org/2000/01/rdf-schema#label> "heading to"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy
+<http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions performable on norms by the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Azioni eseguibili sulle norme da parte del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is debated, approved or rejected by"@en .
+<http://www.cgg.sm/ontology/cgg#isDebatedApprovedOrRejectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 dibattuto, approvato o rigettato da"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#isRepresentedBy
+<http://www.cgg.sm/ontology/cgg#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresentazione del partito all'interno del CGG da parte del relativo gruppo parlamentare."@it .
+<http://www.cgg.sm/ontology/cgg#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Representation of the party inside the GCC by the parliamentary group"@en .
+<http://www.cgg.sm/ontology/cgg#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is represented by"@en .
+<http://www.cgg.sm/ontology/cgg#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "\u00E8 rappresentato da"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#leader
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#CounciliarGroup> .
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/2000/01/rdf-schema#comment> "A Councilor representing the Counciliar Group within the Parliament."@en .
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Consigliere che rappresenta il Gruppo Consiliare all'interno del Parlamento."@it .
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/2000/01/rdf-schema#label> "Capogruppo"@it .
+<http://www.cgg.sm/ontology/cgg#leader> <http://www.w3.org/2000/01/rdf-schema#label> "Leader"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/cgg#begins
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#Legislature> .
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/2000/01/rdf-schema#comment> "Data di inizio della Legislature."@it .
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/2000/01/rdf-schema#comment> "Start date of the Legislature."@en .
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/2000/01/rdf-schema#label> "data di inizio"@it .
+<http://www.cgg.sm/ontology/cgg#begins> <http://www.w3.org/2000/01/rdf-schema#label> "start date"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#ends
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#Legislature> .
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/2000/01/rdf-schema#comment> "Data di fine della Legislature."@it .
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/2000/01/rdf-schema#comment> "End date of the Legislature."@en .
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/2000/01/rdf-schema#label> "data di fine"@it .
+<http://www.cgg.sm/ontology/cgg#ends> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#name
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cgg.sm/ontology/cgg#Party> .
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the party."@en .
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Nome del partito."@it .
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://www.cgg.sm/ontology/cgg#name> <http://www.w3.org/2000/01/rdf-schema#label> "nome"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.cgg.sm/ontology/base#Contact
+# 
+# http://www.cgg.sm/ontology/base#Institution
+<http://www.cgg.sm/ontology/base#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/base#Politician
+<http://www.cgg.sm/ontology/base#Politician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cgg.sm/ontology/cgg#Coalition
+<http://www.cgg.sm/ontology/cgg#Coalition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#Coalition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/cgg#coalitionComposedBy> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.cgg.sm/ontology/cgg#CounciliarGroup> .
+<http://www.cgg.sm/ontology/cgg#Coalition> <http://www.w3.org/2000/01/rdf-schema#comment> "Grouping of several counciliar groups."@en .
+<http://www.cgg.sm/ontology/cgg#Coalition> <http://www.w3.org/2000/01/rdf-schema#comment> "Raggruppamento di pi\u00F9 gruppi consiliari."@it .
+<http://www.cgg.sm/ontology/cgg#Coalition> <http://www.w3.org/2000/01/rdf-schema#label> "Coalition"@en .
+<http://www.cgg.sm/ontology/cgg#Coalition> <http://www.w3.org/2000/01/rdf-schema#label> "Coalizione"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#CounciliarGroup
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/cgg#headingTo> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/cgg#Party> .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/cgg#leader> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.cgg.sm/ontology/cgg#MixedGroup> .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Delegation of a party within the GGC."@en .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresentanza parlamentare di un partito."@it .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Counciliar Group"@en .
+<http://www.cgg.sm/ontology/cgg#CounciliarGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Gruppo Consiliare"@it .
+# 
+# http://www.cgg.sm/ontology/cgg#Councilor
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Politician> .
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the 60 members of the GGC, belonging to a political force or mixed group."@en .
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/2000/01/rdf-schema#comment> "Uno dei 60 membri del CGG, appartenente ad una forza politica o al gruppo misto."@it .
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/2000/01/rdf-schema#label> "Consigliere"@it .
+<http://www.cgg.sm/ontology/cgg#Councilor> <http://www.w3.org/2000/01/rdf-schema#label> "Councilor"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/base#Institution> .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/cgg#cggComposedBy> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/cgg#cggComposedByCouncilors> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "60"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.cgg.sm/ontology/regency#Regency> .
+<http://www.cgg.sm/ontology/regency#Regency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#comment> "Institution responsible for the legislative power, the determination of political address and the exercise of control functions. Made up of 60 members called Councilors."@en .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#comment> "Istituzione alla quale spetta il potere legislativo, la determinazione dell\u2019indirizzo politico e l\u2019esercizio delle funzioni di controllo. \u00C8 composto da 60 membri, chiamati Consiglieri."@it .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#label> "Consiglio Grande e Generale"@it .
+<http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil> <http://www.w3.org/2000/01/rdf-schema#label> "Grand and General Council"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#Legislature
+<http://www.cgg.sm/ontology/cgg#Legislature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#Legislature> <http://www.w3.org/2000/01/rdf-schema#comment> "Period of stay of the Grand and General Council."@en .
+<http://www.cgg.sm/ontology/cgg#Legislature> <http://www.w3.org/2000/01/rdf-schema#comment> "Periodo di permanenza del Consiglio Grande e Generale."@it .
+<http://www.cgg.sm/ontology/cgg#Legislature> <http://www.w3.org/2000/01/rdf-schema#label> "Legislatura"@it .
+<http://www.cgg.sm/ontology/cgg#Legislature> <http://www.w3.org/2000/01/rdf-schema#label> "Legislature"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#Majority
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> .
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.cgg.sm/ontology/cgg#Minority> .
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/2000/01/rdf-schema#comment> "La fazione parlamentare che ha vinto le elezioni."@it .
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/2000/01/rdf-schema#comment> "The parliamentary bloc that won the election."@en .
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/2000/01/rdf-schema#label> "Maggioranza"@it .
+<http://www.cgg.sm/ontology/cgg#Majority> <http://www.w3.org/2000/01/rdf-schema#label> "Majority"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#Minority
+<http://www.cgg.sm/ontology/cgg#Minority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#Minority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> .
+<http://www.cgg.sm/ontology/cgg#Minority> <http://www.w3.org/2000/01/rdf-schema#comment> "Fazioni parlamentari che non hanno vinto le elezioni."@it .
+<http://www.cgg.sm/ontology/cgg#Minority> <http://www.w3.org/2000/01/rdf-schema#comment> "Parliamentary blocs who didn't win the elections."@en .
+<http://www.cgg.sm/ontology/cgg#Minority> <http://www.w3.org/2000/01/rdf-schema#label> "Minoranza"@it .
+<http://www.cgg.sm/ontology/cgg#Minority> <http://www.w3.org/2000/01/rdf-schema#label> "Minority"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#MixedGroup
+<http://www.cgg.sm/ontology/cgg#MixedGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#MixedGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> .
+<http://www.cgg.sm/ontology/cgg#MixedGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of Independent Councilors."@en .
+<http://www.cgg.sm/ontology/cgg#MixedGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Gruppo di Consiglieri indipendenti."@it .
+<http://www.cgg.sm/ontology/cgg#MixedGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Gruppo Misto"@it .
+<http://www.cgg.sm/ontology/cgg#MixedGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Mixed Group"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#ParliamentaryBloc
+<http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cgg.sm/ontology/cgg#Majority> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cgg.sm/ontology/cgg#Minority> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> <http://www.w3.org/2000/01/rdf-schema#comment> "Partitioning of the Parliament in majority and minority."@en .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> <http://www.w3.org/2000/01/rdf-schema#comment> "Suddivisione del Parlamento in maggioranza e minoranza."@it .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> <http://www.w3.org/2000/01/rdf-schema#label> "Fazione parlamentare"@it .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryBloc> <http://www.w3.org/2000/01/rdf-schema#label> "Parliamentary Bloc"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#ParliamentaryGroup
+<http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.cgg.sm/ontology/cgg#groupComposedBy> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.cgg.sm/ontology/cgg#Councilor> .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A parliamentary group is an organ that gathers the political demands and representations within a parliament."@en .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Un gruppo parlamentare \u00E8 un organo che raccoglie le istanze e le rappresentanze politiche all'interno di un parlamento."@it .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Gruppo parlamentare"@it .
+<http://www.cgg.sm/ontology/cgg#ParliamentaryGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Parliamentary Group"@en .
+# 
+# http://www.cgg.sm/ontology/cgg#Party
+<http://www.cgg.sm/ontology/cgg#Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cgg.sm/ontology/cgg#Party> <http://www.w3.org/2000/01/rdf-schema#comment> "Association between people united by the same political purpose or by a common vision on fundamental issues of the management of the state and society or even only on specific and particular topics."@en .
+<http://www.cgg.sm/ontology/cgg#Party> <http://www.w3.org/2000/01/rdf-schema#comment> "Associazione tra persone accomunate da una medesima finalit\u00E0 politica ovvero da una comune visione su questioni fondamentali della gestione dello Stato e della societ\u00E0 o anche solo su temi specifici e particolari. "@it .
+<http://www.cgg.sm/ontology/cgg#Party> <http://www.w3.org/2000/01/rdf-schema#label> "Partito"@it .
+<http://www.cgg.sm/ontology/cgg#Party> <http://www.w3.org/2000/01/rdf-schema#label> "Party"@en .
+# 
+# http://www.cgg.sm/ontology/regency#Regency
+# 
+# http://www.cgg.sm/ontology/textual-products#Norm
+<http://www.cgg.sm/ontology/textual-products#Norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#comment> "Appartenenza di un gruppo parlamentare ad una specifica fazione (maggioranza o minoranza)."@it .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#comment> "Bond of membership of a parliamentary group to a specific faction (majority or minority)."@en .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#label> "appartiene ad una fazione"@it .
+<http://www.cgg.sm/ontology/cgg#belongsToBloc> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to a bloc"@en .
+# 
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Bond of membership of a Councilor to a Parliamentary Group."@en .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Legame di appartenenza di un Consigliere ad un Gruppo parlamentare."@it .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#label> "appartiene ad un Gruppo parlamentare"@it .
+<http://www.cgg.sm/ontology/cgg#belongsToGroup> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to Parliamentary Group"@en .
+# 
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Composition of the GGC by Parliamentary Groups."@en .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Composizione del CGG da parte di Gruppi parlamentari."@it .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#label> "CGG composto da"@it .
+<http://www.cgg.sm/ontology/cgg#cggComposedBy> <http://www.w3.org/2000/01/rdf-schema#label> "GGC composed by"@en .
+# 
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Grouping link of counciliar groups into coalitions."@en .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Legame di raggruppamento di gruppi consiliari in coalizioni."@it .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#label> "coalition composed by"@en .
+<http://www.cgg.sm/ontology/cgg#coalitionComposedBy> <http://www.w3.org/2000/01/rdf-schema#label> "coalizione composta da"@it .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

@@ -1,0 +1,456 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.cgg.sm/ontology/textual-products", "http://www.cgg.sm/ontology/commissions", "http://www.w3.org/2000/01/rdf-schema", "http://www.cgg.sm/ontology/cgg" ],
+    "iri" : "http://www.cgg.sm/ontology/commissions",
+    "labels" : {
+      "en" : "Commissions",
+      "it" : "Commissioni"
+    },
+    "comments" : {
+      "en" : "Ontology describing the Counciliar Commissions that examines the draft laws.",
+      "it" : "Ontologia che descrive le Commissioni Consiliari che esaminano i progetti di legge."
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 12,
+    "objectPropertyCount" : 10,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/commissions#PermanentCouncilCommission",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PermanentCouncilCommission",
+      "en" : "Permanent Council Commission",
+      "it" : "Commissione consiliare permanente"
+    },
+    "comment" : {
+      "en" : "An ordinary counciliar commission required by law.",
+      "it" : "Commissione consiliare ordinaria prevista dalla legge."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#VicePresident",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VicePresident",
+      "en" : "Vicepresident",
+      "it" : "Vicepresidente"
+    },
+    "comment" : {
+      "en" : "Vicepresident of the Commission.",
+      "it" : "Vicepresidente della Commissione."
+    },
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#Commissioner",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Commissioner",
+      "en" : "Commissioner",
+      "it" : "Commissario"
+    },
+    "subClasses" : [ "5", "8" ],
+    "comment" : {
+      "en" : "Councilor elected within the Commission.",
+      "it" : "Consigliere eletto all'interno della Commissione."
+    },
+    "id" : "6",
+    "superClasses" : [ "13" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#President",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "President",
+      "en" : "President",
+      "it" : "Presidente"
+    },
+    "comment" : {
+      "en" : "President of the Commission.",
+      "it" : "Presidente della Commissione."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#Motion",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Motion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/textual-products#DraftLaw",
+    "baseIri" : "http://www.cgg.sm/ontology/textual-products",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DraftLaw"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GrandAndGeneralCouncil"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#CouncilCommission",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CouncilCommission",
+      "en" : "Council Commission",
+      "it" : "Commissione consiliare"
+    },
+    "subClasses" : [ "0", "11" ],
+    "comment" : {
+      "en" : "Parliamentary commission that examines the draft laws.",
+      "it" : "Commissione parlamentare che esamina i progetti di legge."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Councilor",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Councilor"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#SpecialCouncilCommission",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecialCouncilCommission",
+      "en" : "Special Council Commission",
+      "it" : "Commissione consiliare speciale"
+    },
+    "comment" : {
+      "en" : "Counciliar commission requested by the Council as needed.",
+      "it" : "Commissione consiliare richiesta dal Consiglio in base alle necessità."
+    },
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/cgg#Legislature",
+    "baseIri" : "http://www.cgg.sm/ontology/cgg",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Legislature"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#CommissionSession",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommissionSession",
+      "en" : "Commission Session",
+      "it" : "Sessione della Commissione"
+    },
+    "comment" : {
+      "en" : "A meeting of the Commission.",
+      "it" : "Una riunione della Commissione."
+    },
+    "id" : "17"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.cgg.sm/ontology/commissions#examinesMotions",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "examinesMotions",
+      "en" : "examines motions",
+      "it" : "esamina mozioni"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Examination of Motions by the Commission.",
+      "it" : "Esame della Commissione di Mozioni."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "13",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "11",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#convenes",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "convenes",
+      "en" : "convenes",
+      "it" : "convoca"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Convocation of the Commission by the President.",
+      "it" : "Convocazione della Commissione da parte del Presidente."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#composedByCommissioners",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "composedByCommissioners",
+      "en" : "composed by commissioners",
+      "it" : "composto da commissari"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Composition of the Commission by Commissioners.",
+      "it" : "Composizione della Commissione da parte di Commissari."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#participates",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "participates",
+      "en" : "participates",
+      "it" : "partecipa"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Participation of the Commissioner to the Session.",
+      "it" : "Partecipazione del Commissario alla Sessione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#hasRepresentative",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasRepresentative"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#inChargeFor",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "inChargeFor",
+      "en" : "in charge for",
+      "it" : "in carica per"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property that describes the duration of a commission linked to a legislature.",
+      "it" : "Proprietà che descrive la durata della commissione legata ad una legislatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#isParticipatedBy",
+    "inverse" : "19",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isParticipatedBy",
+      "en" : "is participated by",
+      "it" : "è partecipata da"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Participation of the Session by the Commissioner.",
+      "it" : "Partecipazione della Sessione da parte dei Commissari."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#belongsToCommission",
+    "inverse" : "18",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "belongsToCommission",
+      "en" : "belongs to commission",
+      "it" : "appartiene alla commissione"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Membership of the Commissioners to the Commission.",
+      "it" : "Appartenenza dei Commissari alla Commissione."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#examinesLaws",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "examinesLaws",
+      "en" : "examines laws",
+      "it" : "esamina leggi"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Examination of Draft Laws by the Commission.",
+      "it" : "Esame della Commissione di Progetti di Legge."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.cgg.sm/ontology/commissions#appointedBy",
+    "baseIri" : "http://www.cgg.sm/ontology/commissions",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "appointedBy",
+      "en" : "appointed by",
+      "it" : "nominato da"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Nomination of the Commission by the Grand and General Council.",
+      "it" : "Nomina della Commissione da parte del Consiglio Grande e Generale."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  } ]
+}

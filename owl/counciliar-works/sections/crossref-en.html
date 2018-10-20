@@ -1,0 +1,420 @@
+<h2  id="crossreference" class="list">Cross reference for Counciliar Works classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Counciliar Works.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Convocation"
+            title="http://www.cgg.sm/ontology/counciliar-works#Convocation">
+            <span>Convocation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Paragraph"
+            title="http://www.cgg.sm/ontology/counciliar-works#Paragraph">Paragraph</a>
+      </li>
+      <li>
+         <a href="#Session"
+            title="http://www.cgg.sm/ontology/counciliar-works#Session">Session</a>
+      </li>
+      <li>
+         <a href="#UrgentSession"
+            title="http://www.cgg.sm/ontology/counciliar-works#UrgentSession">Urgent session</a>
+      </li>
+   </ul>
+   <div class="entity" id="Convocation">
+      <h3>Convocation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#Convocation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#hasParagraphs"
+               title="http://www.cgg.sm/ontology/counciliar-works#hasParagraphs">has paragraphs</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">some</span> 
+            <a href="#Paragraph"
+               title="http://www.cgg.sm/ontology/counciliar-works#Paragraph">Paragraph</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasParagraphs"
+               title="http://www.cgg.sm/ontology/counciliar-works#hasParagraphs">has paragraphs</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#of" title="http://www.cgg.sm/ontology/counciliar-works#of">of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#Convocation"
+               title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConvenedBy"
+               title="http://www.cgg.sm/ontology/counciliar-works#isConvenedBy">is convened by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isDiscussedDuring"
+               title="http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring">is discussed during</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#Convocation">object property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Paragraph">
+      <h3>Paragraph<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#Paragraph</p>
+      <div class="comment">
+         <span class="markdown">A paragraph of the convocation.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#topic"
+               title="http://www.cgg.sm/ontology/counciliar-works#topic">topic</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasParagraphs"
+               title="http://www.cgg.sm/ontology/counciliar-works#hasParagraphs">has paragraphs</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Session">
+      <h3>Session<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#Session</p>
+      <div class="comment">
+         <span class="markdown">A single session of the Grand and General Council.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Convocation"
+               title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">exactly</span> 1 <a href="#Convocation"
+               title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#UrgentSession"
+               title="http://www.cgg.sm/ontology/counciliar-works#UrgentSession">Urgent session</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#Convocation"
+               title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ends" title="http://www.cgg.sm/ontology/counciliar-works#ends">End date and time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#begins"
+               title="http://www.cgg.sm/ontology/counciliar-works#begins">Start date and time</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isConvenedBy"
+               title="http://www.cgg.sm/ontology/counciliar-works#isConvenedBy">is convened by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UrgentSession">
+      <h3>Urgent session<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#UrgentSession</p>
+      <div class="comment">
+         <span class="markdown">A urgent session convened if needed.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Session"
+               title="http://www.cgg.sm/ontology/counciliar-works#Session">Session</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Convocation"
+            title="http://www.cgg.sm/ontology/counciliar-works#Convocation">
+            <span>Convocation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasParagraphs"
+            title="http://www.cgg.sm/ontology/counciliar-works#hasParagraphs">has paragraphs</a>
+      </li>
+      <li>
+         <a href="#isConvenedBy"
+            title="http://www.cgg.sm/ontology/counciliar-works#isConvenedBy">is convened by</a>
+      </li>
+      <li>
+         <a href="#isDiscussedDuring"
+            title="http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring">is discussed during</a>
+      </li>
+      <li>
+         <a href="#of" title="http://www.cgg.sm/ontology/counciliar-works#of">of</a>
+      </li>
+      <li>
+         <a href="#topic"
+            title="http://www.cgg.sm/ontology/counciliar-works#topic">topic</a>
+      </li>
+   </ul>
+   <div class="entity" id="Convocation">
+      <h3>Convocation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#Convocation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Convocation"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isConvenedBy"
+                  title="http://www.cgg.sm/ontology/counciliar-works#isConvenedBy">is convened by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#Convocation">class</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasParagraphs">
+      <h3>has paragraphs<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#hasParagraphs</p>
+      <div class="comment">
+         <span class="markdown">Composition of the convocation by one or more paragraphs.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Convocation"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Paragraph"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Paragraph">Paragraph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isConvenedBy">
+      <h3>is convened by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#isConvenedBy</p>
+      <div class="comment">
+         <span class="markdown">Convocation of a counciliar session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Convocation"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#Convocation"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDiscussedDuring">
+      <h3>is discussed during<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#isDiscussedDuring</p>
+      <div class="comment">
+         <span class="markdown">Discussion of a norm during the convocation of a Council session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/textual-products#Norm">norm</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Convocation"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="of">
+      <h3>of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#of</p>
+      <div class="comment">
+         <span class="markdown">Link between convocation and GGC.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Convocation"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Convocation">Convocation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.cgg.sm/ontology/cgg#GrandAndGeneralCouncil">grand and general council</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="topic">
+      <h3>topic<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#topic</p>
+      <div class="comment">
+         <span class="markdown">The topic of a paragraph, usually a Norm.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Paragraph"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Paragraph">Paragraph</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.cgg.sm/ontology/textual-products#Norm">norm</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ends" title="http://www.cgg.sm/ontology/counciliar-works#ends">End date and time</a>
+      </li>
+      <li>
+         <a href="#begins"
+            title="http://www.cgg.sm/ontology/counciliar-works#begins">Start date and time</a>
+      </li>
+   </ul>
+   <div class="entity" id="ends">
+      <h3>End date and time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#ends</p>
+      <div class="comment">
+         <span class="markdown">End date and time of the session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="begins">
+      <h3>Start date and time<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.cgg.sm/ontology/counciliar-works#begins</p>
+      <div class="comment">
+         <span class="markdown">Start date and time of the session.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Session"
+                  title="http://www.cgg.sm/ontology/counciliar-works#Session">Session</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

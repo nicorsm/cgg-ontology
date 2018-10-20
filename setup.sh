@@ -1,10 +1,12 @@
 #!/bin/bash
-java -jar widoco.jar -rewriteAll -confFile ./config/base.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/base# -outFolder ./rdfs/base -ontFile ./rdfs/base.rdf
-java -jar widoco.jar -rewriteAll -confFile ./config/congress.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/congress# -outFolder ./rdfs/congress -ontFile ./rdfs/congress.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/cgg.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/cgg# -outFolder ./rdfs/cgg -ontFile ./rdfs/cgg.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/commissions.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/commissions# -outFolder ./rdfs/commissions -ontFile ./rdfs/commissions.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/council-of-12.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/council-of-12# -outFolder ./rdfs/council-of-12 -ontFile ./rdfs/council-of-12.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/counciliar-works.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/counciliar-works# -outFolder ./rdfs/counciliar-works -ontFile ./rdfs/counciliar-works.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/international-delegations.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/international-delegations# -outFolder ./rdfs/international-delegations -ontFile ./rdfs/international-delegations.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/regency.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/regency# -outFolder ./rdfs/regency -ontFile ./rdfs/regency.rdf 
-java -jar widoco.jar -rewriteAll -confFile ./config/textual-products.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/textual-products# -outFolder ./rdfs/textual-products -ontFile ./rdfs/textual-products.rdf 
+
+declare -a arr=("base" "congress" "cgg" "commissions" "council-of-12" "counciliar-works" "international-delegations" "regency" "textual-products")
+
+for i in "${arr[@]}"
+do
+   rdfs='java -jar widoco.jar -rewriteAll -confFile ./config/'"$i"'.properties -includeImportedOntologies -webVowl -ontURI http://www.cgeg.sm/ontology/'"$i"'# -outFolder ./rdfs/'"$i"' -ontFile ./rdfs/'"$i"'.rdf -lang en-it'
+   eval $rdfs
+   owl='java -jar widoco.jar -rewriteAll -webVowl -ontURI http://www.cgeg.sm/ontology/'"$i"'# -outFolder ./owl/'"$i"' -ontFile ./owl/'"$i"'.owl -lang en-it'
+   eval $owl
+    
+done
