@@ -7,23 +7,23 @@
     <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec#"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2006/vcard/ns" uri="http://www.w3.org/2006/vcard/ns#"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/base" uri="base.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/cgg" uri="cgg.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/commissions" uri="commissions.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/congress" uri="congress.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/council-of-12" uri="council-of-12.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/counciliar-works" uri="counciliar-works.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/international-delegations" uri="international-delegations.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/regency" uri="regency.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="http://www.cgg.sm/ontology/textual-products" uri="textual-products.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/base" uri="base/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/cgg" uri="cgg/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/commissions" uri="commissions/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/congress" uri="congress/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/council-of-12" uri="council-of-12/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/counciliar-works" uri="counciliar-works/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/international-delegations" uri="international-delegations/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/regency" uri="regency/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1540058244633" name="shadowed:http://www.cgg.sm/ontology/textual-products" uri="textual-products/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/base" uri="base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/cgg" uri="cgg.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/commissions" uri="commissions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/congress" uri="congress.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/council-of-12" uri="council-of-12.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/counciliar-works" uri="counciliar-works.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/international-delegations" uri="international-delegations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/regency" uri="regency.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="http://www.cgg.sm/ontology/textual-products" uri="textual-products.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/base" uri="base/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/cgg" uri="cgg/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/commissions" uri="commissions/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/congress" uri="congress/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/council-of-12" uri="council-of-12/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/counciliar-works" uri="counciliar-works/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/international-delegations" uri="international-delegations/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/regency" uri="regency/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1540128186947" name="shadowed:http://www.cgg.sm/ontology/textual-products" uri="textual-products/ontology.xml"/>
     </group>
 </catalog>
